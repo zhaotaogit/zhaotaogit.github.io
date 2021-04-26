@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Taotao&#39;s Blog">
+    <meta name="keywords" content="Linux基础, Taotao&#39;s Blog">
     <meta name="description" content="Taotao&#39;s Blog">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Taotao&#39;s Blog</title>
+    <title>Linux基础 | Taotao&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -316,12 +316,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">Linux基础</h1>
                 </div>
             </div>
         </div>
@@ -449,28 +449,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-04-25
+                    2021-04-26
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-04-25
+                    2021-04-26
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    26
+                    668
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -496,7 +496,110 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>title: 404<br>date: 2019-08-5 16:41:10<br>type: “404”<br>layout: “404”<br>description: “Oops～，我崩溃了！找不到你想要的页面 :(“</p>
+                <h1 id="1-Linux"><a href="#1-Linux" class="headerlink" title="1.Linux"></a>1.Linux</h1><h2 id="1-1Vi编辑器的模式"><a href="#1-1Vi编辑器的模式" class="headerlink" title="1.1Vi编辑器的模式"></a>1.1Vi编辑器的模式</h2><ul>
+<li><h4 id="插入模式：文字数据的输入，按Esc键可以回到编辑模式"><a href="#插入模式：文字数据的输入，按Esc键可以回到编辑模式" class="headerlink" title="插入模式：文字数据的输入，按Esc键可以回到编辑模式"></a>插入模式：文字数据的输入，按Esc键可以回到编辑模式</h4></li>
+<li><h4 id="编辑模式：进入Vi的默认模式，主要功能是控制光标的移动、删除字符、区段复制等。"><a href="#编辑模式：进入Vi的默认模式，主要功能是控制光标的移动、删除字符、区段复制等。" class="headerlink" title="编辑模式：进入Vi的默认模式，主要功能是控制光标的移动、删除字符、区段复制等。"></a>编辑模式：进入Vi的默认模式，主要功能是控制光标的移动、删除字符、区段复制等。</h4></li>
+<li><h4 id="命令模式：保存文件、退出Vi-以及其他的设置，例如查找或替换字符串等。"><a href="#命令模式：保存文件、退出Vi-以及其他的设置，例如查找或替换字符串等。" class="headerlink" title="命令模式：保存文件、退出Vi,以及其他的设置，例如查找或替换字符串等。"></a>命令模式：保存文件、退出Vi,以及其他的设置，例如查找或替换字符串等。</h4></li>
+</ul>
+<h2 id="1-2-Vi编辑器模式的切换"><a href="#1-2-Vi编辑器模式的切换" class="headerlink" title="1.2 Vi编辑器模式的切换"></a>1.2 Vi编辑器模式的切换</h2><ul>
+<li><p>编辑模式–&gt;插入模式</p>
+<p>按a键：从当前光标所在位置的下一个字符开始输入</p>
+<p>按i键：从光标所在位置插入新输入的字符</p>
+<p>按o键：新增加一行，并将光标移动到下一行的开头</p>
+<p>注意：在编辑模式下输入命令时，如a、i、o字符并不会显示出来。</p>
+</li>
+<li><p>插入模式–&gt;编辑模式</p>
+<p>​    按下Esc键</p>
+</li>
+</ul>
+<img src="/.io//image-20201219144847919.png" alt="image-20201219144847919" style="zoom:50%;">
+
+<img src="/.io//Linux基础_imgs/image-20201219144847919.png" alt="image-20201219144847919" style="zoom:50%;">
+
+<ul>
+<li><p>编辑模式–&gt;命令模式</p>
+<p>输入”:”键即可</p>
+</li>
+<li><p>命令模式–&gt;编辑模式</p>
+<p>输入命令后回车即可</p>
+<h4 id="编辑模式中常用命令"><a href="#编辑模式中常用命令" class="headerlink" title="编辑模式中常用命令"></a>编辑模式中常用命令</h4><blockquote>
+<p>i:在光标前插入文本</p>
+<p>a：在光标后插入文本</p>
+<p>I：在当前的前端插入文本</p>
+<p>A：在当前行的末端插入文本</p>
+<p>O：在当前行前插入一行</p>
+<p>o：在当前行后插入一行</p>
+</blockquote>
+<h4 id="命令模式和编辑模式下的操作"><a href="#命令模式和编辑模式下的操作" class="headerlink" title="命令模式和编辑模式下的操作"></a>命令模式和编辑模式下的操作</h4><img src="/.io//Linux基础_imgs/image-20201219145615577.png" alt="image-20201219145615577" style="zoom:50%;"></li>
+</ul>
+<h2 id="1-3文件操作"><a href="#1-3文件操作" class="headerlink" title="1.3文件操作"></a>1.3文件操作</h2><ol>
+<li><p>li显示目录文件  语法：ls 选项[-alF] [文件或目录]</p>
+<ul>
+<li>-a 显示所有文件，包括隐藏文件</li>
+<li>-l 使用长格式显示</li>
+<li>-F 附加文件类别，符号在文件名最后</li>
+</ul>
+<p><img src="/.io//Linux%E5%9F%BA%E7%A1%80_imgs%5Cimage-20210110135615077.png" alt="image-20210110135615077"></p>
+</li>
+<li><p>cp 复制文件 语法：cp  选项[-afp] [源文件或目录] [目的文件或目录]</p>
+<ul>
+<li>-a 复制所有目录并包含子目录</li>
+<li>-f 强制复制文件</li>
+<li>-p 保留源文件的日期</li>
+</ul>
+<p><img src="/.io//Linux%E5%9F%BA%E7%A1%80_imgs%5Cimage-20210110135811752.png" alt="image-20210110135811752"></p>
+<p><img src="/.io//Linux%E5%9F%BA%E7%A1%80_imgs%5Cimage-20210110140404827.png" alt="image-20210110140404827"></p>
+</li>
+<li><p>cat 显示文件内容 语法: cat [文件名]</p>
+</li>
+</ol>
+<p><img src="/.io//Linux%E5%9F%BA%E7%A1%80_imgs%5Cimage-20210110135855215.png" alt="image-20210110135855215"></p>
+<ol>
+<li><p>more 分页显示文件内容 语法：more [文件名]</p>
+<ul>
+<li>f或空格：显示下一页</li>
+<li>Enter 显示下一行</li>
+<li>q或Q 退出more</li>
+</ul>
+</li>
+<li><p>rm 删除文件 语法：rm 选项[-irf] [文件目录]</p>
+<ul>
+<li>-i 交互方式，询问是否删除</li>
+<li>-r 递归删除目录</li>
+<li>-f 强制删除，不需询问</li>
+</ul>
+<p><img src="/.io//Linux%E5%9F%BA%E7%A1%80_imgs%5Cimage-20210110135918780.png" alt="image-20210110135918780"></p>
+</li>
+<li><p>rmdir 删空目录 语法rmdir 目录名</p>
+<p><img src="/.io//Linux%E5%9F%BA%E7%A1%80_imgs%5Cimage-20210110144703876.png" alt="image-20210110144703876"></p>
+</li>
+<li><p>mv 移动文件 语法:mv 文件名 目录地址</p>
+<p>​                                                <img src="/.io//Linux%E5%9F%BA%E7%A1%80_imgs%5Cimage-20210110144840955.png" alt="image-20210110144840955"></p>
+</li>
+<li><p>tar 解压缩文件 语法</p>
+<p>压缩：</p>
+<p><img src="/.io//Linux%E5%9F%BA%E7%A1%80_imgs%5Cimage-20210110145202459.png" alt="image-20210110145202459"></p>
+<p>解压：</p>
+<p>​                                   <img src="/.io//Linux%E5%9F%BA%E7%A1%80_imgs%5Cimage-20210110145243347.png" alt="image-20210110145243347"></p>
+</li>
+<li><p>touch 创建文件 语法 touch 文件名.后缀</p>
+<p><img src="/.io//Linux%E5%9F%BA%E7%A1%80_imgs%5Cimage-20210110145413167.png" alt="image-20210110145413167"></p>
+</li>
+</ol>
+<p>7.修改日志保存未知步骤</p>
+<pre class="line-numbers language-linux" data-language="linux"><code class="language-linux">touch /var/log/test2.log 创建要保存日志的文件
+pwd 查看此文件的目录
+vi /etc/rsyslog.conf 修改日志系统
+					### 在# Save boot messages also to boot.log
+					###local7.* 行下编辑
+*.*														/var/log/test2.log
+
+systemctl restart rsyslog.service 重启日志系统
+cat /var/log/test2.log  查看test2.log的文件内容
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="/.io//Linux%E5%9F%BA%E7%A1%80_imgs%5Cimage-20210110151224600.png" alt="image-20210110151224600"></p>
+<p><img src="/.io//Linux%E5%9F%BA%E7%A1%80_imgs%5Cimage-20210110151059479.png" alt="image-20210110151059479"></p>
 
                 
             </div>
@@ -523,7 +626,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zhaotaogit.github.io/404.html">https://zhaotaogit.github.io/404.html</a>
+                    <a href="https://zhaotaogit.github.io/year/04/26/linux-ji-chu/">https://zhaotaogit.github.io/year/04/26/linux-ji-chu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -996,13 +1099,13 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/404.html">
+                <a href="/year/04/26/linux-ji-chu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Linux基础">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">Linux基础</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1013,7 +1116,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-25
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-26
                             </span>
                         <span class="publish-author">
                             
@@ -1031,16 +1134,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/404.html">
+                <a href="/year/04/25/article-title/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="article title">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">article title</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1061,7 +1164,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
