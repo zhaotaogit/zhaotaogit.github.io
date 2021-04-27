@@ -30,20 +30,7 @@
     
     
     <entry>
-      <title>article title</title>
-      <link href="year/04/25/article-title/"/>
-      <url>year/04/25/article-title/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
+      <title>Hello Hexo!</title>
       <link href="year/04/24/hello-world/"/>
       <url>year/04/24/hello-world/</url>
       
