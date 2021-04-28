@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="index, Taotao&#39;s Blog">
+    <meta name="keywords" content="二次元, Taotao&#39;s Blog">
     <meta name="description" content="Taotao&#39;s Blog">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>index | Taotao&#39;s Blog</title>
+    <title>二次元 | Taotao&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -345,60 +345,47 @@
 </header>
 
     <link rel="stylesheet" href="/css/gallery.css">
+<link type="text/css" href="/libs/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link type="text/css" href="/libs/justifiedGallery/justifiedGallery.min.css" rel="stylesheet">
 
-<div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                Taotao&#39;s Blog
-                
-            </div>
 
-            <div class="description center-align">
-                
-                    <span id="jinrishici-sentence">正在加载今日诗词....</span> 
-                
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">二次元</h1>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 
+
+<div class="container">
+    <div class="photo-wrapper">
+        
+            <div class="waterfall" id="encrypt-blog">
+                <a target="_blank" href="https://cdn.jsdelivr.net/gh/zhaotaogit/images/AlbumX/1.jpg"     class="photo-item" rel="example_group noopener"     data-fancybox="images">      <img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/AlbumX/1.jpg"       alt=AlbumX/1.jpg>
+    </a><a target="_blank" href="https://cdn.jsdelivr.net/gh/zhaotaogit/images/AlbumX/2.jpg"     class="photo-item" rel="example_group noopener"     data-fancybox="images">      <img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/AlbumX/2.jpg"       alt=AlbumX/2.jpg>
+    </a><a target="_blank" href="https://cdn.jsdelivr.net/gh/zhaotaogit/images/AlbumX/3.jpg"     class="photo-item" rel="example_group noopener"     data-fancybox="images">      <img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/AlbumX/3.jpg"       alt=AlbumX/3.jpg>
+    </a><a target="_blank" href="https://cdn.jsdelivr.net/gh/zhaotaogit/images/AlbumX/4.jpg"     class="photo-item" rel="example_group noopener"     data-fancybox="images">      <img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/AlbumX/4.jpg"       alt=AlbumX/4.jpg>
+    </a>
+            </div>
+        
+    </div>
+</div>
+
+<script src="/libs/fancybox/fancybox.js"></script>
+<script src="/libs/justifiedGallery/justifiedGallery.min.js"></script>
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+
+  $("a[rel=example_group]").fancybox();
+  $("#encrypt-blog").justifiedGallery({margins: 5, rowHeight: 150});
+
 </script>
-
-
-
-    </div>
-</div>
-
-<main class="content">
-    <div class="container">
-        
-        
-        <div class="gallery-wrapper row">
-            
-            
-            <div class="col s6 m4 l4 xl3 gallery-box">
-                <a href="./二次元" class="gallery-item" data-aos="zoom-in-up">
-                     <div class="gallery-cover-box" style="background-image: url(https://cdn.jsdelivr.net/gh/zhaotaogit/images/AlbumX/0.jpg);">
-                    </div>
-                    <p class="gallery-name">
-                        二次元
-                    </p>
-                </a>
-            </div>
-            
-        </div>
-        
-    </div>
-</main>
 
     <footer class="page-footer bg-color">
     
