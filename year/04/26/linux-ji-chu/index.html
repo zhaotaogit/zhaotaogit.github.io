@@ -32,7 +32,8 @@
 
 <meta name="generator" content="Hexo 5.4.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="Taotao's Blog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="alternate" href="/atom.xml" title="Taotao's Blog" type="application/atom+xml">
 </head>
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 
@@ -524,9 +525,6 @@
         <hr class="clearfix">
 
         
-        <!-- 是否加载使用自带的 prismjs. -->
-        <link rel="stylesheet" href="/libs/prism/prism.css">
-        
 
         
 
@@ -614,17 +612,16 @@
 <img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Linux%E5%9F%BA%E7%A1%80/image-20210110145413167.png"></li>
 </ol>
 <p>7.修改日志保存未知步骤</p>
-<pre class="line-numbers language-linux" data-language="linux"><code class="language-linux">touch /var/log/test2.log 创建要保存日志的文件
+<pre class="line-numbers language-linux"><code class="language-linux">touch /var/log/test2.log 创建要保存日志的文件
 pwd 查看此文件的目录
 vi /etc/rsyslog.conf 修改日志系统
-					### 在# Save boot messages also to boot.log
-					###local7.* 行下编辑
-*.*														/var/log/test2.log
+                    ### 在# Save boot messages also to boot.log
+                    ###local7.* 行下编辑
+*.*                                                        /var/log/test2.log
 
 systemctl restart rsyslog.service 重启日志系统
 cat /var/log/test2.log  查看test2.log的文件内容
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Linux%E5%9F%BA%E7%A1%80/image-20210110151224600.png">
 
 <img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Linux%E5%9F%BA%E7%A1%80/image-20210110151059479.png">
@@ -1392,16 +1389,12 @@ cat /var/log/test2.log  查看test2.log的文件内容
 <style>
     .aplayer .aplayer-lrc p {
         
-        display: none;
-        
         font-size: 12px;
         font-weight: 700;
         line-height: 16px !important;
     }
 
     .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
         
         font-size: 15px;
         color: #42b983;
@@ -1426,7 +1419,7 @@ cat /var/log/test2.log  查看test2.log的文件内容
                    type="playlist"
                    id="503838841"
                    fixed='true'
-                   autoplay='false'
+                   autoplay='true'
                    theme='#42b983'
                    loop='all'
                    order='random'
