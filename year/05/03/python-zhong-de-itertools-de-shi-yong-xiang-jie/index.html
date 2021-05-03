@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Linux基础, Taotao&#39;s Blog">
+    <meta name="keywords" content="Python中的itertools的使用详解, Taotao&#39;s Blog">
     <meta name="description" content="Taotao&#39;s Blog">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Linux基础 | Taotao&#39;s Blog</title>
+    <title>Python中的itertools的使用详解 | Taotao&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -349,12 +349,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/zhaotaogit/images/Linux%E5%B0%81%E9%9D%A2/Linux01.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Linux基础</h1>
+                    <h1 class="description center-align post-title">Python中的itertools的使用详解</h1>
                 </div>
             </div>
         </div>
@@ -470,8 +470,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Linux%E5%9F%BA%E7%A1%80/">
-                                <span class="chip bg-color">Linux基础</span>
+                            <a href="/tags/Python/">
+                                <span class="chip bg-color">Python</span>
                             </a>
                         
                     </div>
@@ -495,28 +495,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-04-26
+                    2021-05-03
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-05-02
+                    2021-05-03
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    668
+                    879
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    4 分
                 </div>
                 
 
@@ -539,118 +539,166 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="1-Linux"><a href="#1-Linux" class="headerlink" title="1.Linux"></a>1.Linux</h1><h2 id="1-1Vi编辑器的模式"><a href="#1-1Vi编辑器的模式" class="headerlink" title="1.1Vi编辑器的模式"></a>1.1Vi编辑器的模式</h2><ul>
-<li><h4 id="插入模式：文字数据的输入，按Esc键可以回到编辑模式"><a href="#插入模式：文字数据的输入，按Esc键可以回到编辑模式" class="headerlink" title="插入模式：文字数据的输入，按Esc键可以回到编辑模式"></a>插入模式：文字数据的输入，按Esc键可以回到编辑模式</h4></li>
-<li><h4 id="编辑模式：进入Vi的默认模式，主要功能是控制光标的移动、删除字符、区段复制等。"><a href="#编辑模式：进入Vi的默认模式，主要功能是控制光标的移动、删除字符、区段复制等。" class="headerlink" title="编辑模式：进入Vi的默认模式，主要功能是控制光标的移动、删除字符、区段复制等。"></a>编辑模式：进入Vi的默认模式，主要功能是控制光标的移动、删除字符、区段复制等。</h4></li>
-<li><h4 id="命令模式：保存文件、退出Vi-以及其他的设置，例如查找或替换字符串等。"><a href="#命令模式：保存文件、退出Vi-以及其他的设置，例如查找或替换字符串等。" class="headerlink" title="命令模式：保存文件、退出Vi,以及其他的设置，例如查找或替换字符串等。"></a>命令模式：保存文件、退出Vi,以及其他的设置，例如查找或替换字符串等。</h4></li>
-</ul>
-<h2 id="1-2-Vi编辑器模式的切换"><a href="#1-2-Vi编辑器模式的切换" class="headerlink" title="1.2 Vi编辑器模式的切换"></a>1.2 Vi编辑器模式的切换</h2><ul>
-<li><p>编辑模式–&gt;插入模式</p>
-<p>按a键：从当前光标所在位置的下一个字符开始输入</p>
-<p>按i键：从光标所在位置插入新输入的字符</p>
-<p>按o键：新增加一行，并将光标移动到下一行的开头</p>
-<p>注意：在编辑模式下输入命令时，如a、i、o字符并不会显示出来。</p>
-</li>
-<li><p>插入模式–&gt;编辑模式</p>
-<p>​    按下Esc键</p>
-<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Linux%E5%9F%BA%E7%A1%80/Linux%E5%9F%BA%E7%A1%80image-20201219144839599.png"></li>
-<li><p>编辑模式–&gt;命令模式</p>
-<p>输入”:”键即可</p>
-</li>
-<li><p>命令模式–&gt;编辑模式</p>
-<p>输入命令后回车即可</p>
-<h4 id="编辑模式中常用命令"><a href="#编辑模式中常用命令" class="headerlink" title="编辑模式中常用命令"></a>编辑模式中常用命令</h4><blockquote>
-<p>i:在光标前插入文本</p>
-<p>a：在光标后插入文本</p>
-<p>I：在当前的前端插入文本</p>
-<p>A：在当前行的末端插入文本</p>
-<p>O：在当前行前插入一行</p>
-<p>o：在当前行后插入一行</p>
-</blockquote>
-<h4 id="命令模式和编辑模式下的操作"><a href="#命令模式和编辑模式下的操作" class="headerlink" title="命令模式和编辑模式下的操作"></a>命令模式和编辑模式下的操作</h4><img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Linux%E5%9F%BA%E7%A1%80/image-20201219145615577.png"></li>
-</ul>
-<h2 id="1-3文件操作"><a href="#1-3文件操作" class="headerlink" title="1.3文件操作"></a>1.3文件操作</h2><ol>
-<li><p>li显示目录文件  语法：ls 选项[-alF] [文件或目录]</p>
+                <h1 id="Python中的itertools的使用详解"><a href="#Python中的itertools的使用详解" class="headerlink" title="Python中的itertools的使用详解"></a>Python中的itertools的使用详解</h1><p><strong>1.无穷的迭代器</strong></p>
+<p>1.1 count(start,[step])</p>
+<p>count()接受两个参数</p>
 <ul>
-<li>-a 显示所有文件，包括隐藏文件</li>
-<li>-l 使用长格式显示</li>
-<li>-F 附加文件类别，符号在文件名最后</li>
+<li> start:循环开始的数字</li>
+<li> step:循环中的间隔</li>
 </ul>
-<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Linux%E5%9F%BA%E7%A1%80/image-20210110135615077.png"></li>
-<li><p>cp 复制文件 语法：cp  选项[-afp] [源文件或目录] [目的文件或目录]</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> itertools <span class="token keyword">import</span> count
+ 
+<span class="token triple-quoted-string string">"""
+无穷的迭代器 count()
+"""</span>
+c <span class="token operator">=</span> count<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
+v <span class="token operator">=</span> next<span class="token punctuation">(</span>c<span class="token punctuation">)</span>
+<span class="token keyword">while</span> v <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">:</span>
+  v <span class="token operator">=</span> next<span class="token punctuation">(</span>c<span class="token punctuation">)</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">','</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>1.2 cycle()</p>
+<p>cycle就是一while True，无限循环里面的数字。</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token triple-quoted-string string">"""
+无穷迭代器 cycle()
+"""</span>
+<span class="token keyword">from</span> itertools <span class="token keyword">import</span> cycle
+ 
+c <span class="token operator">=</span> cycle<span class="token punctuation">(</span><span class="token string">'ABCD'</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span>next<span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">','</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>1.3 repeat(elem,[n])</p>
+<p>重复迭代elem，n次</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token triple-quoted-string string">"""
+无穷迭代器 repeat()
+"""</span>
+<span class="token keyword">from</span> itertools <span class="token keyword">import</span> repeat
+ 
+r <span class="token operator">=</span> repeat<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span>next<span class="token punctuation">(</span>r<span class="token punctuation">)</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">','</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>2. 迭代器</strong></p>
+<p>2.1 accumulate(p,[func])</p>
+<p>使用func的函数对迭代对象p进行累积。</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token triple-quoted-string string">"""
+迭代器 accumulate()
+"""</span>
+<span class="token keyword">from</span> itertools <span class="token keyword">import</span> accumulate
+ 
+test_list <span class="token operator">=</span> <span class="token punctuation">[</span>i <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> accumulate<span class="token punctuation">(</span>test_list<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token comment" spellcheck="true"># 默认是operator.add</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">','</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> accumulate<span class="token punctuation">(</span>test_list<span class="token punctuation">,</span> <span class="token keyword">lambda</span> x<span class="token punctuation">,</span> y<span class="token punctuation">:</span> x <span class="token operator">*</span> y<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token comment" spellcheck="true"># operator.mul</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">','</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>2.2 chain()</p>
+<p>chain()中可以放多个迭代对象，然后一一迭代出来。</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token triple-quoted-string string">"""
+迭代器 chain()
+"""</span>
+<span class="token keyword">from</span> itertools <span class="token keyword">import</span> chain
+ 
+ch <span class="token operator">=</span> chain<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token number">4</span><span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">11</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> ch<span class="token punctuation">:</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>2.3 chain.from_iterable()</p>
+<p>跟chain不同的地方在于:</p>
 <ul>
-<li>-a 复制所有目录并包含子目录</li>
-<li>-f 强制复制文件</li>
-<li>-p 保留源文件的日期</li>
+<li> chain: 可以接受多个迭代对象</li>
+<li> chain.from_iterable():可以接受一个可以产生迭代对象的迭代器</li>
 </ul>
-<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Linux%E5%9F%BA%E7%A1%80/image-20210110135811752.png">
-
-<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Linux%E5%9F%BA%E7%A1%80/image-20210110140404827.png"></li>
-<li><p>cat 显示文件内容 语法: cat [文件名]</p>
-</li>
-</ol>
-<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Linux%E5%9F%BA%E7%A1%80/image-20210110135855215.png">
-
-<ol>
-<li><p>more 分页显示文件内容 语法：more [文件名]</p>
-<ul>
-<li>f或空格：显示下一页</li>
-<li>Enter 显示下一行</li>
-<li>q或Q 退出more</li>
-</ul>
-</li>
-<li><p>rm 删除文件 语法：rm 选项[-irf] [文件目录]</p>
-<ul>
-<li>-i 交互方式，询问是否删除</li>
-<li>-r 递归删除目录</li>
-<li>-f 强制删除，不需询问</li>
-</ul>
-<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Linux%E5%9F%BA%E7%A1%80/image-20210110140003294.png"></li>
-<li><p>rmdir 删空目录 语法rmdir 目录名</p>
-<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Linux%E5%9F%BA%E7%A1%80/image-20210110144648731.png"></li>
-<li><p>mv 移动文件 语法:mv 文件名 目录地址</p>
-<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Linux%E5%9F%BA%E7%A1%80/image-20210110144840955.png"></li>
-<li><p>tar 解压缩文件 语法</p>
-<p>压缩：</p>
-<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Linux%E5%9F%BA%E7%A1%80/image-20210110145202459.png">
-
-<p>解压：</p>
-<p>​               <img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Linux%E5%9F%BA%E7%A1%80/image-20210110145243347.png"></p>
-</li>
-<li><p>touch 创建文件 语法 touch 文件名.后缀</p>
-<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Linux%E5%9F%BA%E7%A1%80/image-20210110145413167.png"></li>
-</ol>
-<p>7.修改日志保存未知步骤</p>
-<pre class="line-numbers language-linux"><code class="language-linux">touch /var/log/test2.log 创建要保存日志的文件
-pwd 查看此文件的目录
-vi /etc/rsyslog.conf 修改日志系统
-                    ### 在# Save boot messages also to boot.log
-                    ###local7.* 行下编辑
-*.*                                                        /var/log/test2.log
-
-systemctl restart rsyslog.service 重启日志系统
-cat /var/log/test2.log  查看test2.log的文件内容
+<pre class="line-numbers language-python"><code class="language-python"><span class="token triple-quoted-string string">"""
+迭代器 chain.from_iterable()
+"""</span>
+<span class="token keyword">def</span> <span class="token function">gen_iterables</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+  <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">yield</span> range<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+ 
+<span class="token keyword">for</span> i <span class="token keyword">in</span> chain<span class="token punctuation">.</span>from_iterable<span class="token punctuation">(</span>gen_iterables<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Linux%E5%9F%BA%E7%A1%80/image-20210110151224600.png">
-
-<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Linux%E5%9F%BA%E7%A1%80/image-20210110151059479.png">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<p>2.4 compress(data,selectors)</p>
+<p>这是就是看下这个就知道了s是selectors中的元素。<br>(d[0] if s[0]), (d[1] if s[1]), …</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token triple-quoted-string string">"""
+迭代器 compress
+"""</span>
+<span class="token keyword">from</span> itertools <span class="token keyword">import</span> compress
+ 
+<span class="token keyword">print</span><span class="token punctuation">(</span>list<span class="token punctuation">(</span>compress<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">,</span> <span class="token string">'B'</span><span class="token punctuation">,</span> <span class="token string">'C'</span><span class="token punctuation">,</span> <span class="token string">'D'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>2.5 dropwhile(pred,seq)</p>
+<p>循环开始的条件是，直到遇到第一次不满足pred条件的情况，才开始遍历。</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token triple-quoted-string string">"""
+迭代器 dropwhile()
+"""</span>
+<span class="token keyword">from</span> itertools <span class="token keyword">import</span> dropwhile
+ 
+l <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>list<span class="token punctuation">(</span>dropwhile<span class="token punctuation">(</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> x <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">,</span> l<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>2.6 groupby</p>
+<p>这个感觉挺有意思的，有点像sql中的group_by。可以对字符串，列表等进行分组。</p>
+<p>返回键和，组里的内容</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> itertools <span class="token keyword">import</span> groupby
+ 
+<span class="token comment" spellcheck="true"># 对字符串进行分组</span>
+<span class="token keyword">for</span> k<span class="token punctuation">,</span> g <span class="token keyword">in</span> groupby<span class="token punctuation">(</span><span class="token string">'11111234567'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span>k<span class="token punctuation">,</span> list<span class="token punctuation">(</span>g<span class="token punctuation">)</span><span class="token punctuation">)</span>
+d <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true"># 按照字典value来进行分组</span>
+<span class="token keyword">for</span> k<span class="token punctuation">,</span> g <span class="token keyword">in</span> groupby<span class="token punctuation">(</span>d<span class="token punctuation">,</span> <span class="token keyword">lambda</span> x<span class="token punctuation">:</span> d<span class="token punctuation">.</span>get<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span>k<span class="token punctuation">,</span> list<span class="token punctuation">(</span>g<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>2.7 islice<br>这个就是对迭代对象进行切割，不支持负数，有点像range(1,10,2)这种</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> itertools <span class="token keyword">import</span> islice
+<span class="token keyword">print</span><span class="token punctuation">(</span>list<span class="token punctuation">(</span>islice<span class="token punctuation">(</span><span class="token string">'ABCDEFG'</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span> None<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>2.8 zip_longest</p>
+<p>这个和zip很像，不同地方在于:</p>
+<ul>
+<li> zip结束取决于里面最短的迭代对象</li>
+<li> zip_longest结束取决于里面最长的迭代对象</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> itertools <span class="token keyword">import</span> zip_longest
+ 
+<span class="token keyword">for</span> x<span class="token punctuation">,</span>y <span class="token keyword">in</span> zip_longest<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span>
+<span class="token keyword">for</span> x<span class="token punctuation">,</span>y <span class="token keyword">in</span> zip<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>排列组合迭代器</strong></p>
+<p>3.1 product</p>
+<p>相当于 嵌套的for</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token triple-quoted-string string">"""
+排列组合迭代器 product 嵌套的for
+"""</span>
+<span class="token keyword">from</span> itertools <span class="token keyword">import</span> product
+<span class="token keyword">for</span> i<span class="token punctuation">,</span>j <span class="token keyword">in</span> product<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span>j<span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>3.2 permutations</p>
+<p>全排列，比如输出123的全部情况。(1,2,3),(1,3,2)…</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> itertools <span class="token keyword">import</span> permutations
+<span class="token keyword">print</span><span class="token punctuation">(</span>list<span class="token punctuation">(</span>permutations<span class="token punctuation">(</span><span class="token string">'123'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>3.3 combinations(p,r)</p>
+<p>从p中找出所有长度为r的排列情况… 有顺序</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> itertools <span class="token keyword">import</span> combinations
+<span class="token keyword">print</span><span class="token punctuation">(</span>list<span class="token punctuation">(</span>combinations<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>3.4 combinations_with_replacement()</p>
+<p>从p中找出所有长度为r的排列情况，有顺序，但包括自身就是会重复的意思。</p>
+<ul>
+<li> combinations_with_replacement(‘ABCD’, 2)</li>
+<li> AA AB AC AD BB BC BD CC CD DD</li>
+</ul>
+<p>了解是了解了，就是用的时候不知道能不能想起来…</p>
+<p>以上就是本文的全部内容，希望对大家的学习有所帮助，也希望大家多多支持服务器之家。</p>
+<p>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_36659627/article/details/103926495">https://blog.csdn.net/qq_36659627/article/details/103926495</a></p>
 
                 
             </div>
@@ -677,7 +725,7 @@ cat /var/log/test2.log  查看test2.log的文件内容
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zhaotaogit.github.io/year/04/26/linux-ji-chu/">https://zhaotaogit.github.io/year/04/26/linux-ji-chu/</a>
+                    <a href="https://zhaotaogit.github.io/year/05/03/python-zhong-de-itertools-de-shi-yong-xiang-jie/">https://zhaotaogit.github.io/year/05/03/python-zhong-de-itertools-de-shi-yong-xiang-jie/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -715,8 +763,8 @@ cat /var/log/test2.log  查看test2.log的文件内容
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Linux%E5%9F%BA%E7%A1%80/">
-                                    <span class="chip bg-color">Linux基础</span>
+                                <a href="/tags/Python/">
+                                    <span class="chip bg-color">Python</span>
                                 </a>
                             
                         </div>
@@ -1149,28 +1197,79 @@ cat /var/log/test2.log  查看test2.log的文件内容
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/year/04/27/java-yi-xie-nei-zhi-fang-fa-chi-xu-geng-xin/">
+                <a href="/year/05/03/python-zhong-de-itertools-de-shi-yong-xiang-jie/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Java%E5%B0%81%E9%9D%A2/Java.jpg" class="responsive-img" alt="Java一些内置方法-持续更新">
                         
-                        <span class="card-title">Java一些内置方法-持续更新</span>
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Python中的itertools的使用详解">
+                        
+                        <span class="card-title">Python中的itertools的使用详解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Java学习
+                            Python学习
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-27
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-03
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                    学习
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/year/04/29/git-cang-ku-xiao-ji/">
+                    <div class="card-image">
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Git%E5%B0%81%E9%9D%A2/Git.jpg" class="responsive-img" alt="Git仓库小记">
+                        
+                        <span class="card-title">Git仓库小记</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Git学习
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-29
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1186,47 +1285,10 @@ cat /var/log/test2.log  查看test2.log的文件内容
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Java/">
-                        <span class="chip bg-color">Java</span>
+                    <a href="/tags/Git/">
+                        <span class="chip bg-color">Git</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/year/04/24/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Hello Hexo!">
-                        
-                        <span class="card-title">Hello Hexo!</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-24
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            Zhaotao
-                            
-                        </span>
-                    </div>
                 </div>
                 
             </div>

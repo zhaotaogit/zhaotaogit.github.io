@@ -6,7 +6,7 @@
   <link href="https://zhaotaogit.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhaotaogit.github.io/"/>
-  <updated>2021-05-02T09:17:30.903Z</updated>
+  <updated>2021-05-03T14:23:29.793Z</updated>
   <id>https://zhaotaogit.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python中的itertools的使用详解</title>
+    <link href="https://zhaotaogit.github.io/year/05/03/python-zhong-de-itertools-de-shi-yong-xiang-jie/"/>
+    <id>https://zhaotaogit.github.io/year/05/03/python-zhong-de-itertools-de-shi-yong-xiang-jie/</id>
+    <published>2021-05-03T14:22:25.000Z</published>
+    <updated>2021-05-03T14:23:29.793Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Python中的itertools的使用详解&quot;&gt;&lt;a href=&quot;#Python中的itertools的使用详解&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="学习" scheme="https://zhaotaogit.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="Python" scheme="https://zhaotaogit.github.io/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>Git仓库小记</title>
