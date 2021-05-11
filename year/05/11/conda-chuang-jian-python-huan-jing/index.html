@@ -30,9 +30,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Taotao's Blog" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 5.4.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Taotao's Blog" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
@@ -539,36 +539,36 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Cnda创建python环境"><a href="#Cnda创建python环境" class="headerlink" title="Cnda创建python环境"></a>Cnda创建python环境</h1><h1 id="1-列出当前存在的环境"><a href="#1-列出当前存在的环境" class="headerlink" title="1 列出当前存在的环境"></a>1 列出当前存在的环境</h1><p>可以用以下命令罗列出当前已经创建的python虚拟环境</p>
+                <h1 id="Cnda创建python环境"><a href="#Cnda创建python环境" class="headerlink" title="Cnda创建python环境"></a>Cnda创建python环境</h1><h2 id="1-列出当前存在的环境"><a href="#1-列出当前存在的环境" class="headerlink" title="1 列出当前存在的环境"></a>1 列出当前存在的环境</h2><p>可以用以下命令罗列出当前已经创建的python虚拟环境</p>
 <pre class="line-numbers language-cpp"><code class="language-cpp">conda env list
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>罗列结果如下所示:</p>
 <img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Album_Src/Conda_list.jpg">
 
 <p>左边是虚拟环境的名称，右边是其所在路径，带星号的表示是默认环境。</p>
-<h1 id="2-创建虚拟环境"><a href="#2-创建虚拟环境" class="headerlink" title="2 创建虚拟环境"></a>2 创建虚拟环境</h1><p>可以用如下命令创建一个名字为my_py_env，python版本为3.6.2的虚拟环境。</p>
+<h2 id="2-创建虚拟环境"><a href="#2-创建虚拟环境" class="headerlink" title="2 创建虚拟环境"></a>2 创建虚拟环境</h2><p>可以用如下命令创建一个名字为my_py_env，python版本为3.6.2的虚拟环境。</p>
 <pre class="line-numbers language-undefined"><code class="language-undefined">conda create -n my_py_env python=3.6.2
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>该方式创建的环境在默认路径下，可以通过以下方式指定路径：</p>
 <pre class="line-numbers language-swift"><code class="language-swift">conda create <span class="token operator">--</span><span class="token keyword">prefix</span><span class="token operator">=</span><span class="token string">"D:\\my_python\\envs\\my_py_env"</span>  python<span class="token operator">=</span><span class="token number">3.6</span><span class="token punctuation">.</span><span class="token number">3</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>其中”D:\my_python\envs"是路径名，”my_py_env” 是环境名.</p>
-<h1 id="3-进入环境"><a href="#3-进入环境" class="headerlink" title="3 进入环境"></a>3 进入环境</h1><pre class="line-numbers language-undefined"><code class="language-undefined">activate my_py_env
+<h2 id="3-进入环境"><a href="#3-进入环境" class="headerlink" title="3 进入环境"></a>3 进入环境</h2><pre class="line-numbers language-undefined"><code class="language-undefined">activate my_py_env
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>在windows系统cmd下通过以上命令即可进入my_py_env环境，如果在linux系统下，需要使用：</p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">source</span> activate my_py_env
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h1 id="4-退出环境"><a href="#4-退出环境" class="headerlink" title="4 退出环境"></a>4 退出环境</h1><p>windows:</p>
+<h2 id="4-退出环境"><a href="#4-退出环境" class="headerlink" title="4 退出环境"></a>4 退出环境</h2><p>windows:</p>
 <pre class="line-numbers language-undefined"><code class="language-undefined">deactivate
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>linux：</p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">source</span> deactivate
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h1 id="5-使用conda管理包"><a href="#5-使用conda管理包" class="headerlink" title="5 使用conda管理包"></a>5 使用conda管理包</h1><pre class="line-numbers language-undefined"><code class="language-undefined">conda install -n my_py_env package_name
+<h2 id="5-使用conda管理包"><a href="#5-使用conda管理包" class="headerlink" title="5 使用conda管理包"></a>5 使用conda管理包</h2><pre class="line-numbers language-undefined"><code class="language-undefined">conda install -n my_py_env package_name
 conda uninstall -n my_py_env package_name
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>只需要在conda命令中通过 -n 显示指定python环境即可</p>
-<h1 id="6-删除环境"><a href="#6-删除环境" class="headerlink" title="6 删除环境"></a>6 删除环境</h1><pre class="line-numbers language-csharp"><code class="language-csharp">conda <span class="token keyword">remove</span> <span class="token operator">-</span>n my_py_env <span class="token operator">--</span>all
+<h2 id="6-删除环境"><a href="#6-删除环境" class="headerlink" title="6 删除环境"></a>6 删除环境</h2><pre class="line-numbers language-csharp"><code class="language-csharp">conda <span class="token keyword">remove</span> <span class="token operator">-</span>n my_py_env <span class="token operator">--</span>all
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
                 
