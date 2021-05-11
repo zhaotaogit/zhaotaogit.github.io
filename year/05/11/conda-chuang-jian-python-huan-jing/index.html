@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Taotao&#39;s Blog">
+    <meta name="keywords" content="Conda创建python环境, Taotao&#39;s Blog">
     <meta name="description" content="Taotao&#39;s Blog">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Taotao&#39;s Blog</title>
+    <title>Conda创建python环境 | Taotao&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -349,12 +349,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://ss3.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/baike/pic/item/78310a55b319ebc45d5c45dc8e26cffc1e17164a.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">Conda创建python环境</h1>
                 </div>
             </div>
         </div>
@@ -468,12 +468,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Conda/">
+                                <span class="chip bg-color">Conda</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Conda/" class="post-category">
+                                Conda
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -482,21 +495,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-04-25
+                    2021-05-11
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-04-25
+                    2021-05-11
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    26
+                    262
                 </div>
                 
 
@@ -526,7 +539,37 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>title: 404<br>date: 2019-08-5 16:41:10<br>type: “404”<br>layout: “404”<br>description: “Oops～，我崩溃了！找不到你想要的页面 :(“</p>
+                <h1 id="Cnda创建python环境"><a href="#Cnda创建python环境" class="headerlink" title="Cnda创建python环境"></a>Cnda创建python环境</h1><h1 id="1-列出当前存在的环境"><a href="#1-列出当前存在的环境" class="headerlink" title="1 列出当前存在的环境"></a>1 列出当前存在的环境</h1><p>可以用以下命令罗列出当前已经创建的python虚拟环境</p>
+<pre class="line-numbers language-cpp"><code class="language-cpp">conda env list
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>罗列结果如下所示:</p>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Album_Src/Conda_list.jpg">
+
+<p>左边是虚拟环境的名称，右边是其所在路径，带星号的表示是默认环境。</p>
+<h1 id="2-创建虚拟环境"><a href="#2-创建虚拟环境" class="headerlink" title="2 创建虚拟环境"></a>2 创建虚拟环境</h1><p>可以用如下命令创建一个名字为my_py_env，python版本为3.6.2的虚拟环境。</p>
+<pre class="line-numbers language-undefined"><code class="language-undefined">conda create -n my_py_env python=3.6.2
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>该方式创建的环境在默认路径下，可以通过以下方式指定路径：</p>
+<pre class="line-numbers language-swift"><code class="language-swift">conda create <span class="token operator">--</span><span class="token keyword">prefix</span><span class="token operator">=</span><span class="token string">"D:\\my_python\\envs\\my_py_env"</span>  python<span class="token operator">=</span><span class="token number">3.6</span><span class="token punctuation">.</span><span class="token number">3</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>其中”D:\my_python\envs"是路径名，”my_py_env” 是环境名.</p>
+<h1 id="3-进入环境"><a href="#3-进入环境" class="headerlink" title="3 进入环境"></a>3 进入环境</h1><pre class="line-numbers language-undefined"><code class="language-undefined">activate my_py_env
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>在windows系统cmd下通过以上命令即可进入my_py_env环境，如果在linux系统下，需要使用：</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">source</span> activate my_py_env
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h1 id="4-退出环境"><a href="#4-退出环境" class="headerlink" title="4 退出环境"></a>4 退出环境</h1><p>windows:</p>
+<pre class="line-numbers language-undefined"><code class="language-undefined">deactivate
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>linux：</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">source</span> deactivate
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h1 id="5-使用conda管理包"><a href="#5-使用conda管理包" class="headerlink" title="5 使用conda管理包"></a>5 使用conda管理包</h1><pre class="line-numbers language-undefined"><code class="language-undefined">conda install -n my_py_env package_name
+conda uninstall -n my_py_env package_name
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>只需要在conda命令中通过 -n 显示指定python环境即可</p>
+<h1 id="6-删除环境"><a href="#6-删除环境" class="headerlink" title="6 删除环境"></a>6 删除环境</h1><pre class="line-numbers language-csharp"><code class="language-csharp">conda <span class="token keyword">remove</span> <span class="token operator">-</span>n my_py_env <span class="token operator">--</span>all
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
                 
             </div>
@@ -553,7 +596,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zhaotaogit.github.io/404.html">https://zhaotaogit.github.io/404.html</a>
+                    <a href="https://zhaotaogit.github.io/year/05/11/conda-chuang-jian-python-huan-jing/">https://zhaotaogit.github.io/year/05/11/conda-chuang-jian-python-huan-jing/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -590,7 +633,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/Conda/">
+                                    <span class="chip bg-color">Conda</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1026,34 +1073,45 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/404.html">
+                <a href="/year/05/11/conda-chuang-jian-python-huan-jing/">
                     <div class="card-image">
                         
+                        <img src="https://ss3.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/baike/pic/item/78310a55b319ebc45d5c45dc8e26cffc1e17164a.jpg" class="responsive-img" alt="Conda创建python环境">
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                        
-                        <span class="card-title"></span>
+                        <span class="card-title">Conda创建python环境</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Conda
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-25
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-11
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Zhaotao
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Conda/" class="post-category">
+                                    Conda
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Conda/">
+                        <span class="chip bg-color">Conda</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1061,37 +1119,47 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/404.html">
+                <a href="/year/05/03/python-zhong-de-itertools-de-shi-yong-xiang-jie/">
                     <div class="card-image">
                         
+                        <img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Python%E5%B0%81%E9%9D%A2/Python.jpg" class="responsive-img" alt="Python中的itertools的使用详解">
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                        
-                        <span class="card-title"></span>
+                        <span class="card-title">Python中的itertools的使用详解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Python学习
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-25
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-03
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Zhaotao
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                    学习
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>

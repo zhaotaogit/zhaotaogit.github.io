@@ -6,7 +6,7 @@
   <link href="https://zhaotaogit.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhaotaogit.github.io/"/>
-  <updated>2021-05-03T14:38:39.861Z</updated>
+  <updated>2021-05-11T04:13:28.175Z</updated>
   <id>https://zhaotaogit.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Conda创建python环境</title>
+    <link href="https://zhaotaogit.github.io/year/05/11/conda-chuang-jian-python-huan-jing/"/>
+    <id>https://zhaotaogit.github.io/year/05/11/conda-chuang-jian-python-huan-jing/</id>
+    <published>2021-05-11T04:06:55.000Z</published>
+    <updated>2021-05-11T04:13:28.175Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Cnda创建python环境&quot;&gt;&lt;a href=&quot;#Cnda创建python环境&quot; class=&quot;headerlink&quot; title=&quot;Cnda创建python环境&quot;&gt;&lt;/a&gt;Cnda创建python环境&lt;/h1&gt;&lt;h1 id=&quot;1-列出当前存在的环境&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Conda" scheme="https://zhaotaogit.github.io/categories/Conda/"/>
+    
+    
+    <category term="Conda" scheme="https://zhaotaogit.github.io/tags/Conda/"/>
+    
+  </entry>
   
   <entry>
     <title>Python中的itertools的使用详解</title>
