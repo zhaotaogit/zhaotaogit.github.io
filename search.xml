@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Linux安装Anaconda3环境配置指南</title>
+      <link href="year/05/16/linux-an-zhuang-anaconda3-huan-jing-pei-zhi-zhi-nan/"/>
+      <url>year/05/16/linux-an-zhuang-anaconda3-huan-jing-pei-zhi-zhi-nan/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Linux安装Anaconda3环境配置指南"><a href="#Linux安装Anaconda3环境配置指南" class="headerlink" title="Linux安装Anaconda3环境配置指南"></a>Linux安装Anaconda3环境配置指南</h1><h2 id="1-添加jupyter环境变量"><a href="#1-添加jupyter环境变量" class="headerlink" title="1.添加jupyter环境变量"></a>1.添加jupyter环境变量</h2><pre class="line-numbers language-linux"><code class="language-linux">find -name jupyter        找jupyter的位置vim /etc/profile        编辑文件根据找到的位置,在最后一行添加,PATH后面跟的路径自行改变：export PATH=$PATH:/root/anaconda3/bin source  /etc/profile/         执行配置<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="2-修改配置文件"><a href="#2-修改配置文件" class="headerlink" title="2.修改配置文件"></a>2.修改配置文件</h2><pre class="line-numbers language-linux"><code class="language-linux">jupyter notebook --generate-config        生成配置文件vim  /root/.jupyter/jupyter_notebook_config.py         编辑配置文件添加代码：c.NotebookApp.ip = '*'        配置可以访问的ip为所有ipc.NotebookApp.open_browser = False        配置不自动打开浏览器c.NotebookApp.port = 8888        配置服务端口为888jupyter notebook --allow-root&  开启服务，root用户需要加--allow-root，&代表在后台运行<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Anaconda </category>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Anaconda </tag>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Conda创建python环境</title>
       <link href="year/05/11/conda-chuang-jian-python-huan-jing/"/>
       <url>year/05/11/conda-chuang-jian-python-huan-jing/</url>

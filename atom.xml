@@ -6,7 +6,7 @@
   <link href="https://zhaotaogit.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhaotaogit.github.io/"/>
-  <updated>2021-05-11T04:18:18.212Z</updated>
+  <updated>2021-05-16T14:21:07.641Z</updated>
   <id>https://zhaotaogit.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux安装Anaconda3环境配置指南</title>
+    <link href="https://zhaotaogit.github.io/year/05/16/linux-an-zhuang-anaconda3-huan-jing-pei-zhi-zhi-nan/"/>
+    <id>https://zhaotaogit.github.io/year/05/16/linux-an-zhuang-anaconda3-huan-jing-pei-zhi-zhi-nan/</id>
+    <published>2021-05-16T14:12:04.000Z</published>
+    <updated>2021-05-16T14:21:07.641Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Linux安装Anaconda3环境配置指南&quot;&gt;&lt;a href=&quot;#Linux安装Anaconda3环境配置指南&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Anaconda" scheme="https://zhaotaogit.github.io/categories/Anaconda/"/>
+    
+    <category term="Linux" scheme="https://zhaotaogit.github.io/categories/Anaconda/Linux/"/>
+    
+    
+    <category term="Anaconda" scheme="https://zhaotaogit.github.io/tags/Anaconda/"/>
+    
+    <category term="Linux" scheme="https://zhaotaogit.github.io/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>Conda创建python环境</title>
@@ -46,7 +75,7 @@
     <link href="https://zhaotaogit.github.io/year/05/03/python-zhong-de-itertools-de-shi-yong-xiang-jie/"/>
     <id>https://zhaotaogit.github.io/year/05/03/python-zhong-de-itertools-de-shi-yong-xiang-jie/</id>
     <published>2021-05-03T14:22:25.000Z</published>
-    <updated>2021-05-03T14:38:39.861Z</updated>
+    <updated>2021-05-16T14:14:15.555Z</updated>
     
     
       
