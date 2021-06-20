@@ -489,21 +489,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-05-31
+                    2021-06-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    8.1k
+                    10.8k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    33 分
+                    44 分
                 </div>
                 
 
@@ -567,7 +567,8 @@ python3 -m venv venv            # 创建一个名叫venv的虚拟环境
 </ul>
 <h3 id="2-查看虚拟环境安装了那些模块"><a href="#2-查看虚拟环境安装了那些模块" class="headerlink" title="2.查看虚拟环境安装了那些模块"></a>2.查看虚拟环境安装了那些模块</h3><pre class="line-numbers language-she"><code class="language-she">pip list
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><img src="Linux%25E5%259F%25BA%25E7%25A1%2580_imgs/image-20210521215350134.png" alt="image-20210521215350134"></p>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210521215350134.png">
+
 <h3 id="3-批量导入别的虚拟环境中的所有模块"><a href="#3-批量导入别的虚拟环境中的所有模块" class="headerlink" title="3.批量导入别的虚拟环境中的所有模块"></a>3.批量导入别的虚拟环境中的所有模块</h3><ul>
 <li>即将一个虚拟环境里所有安装的模块安装到指定的环境中。</li>
 </ul>
@@ -596,9 +597,11 @@ In folder <span class="token operator">/</span>Python<span class="token operator
  <span class="token operator">*</span> Debug mode<span class="token punctuation">:</span> off
  <span class="token operator">*</span> Running on http<span class="token punctuation">:</span><span class="token operator">//</span><span class="token number">127.0</span><span class="token punctuation">.</span><span class="token number">0.1</span><span class="token punctuation">:</span><span class="token number">5000</span><span class="token operator">/</span> <span class="token punctuation">(</span>Press CTRL<span class="token operator">+</span>C to quit<span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><img src="Linux%25E5%259F%25BA%25E7%25A1%2580_imgs/image-20210521211157142.png" alt="image-20210521211157142"></p>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210521211157142.png">
+
 <p>此时点击Running on <a href="http://127.0.0.1:5000会跳转到浏览器，浏览器显示即：">http://127.0.0.1:5000会跳转到浏览器，浏览器显示即：</a></p>
-<p><img src="Linux%25E5%259F%25BA%25E7%25A1%2580_imgs/image-20210521211507137.png" alt="image-20210521211507137"></p>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210521211507137.png">
+
 <p>和函数hello_world的返回结果是一样的。</p>
 <h3 id="2-代码详解"><a href="#2-代码详解" class="headerlink" title="2.代码详解"></a>2.代码详解</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask            <span class="token comment" spellcheck="true"># 导入Flask模块</span>
 
@@ -624,7 +627,8 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
 <p><strong>返回网页的方法</strong>：</p>
 <ol>
 <li><p>在项目文件夹下的templates创建一个index.html的文件，里面的内容为你想在网页里显示出来的内容。</p>
-<p><img src="Linux%25E5%259F%25BA%25E7%25A1%2580_imgs/image-20210521214247102.png" alt="image-20210521214247102"></p>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210521214247102.png">
+
 <pre class="line-numbers language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
@@ -645,10 +649,8 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
 <ol>
 <li>然后将函数的返回代码改为return render_template(‘index.html’)，括号里的内容为要显示的网页的文件名。</li>
 </ol>
-<pre class="line-numbers language-HTML"><code class="language-HTML">def hello_world():
-    # return 'Hello World!'
-    return render_template('index.html')
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-HTML"><code class="language-HTML">def hello_world():    # return 'Hello World!'    return render_template('index.html')
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>完整程序代码：</p>
 <pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask<span class="token punctuation">,</span>render_template
 
@@ -664,20 +666,24 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
     app<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>运行结果：</p>
-<p>​                                                            <img src="Linux%25E5%259F%25BA%25E7%25A1%2580_imgs/image-20210521214541098.png" alt="image-20210521214541098"></p>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210521214541098.png">
+
 <h2 id="四-路由请求方式设置"><a href="#四-路由请求方式设置" class="headerlink" title="四.路由请求方式设置"></a>四.路由请求方式设置</h2><h3 id="1-postman软件"><a href="#1-postman软件" class="headerlink" title="1.postman软件"></a>1.postman软件</h3><ul>
 <li>直接官网下载然后打开，打开软件直接跳过，登录的下方有skip字样，点击就可以进入下图界面。</li>
 </ul>
-<p><img src="Linux%25E5%259F%25BA%25E7%25A1%2580_imgs/image-20210521221146651.png" alt="image-20210521221146651"></p>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210521221146651.png">
+
 <ul>
 <li>试用软件发送get请求，查看返回结果。</li>
 </ul>
-<p><img src="Linux%25E5%259F%25BA%25E7%25A1%2580_imgs/image-20210521221926274.png" alt="image-20210521221926274"></p>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210521221926274.png">
+
 <p>发现结果是正确的。</p>
 <ul>
 <li>再用软件选择Post发送请求，查看返回结果。</li>
 </ul>
-<p><img src="Linux%25E5%259F%25BA%25E7%25A1%2580_imgs/image-20210521221812412.png"></p>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210521221812412.png">
+
 <p>发现报了一个405的错误，即方法不允许，服务不支持post请求。</p>
 <h3 id="2-创建post请求"><a href="#2-创建post请求" class="headerlink" title="2.创建post请求"></a>2.创建post请求</h3><p>默认是Get请求,如果需要增加，需要自行指定。</p>
 <p>将装饰器语句改成：</p>
@@ -685,7 +691,8 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>即加上请求方式参数，多个请求方式要用列表。</p>
 <p>修改完成之后，再次发送post请求：</p>
-<p><img src="Linux%25E5%259F%25BA%25E7%25A1%2580_imgs/image-20210521222629321.png" alt="image-20210521222629321"></p>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210521222629321.png">
+
 <p>发现并没有报错，和Get请求返回的结果是相同的，说明网页支持了Post请求了。</p>
 <h2 id="五、路由参数处理"><a href="#五、路由参数处理" class="headerlink" title="五、路由参数处理"></a>五、路由参数处理</h2><h3 id="1-同一个视图函数来显示不同用户的订单信息。"><a href="#1-同一个视图函数来显示不同用户的订单信息。" class="headerlink" title="1.同一个视图函数来显示不同用户的订单信息。"></a>1.同一个视图函数来显示不同用户的订单信息。</h3><p>有时需要将同一类URL映射到同一个视图函数处理，比如:使用同一个视图函数来显示不同用户的订单信息。</p>
 <pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask<span class="token punctuation">,</span>render_template
@@ -711,7 +718,8 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
 <p>上面的代码是在之前代码的基础上又定义了一个路由，目录为’/orders/<order_id>‘，&lt;&gt;定义一个路由参数，&lt;&gt;内需要有个名字,代表动态目录。</order_id></p>
 <p>上面代码运行后跟之前运行结果没有区别，但是在地址栏后面加上/orders/xxx,例如<a target="_blank" rel="noopener" href="http://127.0.0.1:5000/orders/666">http://127.0.0.1:5000/orders/666</a></p>
 <p>按F5刷新后的效果为:</p>
-<p><img src="Linux%25E5%259F%25BA%25E7%25A1%2580_imgs/image-20210522113029492.png" alt="image-20210522113029492"></p>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210522113029492-1624169288185.png">
+
 <p>可以发现显示内容为order_id 666,即get_order_id(order_id)函数的返回结果一致。</p>
 <p>在get_order_id(order_id)函数中增加:print(order_id),然后运行程序，执行结果为：</p>
 <pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask<span class="token punctuation">,</span>render_template
@@ -736,7 +744,8 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
 <span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
     app<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><img src="Linux%25E5%259F%25BA%25E7%25A1%2580_imgs/image-20210522113621709.png" alt="image-20210522113621709"></p>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210522113621709.png">
+
 <p>可以看到打印出了&lt;class ‘str’&gt;，说明函数的参数order_id默认是一个字符串形式。</p>
 <h3 id="2-对路由做访问优化"><a href="#2-对路由做访问优化" class="headerlink" title="2.对路由做访问优化"></a>2.对路由做访问优化</h3><p>有的时候，需要对路由做访问优化，订单ID应该是一个int类型。</p>
 <p>所以我们将**@app.route(‘/orders/<order_id>‘)<strong>修改为</strong>@app.route(‘/orders/&lt; int:order_id &gt;’)**,</order_id></p>
@@ -766,7 +775,7 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
 <td>接受 UUID 字符串</td>
 </tr>
 </tbody></table>
-<h1 id="六、Jinja2模块引擎"><a href="#六、Jinja2模块引擎" class="headerlink" title="六、Jinja2模块引擎"></a>六、Jinja2模块引擎</h1><blockquote>
+<h2 id="六、Jinja2模块引擎"><a href="#六、Jinja2模块引擎" class="headerlink" title="六、Jinja2模块引擎"></a>六、Jinja2模块引擎</h2><blockquote>
 <h1>模板</h1>
 
 <p>视图函数的主要作用是生成请求的响应，这是最简单的请求。实际上，视图函数有两个作用：<strong>处理业务逻辑</strong>和<strong>返回响应内容</strong>。在大型应用中，把业务逻辑和表现内容放在一起，会增加代码的复杂度和维护成本。本节学到的模板，它的作用即是承担视图函数的另一个作用，即返回响应内容。</p>
@@ -809,33 +818,73 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
 </li>
 </ol>
 <p>Python代码：</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask<span class="token punctuation">,</span>render_templateapp <span class="token operator">=</span> Flask<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span><span class="token comment" spellcheck="true"># 1.如何返回一个网页(模板)# 2.如何给模板填充数据@app.route('/')def hello_world():    return render_template('index.html')if __name__ == '__main__':    app.run()</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask<span class="token punctuation">,</span>render_template
+
+app <span class="token operator">=</span> Flask<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 1.如何返回一个网页(模板)</span>
+<span class="token comment" spellcheck="true"># 2.如何给模板填充数据</span>
+@app<span class="token punctuation">.</span>route<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">hello_world</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> render_template<span class="token punctuation">(</span><span class="token string">'index.html'</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    app<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>HTML代码：</p>
-<pre class="line-numbers language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>这个是模板<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>这个是首页<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+这个是模板<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
+这个是首页
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>运行结果:</p>
-<p><img src="Linux%25E5%259F%25BA%25E7%25A1%2580_imgs/image-20210522120929878.png" alt="image-20210522120929878"></p>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210522120929878.png">
+
 <p>可以看到显示的是网页的内容。</p>
 <h3 id="2-传入一个可变的东西"><a href="#2-传入一个可变的东西" class="headerlink" title="2.传入一个可变的东西"></a>2.传入一个可变的东西</h3><p>即在模板中不直接写死的东西：</p>
-<pre class="line-numbers language-python"><code class="language-python">@app<span class="token punctuation">.</span>route<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span><span class="token keyword">def</span> hello_world<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>    <span class="token comment" spellcheck="true"># 比如需要传入网址    url_str = 'www.baidu.com'    return render_template('index.html',url_str=url_str)            # 后面的参数为键值对的形式</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<pre class="line-numbers language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>这个是模板<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>这个是首页{{ url_str }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>            # 加入了{{url_str}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
+<pre class="line-numbers language-python"><code class="language-python">@app<span class="token punctuation">.</span>route<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">hello_world</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
 
-> **{# 注释内容 #}是注释**
+    <span class="token comment" spellcheck="true"># 比如需要传入网址</span>
+    url_str <span class="token operator">=</span> <span class="token string">'www.baidu.com'</span>
 
-> **{{}}是变量代码块**
-```
+    <span class="token keyword">return</span> render_template<span class="token punctuation">(</span><span class="token string">'index.html'</span><span class="token punctuation">,</span>url_str<span class="token operator">=</span>url_str<span class="token punctuation">)</span>            <span class="token comment" spellcheck="true"># 后面的参数为键值对的形式</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>==========================================================================</p>
+<pre class="line-numbers language-htm"><code class="language-htm">​```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+这个是模板<br>
+这个是首页
+{{ url_str }}<br>            # 加入了{{url_str}}
+</body>
+</html>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>==========================================================================<br><strong>{# 注释内容 #}是注释</strong></p>
+{{}}是变量代码块
+	
+==========================================================================
+<br>
+
 
 运行结果：
-
-![image-20210522121806802](Linux%25E5%259F%25BA%25E7%25A1%2580_imgs/image-20210522121806802.png)
-
-当我们修改代码中的url_str的值时，网页内容也会发生改变。
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210522121806802.png">
+- 当我们修改代码中的url_str的值时，网页内容也会发生改变。<br>
 
 
 
-# 七、变量代码块的基本使用
+## 七、变量代码块的基本使用
 
 ### 1.数据的传递
 
@@ -844,39 +893,135 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
 python文件：
 
 ```python
-from flask import Flask,render_templateapp = Flask(__name__)# 1.如何返回一个网页(模板)# 2.如何给模板填充数据@app.route('/')def hello_world():    # 比如需要传入网址    url_str = 'www.baidu.com'    my_list = [1,3,5,7,9]    return render_template('index.html', url_str = url_str,my_list=my_list)if __name__ == '__main__':    app.run(Debug=True)
+from flask import Flask,render_template
+
+app = Flask(__name__)
+
+# 1.如何返回一个网页(模板)
+# 2.如何给模板填充数据
+@app.route('/')
+def hello_world():
+
+    # 比如需要传入网址
+    url_str = 'www.baidu.com'
+    my_list = [1,3,5,7,9]
+    return render_template('index.html', url_str = url_str,my_list=my_list)
+
+
+if __name__ == '__main__':
+    app.run(Debug=True)
+
 ```
+
 
 在html文件中：
 
-```html
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>这个是模板<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>这个是首页{# 下面是一个变量代码快的使用#}{{ url_str }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>{{ my_list }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+```python
+​```html
+
+
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+这个是模板<br>
+这个是首页
+
+
+<br>
+
+
+
+```
+
 <p>运行结果:</p>
-<p><img src="Linux%25E5%259F%25BA%25E7%25A1%2580_imgs/image-20210522123039086.png" alt="image-20210522123039086"></p>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210522123039086.png">
+
 <p>可以看到在py文件中定义的my_list变量被传到了模板中并显示了出来。</p>
 <h3 id="2-列表数据传递"><a href="#2-列表数据传递" class="headerlink" title="2.列表数据传递"></a>2.列表数据传递</h3><p>my_list是一个列表变量，同样，在模板中也可以使用切片</p>
 <p>html代码：</p>
-<pre class="line-numbers language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>这个是模板<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>这个是首页{# 下面是一个变量代码快的使用#}{{ url_str }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>{{ my_list }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>{{ my_list.2 }}            # 增加了这个<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><img src="Linux%25E5%259F%25BA%25E7%25A1%2580_imgs/image-20210522123248935.png" alt="image-20210522123248935"></p>
+<pre class="line-numbers language-python"><code class="language-python">​```html
+<span class="token operator">&lt;</span>!DOCTYPE html<span class="token operator">></span>
+<span class="token operator">&lt;</span>html lang<span class="token operator">=</span><span class="token string">"en"</span><span class="token operator">></span>
+<span class="token operator">&lt;</span>head<span class="token operator">></span>
+    <span class="token operator">&lt;</span>meta charset<span class="token operator">=</span><span class="token string">"UTF-8"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>title<span class="token operator">></span>Title<span class="token operator">&lt;</span><span class="token operator">/</span>title<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>head<span class="token operator">></span>
+这个是模板<span class="token operator">&lt;</span>br<span class="token operator">></span>
+这个是首页
+
+<span class="token punctuation">{</span><span class="token comment" spellcheck="true"># 下面是一个变量代码快的使用#}</span>
+<span class="token punctuation">{</span><span class="token punctuation">{</span> url_str <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span>br<span class="token operator">></span>
+<span class="token punctuation">{</span><span class="token punctuation">{</span> my_list <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span>br<span class="token operator">></span>
+<span class="token punctuation">{</span><span class="token punctuation">{</span> my_list<span class="token number">.2</span> <span class="token punctuation">}</span><span class="token punctuation">}</span>            <span class="token comment" spellcheck="true"># 增加了这个</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>body<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>html<span class="token operator">></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210522123248935.png">
+
 <p>发现多了一个5</p>
 <p>除了用点的方式，也可以使用同python切片[]的方式，有同样的效果。</p>
 <h3 id="3-字典数据的传递"><a href="#3-字典数据的传递" class="headerlink" title="3.字典数据的传递"></a>3.字典数据的传递</h3><p>除了列表，字典也可以</p>
 <p>python：</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask<span class="token punctuation">,</span>render_templateapp <span class="token operator">=</span> Flask<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span><span class="token comment" spellcheck="true"># 1.如何返回一个网页(模板)# 2.如何给模板填充数据@app.route('/')def hello_world():    # 比如需要传入网址    url_str = 'www.baidu.com'    my_list = [1,3,5,7,9]    my_dict = {        'name':'赵涛涛',        'age':18    }    return render_template('index.html', url_str = url_str,my_list=my_list,my_dict=my_dict)if __name__ == '__main__':    app.run(Debug=True)</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask<span class="token punctuation">,</span>render_template
+
+app <span class="token operator">=</span> Flask<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 1.如何返回一个网页(模板)</span>
+<span class="token comment" spellcheck="true"># 2.如何给模板填充数据</span>
+@app<span class="token punctuation">.</span>route<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">hello_world</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    <span class="token comment" spellcheck="true"># 比如需要传入网址</span>
+    url_str <span class="token operator">=</span> <span class="token string">'www.baidu.com'</span>
+    my_list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">]</span>
+    my_dict <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token string">'name'</span><span class="token punctuation">:</span><span class="token string">'赵涛涛'</span><span class="token punctuation">,</span>
+        <span class="token string">'age'</span><span class="token punctuation">:</span><span class="token number">18</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> render_template<span class="token punctuation">(</span><span class="token string">'index.html'</span><span class="token punctuation">,</span> url_str <span class="token operator">=</span> url_str<span class="token punctuation">,</span>my_list<span class="token operator">=</span>my_list<span class="token punctuation">,</span>my_dict<span class="token operator">=</span>my_dict<span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    app<span class="token punctuation">.</span>run<span class="token punctuation">(</span>Debug<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>html:</p>
-<pre class="line-numbers language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>这个是模板<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>这个是首页{# 下面是一个变量代码快的使用#}{{ url_str }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>{{ my_list }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>{{ my_list.2 }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>{{ my_dict }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>{{ my_dict['name'] }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python">​```html
+<span class="token operator">&lt;</span>!DOCTYPE html<span class="token operator">></span>
+<span class="token operator">&lt;</span>html lang<span class="token operator">=</span><span class="token string">"en"</span><span class="token operator">></span>
+<span class="token operator">&lt;</span>head<span class="token operator">></span>
+    <span class="token operator">&lt;</span>meta charset<span class="token operator">=</span><span class="token string">"UTF-8"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>title<span class="token operator">></span>Title<span class="token operator">&lt;</span><span class="token operator">/</span>title<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>head<span class="token operator">></span>
+这个是模板<span class="token operator">&lt;</span>br<span class="token operator">></span>
+这个是首页
+
+<span class="token punctuation">{</span><span class="token comment" spellcheck="true"># 下面是一个变量代码快的使用#}</span>
+<span class="token punctuation">{</span><span class="token punctuation">{</span> url_str <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span>br<span class="token operator">></span>
+<span class="token punctuation">{</span><span class="token punctuation">{</span> my_list <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span>br<span class="token operator">></span>
+<span class="token punctuation">{</span><span class="token punctuation">{</span> my_list<span class="token number">.2</span> <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span>br<span class="token operator">></span>
+<span class="token punctuation">{</span><span class="token punctuation">{</span> my_dict <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span>br<span class="token operator">></span>
+<span class="token punctuation">{</span><span class="token punctuation">{</span> my_dict<span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>body<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>html<span class="token operator">></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>运行结果:</p>
-<p><img src="Linux%25E5%259F%25BA%25E7%25A1%2580_imgs/image-20210522123853400.png" alt="image-20210522123853400"></p>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210522123853400.png">
+
 <p>发现字典也可以被正确的传递进来，还可以利用键取出值的方式。</p>
 <p><strong>其他可以传递的数据不再赘述，自行探索</strong>。</p>
-<h1 id="八、控制代码块"><a href="#八、控制代码块" class="headerlink" title="八、控制代码块"></a>八、控制代码块</h1><ul>
+<h2 id="八、控制代码块"><a href="#八、控制代码块" class="headerlink" title="八、控制代码块"></a>八、控制代码块</h2><ul>
 <li>用{ %%}定义控制代码块，可以实现一些语言层次的功能，比如循环或者if语句。</li>
 </ul>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token punctuation">{</span><span class="token operator">%</span> <span class="token keyword">if</span> user <span class="token operator">%</span><span class="token punctuation">}</span>    <span class="token punctuation">{</span><span class="token punctuation">{</span> user <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">{</span><span class="token operator">%</span> <span class="token keyword">else</span> <span class="token operator">%</span><span class="token punctuation">}</span>    hello!<span class="token punctuation">{</span><span class="token operator">%</span> <span class="token keyword">for</span> index <span class="token keyword">in</span> indexs <span class="token operator">%</span><span class="token punctuation">}</span>    <span class="token punctuation">{</span><span class="token punctuation">{</span> index <span class="token punctuation">}</span><span class="token punctuation">}</span> <span class="token punctuation">{</span><span class="token operator">%</span> endfor <span class="token operator">%</span><span class="token punctuation">}</span>
+<pre class="line-numbers language-python"><code class="language-python">​```python
+<span class="token punctuation">{</span><span class="token operator">%</span> <span class="token keyword">if</span> user <span class="token operator">%</span><span class="token punctuation">}</span>
+    <span class="token punctuation">{</span><span class="token punctuation">{</span> user <span class="token punctuation">}</span><span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token operator">%</span> <span class="token keyword">else</span> <span class="token operator">%</span><span class="token punctuation">}</span>
+    hello!
+
+<span class="token punctuation">{</span><span class="token operator">%</span> <span class="token keyword">for</span> index <span class="token keyword">in</span> indexs <span class="token operator">%</span><span class="token punctuation">}</span>
+    <span class="token punctuation">{</span><span class="token punctuation">{</span> index <span class="token punctuation">}</span><span class="token punctuation">}</span> 
+<span class="token punctuation">{</span><span class="token operator">%</span> endfor <span class="token operator">%</span><span class="token punctuation">}</span>
 ```
 
 <span class="token operator">-</span> <span class="token operator">**</span>快速补全技巧<span class="token operator">**</span>
@@ -889,122 +1034,146 @@ from flask import Flask,render_templateapp = Flask(__name__)# 1.如何返回一�
 
 在html文件中增加：
 
-```html
-<span class="token punctuation">{</span><span class="token operator">%</span> <span class="token keyword">for</span> my <span class="token keyword">in</span> my_list <span class="token operator">%</span><span class="token punctuation">}</span>    <span class="token punctuation">{</span><span class="token punctuation">{</span> my <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span>br<span class="token operator">></span><span class="token punctuation">{</span><span class="token operator">%</span> endfor <span class="token operator">%</span><span class="token punctuation">}</span>
+```python
+​```html
+<span class="token punctuation">{</span><span class="token operator">%</span> <span class="token keyword">for</span> my <span class="token keyword">in</span> my_list <span class="token operator">%</span><span class="token punctuation">}</span>
+    <span class="token punctuation">{</span><span class="token punctuation">{</span> my <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span>br<span class="token operator">></span>
+<span class="token punctuation">{</span><span class="token operator">%</span> endfor <span class="token operator">%</span><span class="token punctuation">}</span>
 ```
 
 再运行程序，发现网页依次打印出了my_list中的元素
 
-!<span class="token punctuation">[</span>image<span class="token number">-20210522125242127</span><span class="token punctuation">]</span><span class="token punctuation">(</span>Linux<span class="token operator">%</span><span class="token number">25E5</span><span class="token operator">%</span><span class="token number">259F</span><span class="token operator">%</span><span class="token number">25BA</span><span class="token operator">%</span><span class="token number">25E7</span><span class="token operator">%</span><span class="token number">25A1</span><span class="token operator">%</span>2580_imgs<span class="token operator">/</span>image<span class="token number">-20210522125242127.</span>png<span class="token punctuation">)</span>
+<span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210522125242127.png"</span><span class="token operator">></span>
 
 <span class="token comment" spellcheck="true">### 2.if语句</span>
 
 ​	在刚刚的<span class="token keyword">for</span>语句修改为<span class="token punctuation">:</span>
-
-```html
+```python
+​```html
 <span class="token punctuation">{</span><span class="token operator">%</span> <span class="token keyword">for</span> my <span class="token keyword">in</span> my_list <span class="token operator">%</span><span class="token punctuation">}</span>
     <span class="token punctuation">{</span><span class="token operator">%</span> <span class="token keyword">if</span> my <span class="token operator">></span> <span class="token number">3</span> <span class="token operator">%</span><span class="token punctuation">}</span>
         <span class="token punctuation">{</span><span class="token punctuation">{</span> my <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span>br<span class="token operator">></span>
     <span class="token punctuation">{</span><span class="token operator">%</span> endif <span class="token operator">%</span><span class="token punctuation">}</span>
 <span class="token punctuation">{</span><span class="token operator">%</span> endfor <span class="token operator">%</span><span class="token punctuation">}</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>再运行程序，发现网页中只打印出了my_list中大于3的元素</p>
-<p><img src="Linux%25E5%259F%25BA%25E7%25A1%2580_imgs/image-20210522125226237.png" alt="image-20210522125226237"></p>
-<h1 id="九、过滤器-gt-叫转换器更好理解"><a href="#九、过滤器-gt-叫转换器更好理解" class="headerlink" title="九、过滤器->叫转换器更好理解"></a>九、过滤器-&gt;叫转换器更好理解</h1><h3 id="1-概念及语法"><a href="#1-概念及语法" class="headerlink" title="1.概念及语法"></a>1.概念及语法</h3><p>过滤器的本质就是函数。有时候我们不仅仅只是需要输出变量的值，我们还需要修改变量的显示，甚至格式化、运算等等，而在模板中是不能直接调用 Python 中的某些方法，那么这就用到了过滤器。</p>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210522125226237.png">
+
+<h2 id="九、过滤器-gt-叫转换器更好理解"><a href="#九、过滤器-gt-叫转换器更好理解" class="headerlink" title="九、过滤器->叫转换器更好理解"></a>九、过滤器-&gt;叫转换器更好理解</h2><h3 id="1-概念及语法"><a href="#1-概念及语法" class="headerlink" title="1.概念及语法"></a>1.概念及语法</h3><p>过滤器的本质就是函数。有时候我们不仅仅只是需要输出变量的值，我们还需要修改变量的显示，甚至格式化、运算等等，而在模板中是不能直接调用 Python 中的某些方法，那么这就用到了过滤器。</p>
 <p>使用方式：</p>
 <ul>
 <li>过滤器的使用方式为：变量名 | 过滤器。</li>
 </ul>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token punctuation">{</span><span class="token punctuation">{</span>variable <span class="token operator">|</span> filter_name<span class="token punctuation">(</span><span class="token operator">*</span>args<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python">​```html
+<span class="token punctuation">{</span><span class="token punctuation">{</span>variable <span class="token operator">|</span> filter_name<span class="token punctuation">(</span><span class="token operator">*</span>args<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <ul>
 <li>如果没有任何参数传给过滤器,则可以把括号省略掉</li>
 </ul>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token punctuation">{</span><span class="token punctuation">{</span>variable <span class="token operator">|</span> filter_name<span class="token punctuation">}</span><span class="token punctuation">}</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python">​```html
+<span class="token punctuation">{</span><span class="token punctuation">{</span>variable <span class="token operator">|</span> filter_name<span class="token punctuation">}</span><span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <ul>
 <li><p>如，这个过滤器的作用：把变量url_str 的值的所有小写字母转换为大写字母</p>
 <p>​     将字符串反转。</p>
 </li>
 </ul>
 <h3 id="2-链式调用"><a href="#2-链式调用" class="headerlink" title="2.链式调用"></a>2.链式调用</h3><p>在 jinja2 中，过滤器是可以支持链式调用的，示例如下：</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token string">"hello world"</span> <span class="token operator">|</span> reverse <span class="token operator">|</span> upper <span class="token punctuation">}</span><span class="token punctuation">}</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python">​```html
+<span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token string">"hello world"</span> <span class="token operator">|</span> reverse <span class="token operator">|</span> upper <span class="token punctuation">}</span><span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><strong>先反转再大写</strong></p>
 <h3 id="常见内建过滤器"><a href="#常见内建过滤器" class="headerlink" title="常见内建过滤器"></a>常见内建过滤器</h3><h3 id="字符串操作"><a href="#字符串操作" class="headerlink" title="字符串操作"></a>字符串操作</h3><ul>
 <li>safe：禁用转义</li>
 </ul>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token string">'&lt;em>hello&lt;/em>'</span> <span class="token operator">|</span> safe <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python">​```html
+<span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token string">'&lt;em>hello&lt;/em>'</span> <span class="token operator">|</span> safe <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>用了safe之后，<em></em>会直接应用到hello中，即把hello变成倾斜。</p>
 <ul>
 <li>capitalize：把变量值的首字母转成大写，其余字母转小写</li>
 </ul>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token string">'hello'</span> <span class="token operator">|</span> capitalize <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python">​```html
+<span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token string">'hello'</span> <span class="token operator">|</span> capitalize <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <ul>
 <li>lower：把值转成小写</li>
 </ul>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token string">'HELLO'</span> <span class="token operator">|</span> lower <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python">​```html
+<span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token string">'HELLO'</span> <span class="token operator">|</span> lower <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <ul>
 <li>upper：把值转成大写</li>
 </ul>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token string">'hello'</span> <span class="token operator">|</span> upper <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python">​```html
+<span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token string">'hello'</span> <span class="token operator">|</span> upper <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <ul>
 <li>title：把值中的每个单词的首字母都转成大写</li>
 </ul>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token string">'hello'</span> <span class="token operator">|</span> title <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python">​```html
+<span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token string">'hello'</span> <span class="token operator">|</span> title <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <ul>
 <li>reverse：字符串反转</li>
 </ul>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token string">'olleh'</span> <span class="token operator">|</span> reverse <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python">​```html
+<span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token string">'olleh'</span> <span class="token operator">|</span> reverse <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <ul>
 <li>format：格式化输出</li>
 </ul>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token string">'%s is %d'</span> <span class="token operator">|</span> format<span class="token punctuation">(</span><span class="token string">'name'</span><span class="token punctuation">,</span><span class="token number">17</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python">​```html
+<span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token string">'%s is %d'</span> <span class="token operator">|</span> format<span class="token punctuation">(</span><span class="token string">'name'</span><span class="token punctuation">,</span><span class="token number">17</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <ul>
 <li>striptags：渲染之前把值中所有的HTML标签都删掉</li>
 </ul>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token string">'&lt;em>hello&lt;/em>'</span> <span class="token operator">|</span> striptags <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python">​```html
+<span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token string">'&lt;em>hello&lt;/em>'</span> <span class="token operator">|</span> striptags <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <ul>
 <li>truncate: 字符串截断</li>
 </ul>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token string">'hello every one'</span> <span class="token operator">|</span> truncate<span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python">​```html
+<span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token string">'hello every one'</span> <span class="token operator">|</span> truncate<span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h3 id="列表操作"><a href="#列表操作" class="headerlink" title="列表操作"></a>列表操作</h3><ul>
 <li>first：取第一个元素</li>
 </ul>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span> <span class="token operator">|</span> first <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python">​```html
+<span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span> <span class="token operator">|</span> first <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <ul>
 <li>last：取最后一个元素</li>
 </ul>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span> <span class="token operator">|</span> last <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python">​```html
+<span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span> <span class="token operator">|</span> last <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <ul>
-<li>length：获取列表长度</li>
+<li><p>length：获取列表长度</p>
+<pre class="line-numbers language-python"><code class="language-python">​```html
+<span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span> <span class="token operator">|</span> length <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+<li><p>sum：列表求和</p>
+</li>
 </ul>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span> <span class="token operator">|</span> length <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<ul>
-<li>sum：列表求和</li>
-</ul>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span> <span class="token operator">|</span> sum <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python">​```html
+<span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span> <span class="token operator">|</span> sum <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <ul>
 <li>sort：列表排序</li>
 </ul>
-<pre><code>&lt;p&gt;{{ [6,2,3,1,5,4] | sort }}&lt;/p&gt;
-</code></pre>
-<h3 id="语句块过滤"><a href="#语句块过滤" class="headerlink" title="语句块过滤"></a>语句块过滤</h3><pre class="line-numbers language-pyhton"><code class="language-pyhton">{% filter upper %}    一大堆文字{% endfilter %}
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h1 id="十、Web表单"><a href="#十、Web表单" class="headerlink" title="十、Web表单"></a>十、Web表单</h1><p>web表单是web应用程序的基本功能。</p>
+<pre class="line-numbers language-python"><code class="language-python">​```html
+<span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">|</span> sort <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="语句块过滤"><a href="#语句块过滤" class="headerlink" title="语句块过滤"></a>语句块过滤</h3><pre class="line-numbers language-python"><code class="language-python">​```html
+<span class="token punctuation">{</span><span class="token operator">%</span> filter upper <span class="token operator">%</span><span class="token punctuation">}</span>
+    一大堆文字
+<span class="token punctuation">{</span><span class="token operator">%</span> endfilter <span class="token operator">%</span><span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="十、Web表单"><a href="#十、Web表单" class="headerlink" title="十、Web表单"></a>十、Web表单</h2><p>web表单是web应用程序的基本功能。</p>
 <p>它是HTML页面中负责数据采集的部件。表单有三个部分组成：表单标签、表单域、表单按钮。表单允许用户输入数据，负责HTML页面数据采集，通过表单将用户输入的数据提交给服务器。</p>
 <p>在Flask中，为了处理web表单，我们一般使用Flask-WTF扩展，它封装了WTForms，并且它有验证表单数据的功能</p>
 <h2 id="WTForms支持的HTML标准字段"><a href="#WTForms支持的HTML标准字段" class="headerlink" title="WTForms支持的HTML标准字段"></a>WTForms支持的HTML标准字段</h2><table>
@@ -1158,8 +1327,25 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
 <span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
     app<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h4 id="HTML"><a href="#HTML" class="headerlink" title="HTML:"></a>HTML:</h4><pre class="line-numbers language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>post<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>post<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span><span class="token punctuation">></span></span>用户名:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>username<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span><span class="token punctuation">></span></span>密码:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span><span class="token punctuation">></span></span>确认密码:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>password2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>提交<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="HTML"><a href="#HTML" class="headerlink" title="HTML:"></a>HTML:</h4><pre class="line-numbers language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>post<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>post<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span><span class="token punctuation">></span></span>用户名:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>username<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span><span class="token punctuation">></span></span>密码:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span><span class="token punctuation">></span></span>确认密码:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>password2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>提交<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>当程序运行时，出现了一个表单，需要输入用户名、密码、确认密码，只有三者都不是空且密码和确认密码相同时才会返回succes，否则会打印错误。</p>
 <h3 id="2-提示优化"><a href="#2-提示优化" class="headerlink" title="2.提示优化"></a>2.提示优化</h3><p>上面的程序运行后，当输入不正确的时候会提示错误，但是错误只显示在控制台，并没有在网页中提示，为了解决这个问题需要进行改进。</p>
 <ol>
@@ -1168,17 +1354,127 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
 <li>在html文件表单中加入循环语句遍历消息</li>
 </ol>
 <p>python代码</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask<span class="token punctuation">,</span>render_template<span class="token punctuation">,</span>request<span class="token punctuation">,</span>flashapp <span class="token operator">=</span> Flask<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span>app<span class="token punctuation">.</span>secret_key <span class="token operator">=</span> <span class="token string">'taotao'</span>            <span class="token comment" spellcheck="true"># 设置secret_key</span><span class="token triple-quoted-string string">'''实现一个简单的登录的逻辑处理1.路由需要有get和post两种请求方式 --> 需要判断请求方式2.获取请求参数3.判断参数是否填写，以及密码是否相同4.如果判断都没有问题，就返回一个succes'''</span><span class="token triple-quoted-string string">'''给模板传递消息flash --> 需要对内容加密，因此需要设置secret_key,做一个加密消息的混淆模板中需要遍历消息'''</span>@app<span class="token punctuation">.</span>route<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span>methods<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'GET'</span><span class="token punctuation">,</span><span class="token string">'POST'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token keyword">def</span> index<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>    <span class="token comment" spellcheck="true"># request:请求对象--> 获取请求方式、数据    # 1.需要判断请求方式    if request.method =='POST':        # 2.获取请求参数        username = request.form.get('username')        passwprd = request.form.get('password')        password2 = request.form.get('password2')        print(username)        # 3.判断参数是否填写 &amp; 密码是否相同        if not all([username,passwprd,password2]):            # print('参数不完整')            flash('参数不完整！')        elif passwprd !=password2:            # print('密码不一致')            flash('密码不一致')        else:            return 'succes'    return render_template('index.html')if __name__ == '__main__':    app.run()</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask<span class="token punctuation">,</span>render_template<span class="token punctuation">,</span>request<span class="token punctuation">,</span>flash
+
+app <span class="token operator">=</span> Flask<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span>
+
+app<span class="token punctuation">.</span>secret_key <span class="token operator">=</span> <span class="token string">'taotao'</span>            <span class="token comment" spellcheck="true"># 设置secret_key</span>
+
+<span class="token triple-quoted-string string">'''
+实现一个简单的登录的逻辑处理
+1.路由需要有get和post两种请求方式 --> 需要判断请求方式
+2.获取请求参数
+3.判断参数是否填写，以及密码是否相同
+4.如果判断都没有问题，就返回一个succes
+'''</span>
+
+<span class="token triple-quoted-string string">'''
+给模板传递消息
+flash --> 需要对内容加密，因此需要设置secret_key,做一个加密消息的混淆
+模板中需要遍历消息
+'''</span>
+
+@app<span class="token punctuation">.</span>route<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span>methods<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'GET'</span><span class="token punctuation">,</span><span class="token string">'POST'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">index</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment" spellcheck="true"># request:请求对象--> 获取请求方式、数据</span>
+
+    <span class="token comment" spellcheck="true"># 1.需要判断请求方式</span>
+    <span class="token keyword">if</span> request<span class="token punctuation">.</span>method <span class="token operator">==</span><span class="token string">'POST'</span><span class="token punctuation">:</span>
+        <span class="token comment" spellcheck="true"># 2.获取请求参数</span>
+        username <span class="token operator">=</span> request<span class="token punctuation">.</span>form<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'username'</span><span class="token punctuation">)</span>
+        passwprd <span class="token operator">=</span> request<span class="token punctuation">.</span>form<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'password'</span><span class="token punctuation">)</span>
+        password2 <span class="token operator">=</span> request<span class="token punctuation">.</span>form<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'password2'</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>username<span class="token punctuation">)</span>
+        <span class="token comment" spellcheck="true"># 3.判断参数是否填写 &amp; 密码是否相同</span>
+        <span class="token keyword">if</span> <span class="token operator">not</span> all<span class="token punctuation">(</span><span class="token punctuation">[</span>username<span class="token punctuation">,</span>passwprd<span class="token punctuation">,</span>password2<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment" spellcheck="true"># print('参数不完整')</span>
+            flash<span class="token punctuation">(</span><span class="token string">'参数不完整！'</span><span class="token punctuation">)</span>
+        <span class="token keyword">elif</span> passwprd <span class="token operator">!=</span>password2<span class="token punctuation">:</span>
+            <span class="token comment" spellcheck="true"># print('密码不一致')</span>
+            flash<span class="token punctuation">(</span><span class="token string">'密码不一致'</span><span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token string">'succes'</span>
+    <span class="token keyword">return</span> render_template<span class="token punctuation">(</span><span class="token string">'index.html'</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    app<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>html代码</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token operator">&lt;</span>!DOCTYPE html<span class="token operator">></span><span class="token operator">&lt;</span>html lang<span class="token operator">=</span><span class="token string">"en"</span><span class="token operator">></span><span class="token operator">&lt;</span>head<span class="token operator">></span>    <span class="token operator">&lt;</span>meta charset<span class="token operator">=</span><span class="token string">"UTF-8"</span><span class="token operator">></span>    <span class="token operator">&lt;</span>title<span class="token operator">></span>Title<span class="token operator">&lt;</span><span class="token operator">/</span>title<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>head<span class="token operator">></span><span class="token operator">&lt;</span>body<span class="token operator">></span><span class="token operator">&lt;</span>form method<span class="token operator">=</span><span class="token string">"post"</span><span class="token operator">></span><span class="token operator">&lt;</span>form method<span class="token operator">=</span><span class="token string">"post"</span><span class="token operator">></span>    <span class="token operator">&lt;</span>label<span class="token operator">></span>用户名<span class="token punctuation">:</span><span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">></span><span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">"text"</span> name<span class="token operator">=</span><span class="token string">"username"</span><span class="token operator">></span><span class="token operator">&lt;</span>br<span class="token operator">></span>    <span class="token operator">&lt;</span>label<span class="token operator">></span>密码<span class="token punctuation">:</span><span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">></span><span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">"password"</span> name<span class="token operator">=</span><span class="token string">"password"</span><span class="token operator">></span><span class="token operator">&lt;</span>br<span class="token operator">></span>    <span class="token operator">&lt;</span>label<span class="token operator">></span>确认密码<span class="token punctuation">:</span><span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">></span><span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">"password"</span> name<span class="token operator">=</span><span class="token string">"password2"</span><span class="token operator">></span><span class="token operator">&lt;</span>br<span class="token operator">></span>    <span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">"submit"</span> value<span class="token operator">=</span><span class="token string">"提交"</span><span class="token operator">></span><span class="token operator">&lt;</span>br<span class="token operator">></span>    <span class="token punctuation">{</span><span class="token comment" spellcheck="true">#使用遍历获取闪现的消息#}    {% for message in get_flashed_messages() %} 			        {{ message }}    {% endfor %}&lt;/form>&lt;/form>&lt;/body>&lt;/html></span>
+<pre class="line-numbers language-Html"><code class="language-Html"><!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <title>Title</title></head><body><form method="post"><form method="post">    <label>用户名:</label><input type="text" name="username"><br>    <label>密码:</label><input type="password" name="password"><br>    <label>确认密码:</label><input type="password" name="password2"><br>    <input type="submit" value="提交"><br>    {#使用遍历获取闪现的消息#}    {% for message in get_flashed_messages() %} 			        {{ message }}    {% endfor %}</form></form></body></html>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>get_flashed_messages()是一个函数，用于捕捉消息。    </p>
 <p>程序运行后当输入参数不正确会在网页给予提示，如图：</p>
-<p><img src="Linux%25E5%259F%25BA%25E7%25A1%2580_imgs/image-20210522153138471.png" alt="image-20210522153138471"></p>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210522153138471.png">
+
 <h3 id="3-使用Flask-WTF实现表单"><a href="#3-使用Flask-WTF实现表单" class="headerlink" title="3.使用Flask_WTF实现表单"></a>3.使用Flask_WTF实现表单</h3><p>Python代码：</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask<span class="token punctuation">,</span>render_template<span class="token punctuation">,</span>request<span class="token punctuation">,</span>flashfrom flask_wtf <span class="token keyword">import</span> FlaskForm        <span class="token comment" spellcheck="true"># 导入模块from wtforms import StringField,PasswordField,SubmitFieldapp = Flask(__name__)app.secret_key = 'taotao</span><span class="token triple-quoted-string string">''''实现一个简单的登录的逻辑处理1.路由需要有get和post两种请求方式 --> 需要判断请求方式2.获取请求参数3.判断参数是否填写，以及密码是否相同4.如果判断都没有问题，就返回一个succes'''</span><span class="token triple-quoted-string string">'''给模板传递消息flash --> 需要对内容加密，因此需要设置secret_key,做一个加密消息的混淆模板中需要遍历消息'''</span><span class="token triple-quoted-string string">'''使用WTF实现表单自定义表单类'''</span><span class="token keyword">class</span> <span class="token class-name">LoginForm</span><span class="token punctuation">(</span>FlaskForm<span class="token punctuation">)</span><span class="token punctuation">:</span>            <span class="token comment" spellcheck="true"># 继承FlaskFrom    # 创建需要用到的对象    username = StringField('用户名:')    password = PasswordField('密码:')    password2 = PasswordField('确认密码:')    submit = SubmitField('提交')# 创建一个路由，目录为‘/from’@app.route('/form',methods = ['GET','POST'])def login():    login_form = LoginForm()    return render_template('index.html',form = login_form)@app.route('/',methods=['GET','POST'])def index():    # request:请求对象--> 获取请求方式、数据    # 1.需要判断请求方式    if request.method =='POST':        # 2.获取请求参数        username = request.form.get('username')        passwprd = request.form.get('password')        password2 = request.form.get('password2')        print(username)        # 3.判断参数是否填写 &amp; 密码是否相同        # validate_on_submit()需要CSRF token        if not all([username,passwprd,password2]):            # print('参数不完整')            flash('参数不完整！')        elif passwprd !=password2:            # print('密码不一致')            flash('密码不一致')        else:            return 'succes'    return render_template('index.html')if __name__ == '__main__':    app.run()</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask<span class="token punctuation">,</span>render_template<span class="token punctuation">,</span>request<span class="token punctuation">,</span>flash
+<span class="token keyword">from</span> flask_wtf <span class="token keyword">import</span> FlaskForm        <span class="token comment" spellcheck="true"># 导入模块</span>
+<span class="token keyword">from</span> wtforms <span class="token keyword">import</span> StringField<span class="token punctuation">,</span>PasswordField<span class="token punctuation">,</span>SubmitField
+
+app <span class="token operator">=</span> Flask<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span>
+
+app<span class="token punctuation">.</span>secret_key <span class="token operator">=</span> <span class="token string">'taotao'</span>
+
+<span class="token triple-quoted-string string">'''
+实现一个简单的登录的逻辑处理
+1.路由需要有get和post两种请求方式 --> 需要判断请求方式
+2.获取请求参数
+3.判断参数是否填写，以及密码是否相同
+4.如果判断都没有问题，就返回一个succes
+'''</span>
+
+<span class="token triple-quoted-string string">'''
+给模板传递消息
+flash --> 需要对内容加密，因此需要设置secret_key,做一个加密消息的混淆
+模板中需要遍历消息
+'''</span>
+
+<span class="token triple-quoted-string string">'''
+使用WTF实现表单
+自定义表单类
+'''</span>
+
+<span class="token keyword">class</span> <span class="token class-name">LoginForm</span><span class="token punctuation">(</span>FlaskForm<span class="token punctuation">)</span><span class="token punctuation">:</span>            <span class="token comment" spellcheck="true"># 继承FlaskFrom</span>
+    <span class="token comment" spellcheck="true"># 创建需要用到的对象</span>
+    username <span class="token operator">=</span> StringField<span class="token punctuation">(</span><span class="token string">'用户名:'</span><span class="token punctuation">)</span>
+    password <span class="token operator">=</span> PasswordField<span class="token punctuation">(</span><span class="token string">'密码:'</span><span class="token punctuation">)</span>
+    password2 <span class="token operator">=</span> PasswordField<span class="token punctuation">(</span><span class="token string">'确认密码:'</span><span class="token punctuation">)</span>
+    submit <span class="token operator">=</span> SubmitField<span class="token punctuation">(</span><span class="token string">'提交'</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 创建一个路由，目录为‘/from’</span>
+@app<span class="token punctuation">.</span>route<span class="token punctuation">(</span><span class="token string">'/form'</span><span class="token punctuation">,</span>methods <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'GET'</span><span class="token punctuation">,</span><span class="token string">'POST'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">login</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    login_form <span class="token operator">=</span> LoginForm<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> render_template<span class="token punctuation">(</span><span class="token string">'index.html'</span><span class="token punctuation">,</span>form <span class="token operator">=</span> login_form<span class="token punctuation">)</span>
+
+@app<span class="token punctuation">.</span>route<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span>methods<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'GET'</span><span class="token punctuation">,</span><span class="token string">'POST'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">index</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment" spellcheck="true"># request:请求对象--> 获取请求方式、数据</span>
+
+    <span class="token comment" spellcheck="true"># 1.需要判断请求方式</span>
+    <span class="token keyword">if</span> request<span class="token punctuation">.</span>method <span class="token operator">==</span><span class="token string">'POST'</span><span class="token punctuation">:</span>
+        <span class="token comment" spellcheck="true"># 2.获取请求参数</span>
+        username <span class="token operator">=</span> request<span class="token punctuation">.</span>form<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'username'</span><span class="token punctuation">)</span>
+        passwprd <span class="token operator">=</span> request<span class="token punctuation">.</span>form<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'password'</span><span class="token punctuation">)</span>
+        password2 <span class="token operator">=</span> request<span class="token punctuation">.</span>form<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'password2'</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>username<span class="token punctuation">)</span>
+        <span class="token comment" spellcheck="true"># 3.判断参数是否填写 &amp; 密码是否相同</span>
+        <span class="token comment" spellcheck="true"># validate_on_submit()需要CSRF token</span>
+        <span class="token keyword">if</span> <span class="token operator">not</span> all<span class="token punctuation">(</span><span class="token punctuation">[</span>username<span class="token punctuation">,</span>passwprd<span class="token punctuation">,</span>password2<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment" spellcheck="true"># print('参数不完整')</span>
+            flash<span class="token punctuation">(</span><span class="token string">'参数不完整！'</span><span class="token punctuation">)</span>
+        <span class="token keyword">elif</span> passwprd <span class="token operator">!=</span>password2<span class="token punctuation">:</span>
+            <span class="token comment" spellcheck="true"># print('密码不一致')</span>
+            flash<span class="token punctuation">(</span><span class="token string">'密码不一致'</span><span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token string">'succes'</span>
+    <span class="token keyword">return</span> render_template<span class="token punctuation">(</span><span class="token string">'index.html'</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    app<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>html代码:</p>
 <pre class="line-numbers language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
@@ -1211,7 +1507,7 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h1 id="十一、Flask中使用数据库"><a href="#十一、Flask中使用数据库" class="headerlink" title="十一、Flask中使用数据库"></a>十一、Flask中使用数据库</h1><h3 id="Flask-SQLAlchemy扩展"><a href="#Flask-SQLAlchemy扩展" class="headerlink" title="Flask-SQLAlchemy扩展"></a>Flask-SQLAlchemy扩展</h3><ul>
+<h2 id="十一、Flask中使用数据库"><a href="#十一、Flask中使用数据库" class="headerlink" title="十一、Flask中使用数据库"></a>十一、Flask中使用数据库</h2><h3 id="Flask-SQLAlchemy扩展"><a href="#Flask-SQLAlchemy扩展" class="headerlink" title="Flask-SQLAlchemy扩展"></a>Flask-SQLAlchemy扩展</h3><ul>
 <li>SQLALchemy 实际上是对数据库的抽象，让开发者不用直接和 SQL 语句打交道，而是通过 Python 对象来操作数据库，在舍弃一些性能开销的同时，换来的是开发效率的较大提升</li>
 <li>SQLAlchemy是一个关系型数据库框架，它提供了高层的ORM和底层的原生数据库的操作。flask-sqlalchemy是一个简化了SQLAlchemy操作的flask扩展。</li>
 </ul>
@@ -1224,8 +1520,11 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
 <h4 id="Flask的数据库设置："><a href="#Flask的数据库设置：" class="headerlink" title="Flask的数据库设置："></a>Flask的数据库设置：</h4><pre class="line-numbers language-python"><code class="language-python">app<span class="token punctuation">.</span>config<span class="token punctuation">[</span><span class="token string">'SQLALCHEMY_DATABASE_URI'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'mysql://root:mysql@127.0.0.1:3306/test'</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>其他设置：</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 动态追踪修改设置，如未设置只会提示警告, 不建议开启app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False# 查询时会显示原始SQL语句app.config['SQLALCHEMY_ECHO'] = True</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 动态追踪修改设置，如未设置只会提示警告, 不建议开启</span>
+app<span class="token punctuation">.</span>config<span class="token punctuation">[</span><span class="token string">'SQLALCHEMY_TRACK_MODIFICATIONS'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">False</span>
+<span class="token comment" spellcheck="true"># 查询时会显示原始SQL语句</span>
+app<span class="token punctuation">.</span>config<span class="token punctuation">[</span><span class="token string">'SQLALCHEMY_ECHO'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">True</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="3-一些参数"><a href="#3-一些参数" class="headerlink" title="3.一些参数"></a>3.一些参数</h2><table>
 <thead>
 <tr>
@@ -1400,7 +1699,7 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
 <td align="left">在SQLAlchemy中无法自行决定时，指定多对多关系中的二级联结条件</td>
 </tr>
 </tbody></table>
-<h1 id="十二、数据库的基本操作-环境改成了windows，因为遇到了问题，ubuntu环境折腾不好"><a href="#十二、数据库的基本操作-环境改成了windows，因为遇到了问题，ubuntu环境折腾不好" class="headerlink" title="十二、数据库的基本操作-环境改成了windows，因为遇到了问题，ubuntu环境折腾不好"></a>十二、数据库的基本操作-环境改成了windows，因为遇到了问题，ubuntu环境折腾不好</h1><ul>
+<h2 id="十二、数据库的基本操作-环境改成了windows，因为遇到了问题，ubuntu环境折腾不好"><a href="#十二、数据库的基本操作-环境改成了windows，因为遇到了问题，ubuntu环境折腾不好" class="headerlink" title="十二、数据库的基本操作-环境改成了windows，因为遇到了问题，ubuntu环境折腾不好"></a>十二、数据库的基本操作-环境改成了windows，因为遇到了问题，ubuntu环境折腾不好</h2><ul>
 <li>将已经写好的python项目复制黏贴到windows上就好了，用pycharm以打开项目的方式打开文件夹。</li>
 </ul>
 <h2 id="一-增删改操作"><a href="#一-增删改操作" class="headerlink" title="一. 增删改操作"></a>一. 增删改操作</h2><h3 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1. 基本概念"></a>1. 基本概念</h3><ul>
@@ -1476,7 +1775,8 @@ select * from roles;        # 查询某个表中所有数据
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>注意</strong>：在mysql中写代码，每句代码结尾都要跟上‘；’分号。</p>
 <p>然后再运行python代码，在mysql中执行show tables;代码效果如图：</p>
-<p><img src="Linux%25E5%259F%25BA%25E7%25A1%2580_imgs/image-20210524171951262.png" alt="image-20210524171951262"></p>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210524171951262.png">
+
 <p>可以发现mysql中成功创建了两个表。</p>
 <p>为了在表中添加数据，我们用pycharm自带终端/python控制台来添加数据:</p>
 <p>推荐使用Python控制台，因为如果使用的是虚拟环境，终端输入ipython之后用的是base环境，不是虚拟环境，会导致报错，而python控制台本身就是虚拟环境下的ipython。</p>
@@ -1487,7 +1787,8 @@ db<span class="token punctuation">.</span>session<span class="token punctuation"
 db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>commit<span class="token punctuation">(</span><span class="token punctuation">)</span>            <span class="token comment" spellcheck="true">#提交数据库的修改(包括增/删/改)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>然后再mysql中执行select * from roles*,结果如图:</p>
-<p><img src="Linux%25E5%259F%25BA%25E7%25A1%2580_imgs/image-20210524173231779.png" alt="image-20210524173231779"></p>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210524173231779.png">
+
 <p>可以发现在roles表中已经添加了一条数据。</p>
 <p>接着我们在users表中添加如下数据：</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">user = User(name = 'heima',role_id = role.id)        # 因为User中的role_id是Role中id的外键，role.id是取role对象的id，role的id默认生成了一个1。
@@ -1498,52 +1799,419 @@ db.session.commit()            # 提交修改
 <pre class="line-numbers language-mysql"><code class="language-mysql">select * from users        # 查询users表
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>结果：</p>
-<p><img src="Linux%25E5%259F%25BA%25E7%25A1%2580_imgs/image-20210524174008843.png" alt="image-20210524174008843"></p>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210524174008843.png">
+
 <p>成功添加了一条数据；</p>
 <p><strong>方法汇总:</strong></p>
-<pre><code>db.session.add(role)    添加到数据库的session中
-db.session.add_all([user1, user2]) 添加多个信息到session中
-db.session.commit()     提交数据库的修改(包括增/删/改)
-db.session.rollback()   数据库的回滚操作
-db.session.delete(user) 删除数据库(需跟上commit)
+<pre><code>db.session.add(role)    添加到数据库的session中db.session.add_all([user1, user2]) 添加多个信息到session中db.session.commit()     提交数据库的修改(包括增/删/改)db.session.rollback()   数据库的回滚操作db.session.delete(user) 删除数据库(需跟上commit)
 </code></pre>
 <h3 id="3-修改数据表中的数据"><a href="#3-修改数据表中的数据" class="headerlink" title="3 修改数据表中的数据"></a>3 修改数据表中的数据</h3><ul>
 <li>以下步骤都是在上面步骤完成的情况下追加的。</li>
 </ul>
-<pre class="line-numbers language-python"><code class="language-python">user<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'chengxuyuan'</span>        <span class="token comment" spellcheck="true"># 将user对象的name改成‘chengxuyuan'</span>
-db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>commit<span class="token punctuation">(</span><span class="token punctuation">)</span>            <span class="token comment" spellcheck="true"># 直接提交，不需要add</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p><img src="Linux%25E5%259F%25BA%25E7%25A1%2580_imgs/image-20210524174812523.png" alt="image-20210524174812523"></p>
-<h3 id="4-删除数据表的中数据"><a href="#4-删除数据表的中数据" class="headerlink" title="4.删除数据表的中数据"></a>4.删除数据表的中数据</h3><pre class="line-numbers language-python"><code class="language-python">db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>delete<span class="token punctuation">(</span>user<span class="token punctuation">)</span>            <span class="token comment" spellcheck="true"># 将user对象的name从数据表中删除</span>
-db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>commit<span class="token punctuation">(</span><span class="token punctuation">)</span>            <span class="token comment" spellcheck="true"># 直接提交</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p><img src="Linux%25E5%259F%25BA%25E7%25A1%2580_imgs/image-20210524174847453.png" alt="image-20210524174847453"></p>
-<h4 id="5-汇总"><a href="#5-汇总" class="headerlink" title="5.汇总"></a>5.<strong>汇总</strong></h4><pre><code>#### 2.2 数据的增删改
-​```python
-# 进入ipython一次执行
-In [1]: from demo3_sqlalchemy import *
+<pre class="line-numbers language-python"><code class="language-python">user<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'chengxuyuan'</span>        <span class="token comment" spellcheck="true"># 将user对象的name改成‘chengxuyuan'db.session.commit()            # 直接提交，不需要add</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210524174812523.png">
 
-# 添加一条Role数据
-In [2]: role = Role(name='admin')
-In [3]: db.session.add(role)
-In [4]: db.session.commit()
+<h3 id="4-删除数据表的中数据"><a href="#4-删除数据表的中数据" class="headerlink" title="4.删除数据表的中数据"></a>4.删除数据表的中数据</h3><pre class="line-numbers language-python"><code class="language-python">db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>delete<span class="token punctuation">(</span>user<span class="token punctuation">)</span>            <span class="token comment" spellcheck="true"># 将user对象的name从数据表中删除db.session.commit()            # 直接提交</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210524174847453.png">
 
-# 添加一条User数据, 数据有误可以使用回滚, 将add的对象从session移除
-In [5]: user = User(name='zhangsan')
-In [6]: db.session.add(user)
-In [7]: db.session.rollback()
-In [9]: user.role_id = 1
-In [6]: db.session.add(user)
-In [4]: db.session.commit()
-
-# 修改数据
-In [13]: user.name = 'lisi'
-In [14]: db.session.commit()
-
-# 删除数据
-In [16]: db.session.delete(user)
-In [17]: db.session.commit()
+<h4 id="5-汇总"><a href="#5-汇总" class="headerlink" title="5.汇总"></a>5.<strong>汇总</strong></h4><pre><code>#### 2.2 数据的增删改​```python# 进入ipython一次执行In [1]: from demo3_sqlalchemy import *# 添加一条Role数据In [2]: role = Role(name='admin')In [3]: db.session.add(role)In [4]: db.session.commit()# 添加一条User数据, 数据有误可以使用回滚, 将add的对象从session移除In [5]: user = User(name='zhangsan')In [6]: db.session.add(user)In [7]: db.session.rollback()In [9]: user.role_id = 1In [6]: db.session.add(user)In [4]: db.session.commit()# 修改数据In [13]: user.name = 'lisi'In [14]: db.session.commit()# 删除数据In [16]: db.session.delete(user)In [17]: db.session.commit()
 </code></pre>
+<h2 id="二、模型之间的关联"><a href="#二、模型之间的关联" class="headerlink" title="二、模型之间的关联"></a>二、模型之间的关联</h2><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask
+<span class="token keyword">from</span> flask_sqlalchemy <span class="token keyword">import</span> SQLAlchemy
+
+
+app <span class="token operator">=</span> Flask<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 配置数据的地址</span>
+app<span class="token punctuation">.</span>config<span class="token punctuation">[</span><span class="token string">'SQLALCHEMY_DATABASE_URI'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'mysql://root:mysql@127.0.0.1/flask'</span>
+<span class="token comment" spellcheck="true"># 配置数据库是否动态追踪修改设置，如未设置只会提示警告, 不建议开启</span>
+app<span class="token punctuation">.</span>config<span class="token punctuation">[</span><span class="token string">'SQLALCHEMY_TRACK_MODIFICATIONS'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">False</span>
+
+db <span class="token operator">=</span> SQLAlchemy<span class="token punctuation">(</span>app<span class="token punctuation">)</span>
+
+
+<span class="token triple-quoted-string string">'''
+两张表(管理员/普通用户)
+角色(角色ID)
+'''</span>
+
+<span class="token comment" spellcheck="true"># 数据库的模型，需要继承db.Model</span>
+<span class="token keyword">class</span> <span class="token class-name">Role</span><span class="token punctuation">(</span>db<span class="token punctuation">.</span>Model<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment" spellcheck="true"># 定义表名</span>
+    __tablename__ <span class="token operator">=</span> <span class="token string">'roles'</span>
+    <span class="token comment" spellcheck="true"># 定义字段</span>
+    <span class="token comment" spellcheck="true"># db.Column表示一个字段</span>
+    id <span class="token operator">=</span> db<span class="token punctuation">.</span>Column<span class="token punctuation">(</span>db<span class="token punctuation">.</span>Integer<span class="token punctuation">,</span>primary_key<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 主键</span>
+    name <span class="token operator">=</span> db<span class="token punctuation">.</span>Column<span class="token punctuation">(</span>db<span class="token punctuation">.</span>String<span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span><span class="token punctuation">,</span>unique<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+
+    <span class="token comment" spellcheck="true"># 在一的一方，写关联。</span>
+    <span class="token comment" spellcheck="true"># users = db.relattionship('User'):表示和User模型发生了关联，增加了一个user属性</span>
+    <span class="token comment" spellcheck="true"># backref = 'role'：表示role是User要用的属性</span>
+    users <span class="token operator">=</span> db<span class="token punctuation">.</span>relationship<span class="token punctuation">(</span><span class="token string">'User'</span><span class="token punctuation">,</span> backref<span class="token operator">=</span><span class="token string">'role'</span><span class="token punctuation">)</span>
+
+
+        <span class="token keyword">def</span> <span class="token function">__repr__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token string">'\n&lt;Role: %s %s>'</span> <span class="token operator">%</span> <span class="token punctuation">(</span>self<span class="token punctuation">.</span>name<span class="token punctuation">,</span> self<span class="token punctuation">.</span>id<span class="token punctuation">)</span>
+
+<span class="token keyword">class</span> <span class="token class-name">User</span><span class="token punctuation">(</span>db<span class="token punctuation">.</span>Model<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    __tablename__ <span class="token operator">=</span> <span class="token string">'users'</span>
+    id <span class="token operator">=</span> db<span class="token punctuation">.</span>Column<span class="token punctuation">(</span>db<span class="token punctuation">.</span>Integer<span class="token punctuation">,</span>primary_key<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+    name <span class="token operator">=</span> db<span class="token punctuation">.</span>Column<span class="token punctuation">(</span>db<span class="token punctuation">.</span>String<span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span><span class="token punctuation">,</span>unique<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+    email <span class="token operator">=</span> db<span class="token punctuation">.</span>Column<span class="token punctuation">(</span>db<span class="token punctuation">.</span>String<span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">)</span><span class="token punctuation">,</span>unique<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+    password <span class="token operator">=</span> db<span class="token punctuation">.</span>Column<span class="token punctuation">(</span>db<span class="token punctuation">.</span>String<span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    role_id <span class="token operator">=</span> db<span class="token punctuation">.</span>Column<span class="token punctuation">(</span>db<span class="token punctuation">.</span>Integer<span class="token punctuation">,</span>db<span class="token punctuation">.</span>ForeignKey<span class="token punctuation">(</span><span class="token string">'roles.id'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 表示是表roles的外键</span>
+    <span class="token comment" spellcheck="true"># User希望有role属性，但是这个属性的定义，需要在另一个模型中定义。</span>
+
+    <span class="token keyword">def</span> <span class="token function">__repr__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token string">'\n&lt;User: %s %s %s %s>'</span> <span class="token operator">%</span> <span class="token punctuation">(</span>self<span class="token punctuation">.</span>name<span class="token punctuation">,</span> self<span class="token punctuation">.</span>id<span class="token punctuation">,</span> self<span class="token punctuation">.</span>email<span class="token punctuation">,</span> self<span class="token punctuation">.</span>password<span class="token punctuation">)</span>
+
+@app<span class="token punctuation">.</span>route<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">hello_world</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> <span class="token string">'Hello World!'</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    <span class="token comment" spellcheck="true"># 删除表</span>
+    db<span class="token punctuation">.</span>drop_all<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    db<span class="token punctuation">.</span>create_all<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># 创建表</span>
+    app<span class="token punctuation">.</span>run<span class="token punctuation">(</span>debug<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>python控制台</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> app <span class="token keyword">import</span> <span class="token operator">*</span>
+role <span class="token operator">=</span> Role<span class="token punctuation">(</span>name <span class="token operator">=</span> <span class="token string">'admin'</span><span class="token punctuation">)</span>
+db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>add<span class="token punctuation">(</span>role<span class="token punctuation">)</span>
+db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>commit<span class="token punctuation">(</span><span class="token punctuation">)</span>
+user1 <span class="token operator">=</span> User<span class="token punctuation">(</span>name <span class="token operator">=</span> <span class="token string">'zs'</span><span class="token punctuation">,</span>role_id <span class="token operator">=</span> role<span class="token punctuation">.</span>id<span class="token punctuation">)</span>
+user2 <span class="token operator">=</span> User<span class="token punctuation">(</span>name <span class="token operator">=</span> <span class="token string">'ls'</span><span class="token punctuation">,</span>role_id <span class="token operator">=</span> role<span class="token punctuation">.</span>id<span class="token punctuation">)</span>
+db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>add_all<span class="token punctuation">(</span><span class="token punctuation">[</span>user1<span class="token punctuation">,</span>user2<span class="token punctuation">]</span><span class="token punctuation">)</span>
+db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>commit<span class="token punctuation">(</span><span class="token punctuation">)</span>
+role<span class="token punctuation">.</span>users            <span class="token comment" spellcheck="true"># 通过role.users可以查到User中的数据信息</span>
+<span class="token operator">></span> <span class="token punctuation">[</span>User<span class="token punctuation">:</span> <span class="token number">1</span> zs <span class="token number">1</span> <span class="token punctuation">,</span> User<span class="token punctuation">:</span> <span class="token number">2</span> ls <span class="token number">1</span> <span class="token punctuation">]</span>
+user1<span class="token punctuation">.</span>role            <span class="token comment" spellcheck="true"># 通过user1.role可以查询出user1的Role信息</span>
+<span class="token operator">></span> Role<span class="token punctuation">:</span> <span class="token number">1</span> admin 
+user2<span class="token punctuation">.</span>role
+<span class="token operator">></span> Role<span class="token punctuation">:</span> <span class="token number">1</span> admin 
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="三、查询操作"><a href="#三、查询操作" class="headerlink" title="三、查询操作"></a>三、查询操作</h2><h3 id="1-基本概念-1"><a href="#1-基本概念-1" class="headerlink" title="1. 基本概念"></a>1. 基本概念</h3><h3 id="1-1-常用的SQLAlchemy查询过滤器"><a href="#1-1-常用的SQLAlchemy查询过滤器" class="headerlink" title="1.1 常用的SQLAlchemy查询过滤器"></a>1.1 常用的SQLAlchemy查询过滤器</h3><table>
+<thead>
+<tr>
+<th align="left">过滤器</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">filter()</td>
+<td align="left">把过滤器添加到原查询上，返回一个新查询</td>
+</tr>
+<tr>
+<td align="left">filter_by()</td>
+<td align="left">把等值过滤器添加到原查询上，返回一个新查询</td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="left">使用指定的值限定原查询返回的结果</td>
+</tr>
+<tr>
+<td align="left">offset()</td>
+<td align="left">偏移原查询返回的结果，返回一个新查询</td>
+</tr>
+<tr>
+<td align="left">order_by()</td>
+<td align="left">根据指定条件对原查询结果进行排序，返回一个新查询</td>
+</tr>
+<tr>
+<td align="left">group_by()</td>
+<td align="left">根据指定条件对原查询结果进行分组，返回一个新查询</td>
+</tr>
+</tbody></table>
+<h3 id="1-2-常用的SQLAlchemy查询执行器"><a href="#1-2-常用的SQLAlchemy查询执行器" class="headerlink" title="1.2 常用的SQLAlchemy查询执行器"></a>1.2 常用的SQLAlchemy查询执行器</h3><table>
+<thead>
+<tr>
+<th align="left">方法</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">all()</td>
+<td align="left">以列表形式返回查询的所有结果</td>
+</tr>
+<tr>
+<td align="left">first()</td>
+<td align="left">返回查询的第一个结果，如果未查到，返回None</td>
+</tr>
+<tr>
+<td align="left">first_or_404()</td>
+<td align="left">返回查询的第一个结果，如果未查到，返回404</td>
+</tr>
+<tr>
+<td align="left">get()</td>
+<td align="left">返回指定主键对应的行，如不存在，返回None</td>
+</tr>
+<tr>
+<td align="left">get_or_404()</td>
+<td align="left">返回指定主键对应的行，如不存在，返回404</td>
+</tr>
+<tr>
+<td align="left">count()</td>
+<td align="left">返回查询结果的数量</td>
+</tr>
+<tr>
+<td align="left">paginate()</td>
+<td align="left">返回一个Paginate对象，它包含指定范围内的结果</td>
+</tr>
+</tbody></table>
+<p>先在python中直接创建好数据，创建数据的代码写在创建数据库的后面，代码如下:</p>
+<pre class="line-numbers language-python"><code class="language-python">    ro1 <span class="token operator">=</span> Role<span class="token punctuation">(</span>name<span class="token operator">=</span><span class="token string">'admin'</span><span class="token punctuation">)</span>    db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>add<span class="token punctuation">(</span>ro1<span class="token punctuation">)</span>    db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>commit<span class="token punctuation">(</span><span class="token punctuation">)</span>    <span class="token comment" spellcheck="true"># 再次插入一条数据    ro2 = Role(name='user')    db.session.add(ro2)    db.session.commit()    us1 = User(name='wang', email='wang@163.com', password='123456', role_id=ro1.id)    us2 = User(name='zhang', email='zhang@189.com', password='201512', role_id=ro2.id)    us3 = User(name='chen', email='chen@126.com', password='987654', role_id=ro2.id)    us4 = User(name='zhou', email='zhou@163.com', password='456789', role_id=ro1.id)    us5 = User(name='tang', email='tang@itheima.com', password='158104', role_id=ro2.id)    us6 = User(name='wu', email='wu@gmail.com', password='5623514', role_id=ro2.id)    us7 = User(name='qian', email='qian@gmail.com', password='1543567', role_id=ro1.id)    us8 = User(name='liu', email='liu@itheima.com', password='867322', role_id=ro1.id)    us9 = User(name='li', email='li@163.com', password='4526342', role_id=ro2.id)    us10 = User(name='sun', email='sun@163.com', password='235523', role_id=ro2.id)    db.session.add_all([us1, us2, us3, us4, us5, us6, us7, us8, us9, us10])    db.session.commit()</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>重新运行程序，查看数据表中有没有新增数据:</p>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210525172150895.png">
+
+<p>正确运行后的结果如上图。</p>
+<p>在上面的基础上进行查询如下：</p>
+<p>进入pycharm内置的Python控制台:</p>
+<pre class="line-numbers language-Python"><code class="language-Python">from app import *User.query.all()        # 查询users表中有哪些数据User.query.count()        # 查询表中有多少条数据User.query.first()            # 查询表中的第一条数据User.query.get(4)            # 查询id为4的数据User.query.filter_by(id=4).first()            # 同上 注意写法User.query.filter(User.id==4).first()            # 同上 注意写法'''filter_by:属性=filter:对象.属性==filter功能更强大，可以实现更多的一些查询，支持比较运算符'''
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>上述结果如下图:</strong></p>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210525175554685-1624169534725.png">
+
+
+
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210525174147252.png">
+
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210525175615214.png">
+
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210525180057263.png">
+
+<h2 id="十三、综合案例-图书管理-完结篇"><a href="#十三、综合案例-图书管理-完结篇" class="headerlink" title="十三、综合案例-图书管理-完结篇"></a>十三、综合案例-图书管理-完结篇</h2><p>代码:</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask<span class="token punctuation">,</span>render_template<span class="token punctuation">,</span>flash<span class="token punctuation">,</span>request<span class="token punctuation">,</span>url_for<span class="token punctuation">,</span>redirect
+<span class="token keyword">from</span> flask_sqlalchemy <span class="token keyword">import</span> SQLAlchemy
+<span class="token keyword">from</span> flask_wtf <span class="token keyword">import</span> FlaskForm
+<span class="token keyword">from</span> wtforms <span class="token keyword">import</span> StringField<span class="token punctuation">,</span>SubmitField
+<span class="token keyword">from</span> wtforms<span class="token punctuation">.</span>validators <span class="token keyword">import</span> DataRequired
+
+app <span class="token operator">=</span> Flask<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span>
+
+
+<span class="token comment" spellcheck="true">#数据库配置：连接数据库/自动跟踪修改关闭</span>
+app<span class="token punctuation">.</span>config<span class="token punctuation">[</span><span class="token string">'SQLALCHEMY_DATABASE_URI'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'mysql://root:mysql@127.0.0.1/flask_books'</span>
+<span class="token triple-quoted-string string">'''
+务必将数据库创建好,记得指定数据库编码为UTF-8，即create database flask_books charset=utf8;
+不然会报错
+'''</span>
+app<span class="token punctuation">.</span>config<span class="token punctuation">[</span><span class="token string">'SQLALCHEMY_TRACK_MODIFICATIONS'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">False</span>
+app<span class="token punctuation">.</span>secret_key<span class="token operator">=</span><span class="token string">'heima'</span>      <span class="token comment" spellcheck="true"># 设置secret_key，不设置会报错</span>
+
+db <span class="token operator">=</span> SQLAlchemy<span class="token punctuation">(</span>app<span class="token punctuation">)</span>        <span class="token comment" spellcheck="true"># 创建对象</span>
+
+<span class="token triple-quoted-string string">'''
+实例步骤描述:
+1.配置数据库
+    # 导入模块
+    # 创建app实例并配置参数
+    # mysql里创建好数据库
+2.添加书和作者模型
+    # 模型继承db.Model
+    # __tablename__定义表名
+    # db.Column定义字段
+    # 关系引用
+3.添加数据
+4.使用模板显示数据库查询数据
+ # 查询所有作者信息，让信息传递给模板
+    # 模板中按照格式，依次for循环作者和书籍即可(作者获取书籍，用的是关系引用)
+5.使用WTF使用表单
+    # 自定义表单类
+    # 模板中显示
+    # secret_key 解决编码问题，csrf_token问题
+6.实现相关的增删逻辑
+    # 增加数据
+    # 删除书籍  -- 网页中删除 -- 点击需要发送书籍的ID给删除书籍的路由 -- 路由需要接受参数
+    
+'''</span>
+
+<span class="token comment" spellcheck="true"># 作者模型</span>
+<span class="token keyword">class</span> <span class="token class-name">Author</span><span class="token punctuation">(</span>db<span class="token punctuation">.</span>Model<span class="token punctuation">)</span><span class="token punctuation">:</span>     <span class="token comment" spellcheck="true"># 创建作者类</span>
+    __tablename__ <span class="token operator">=</span> <span class="token string">'authors'</span>       <span class="token comment" spellcheck="true"># 创建的表名</span>
+    id <span class="token operator">=</span> db<span class="token punctuation">.</span>Column<span class="token punctuation">(</span>db<span class="token punctuation">.</span>Integer<span class="token punctuation">,</span>primary_key<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>     <span class="token comment" spellcheck="true"># 创建作者id字段</span>
+    name <span class="token operator">=</span> db<span class="token punctuation">.</span>Column<span class="token punctuation">(</span>db<span class="token punctuation">.</span>String<span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">)</span><span class="token punctuation">,</span>unique<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>     <span class="token comment" spellcheck="true"># 创建作者名称字段</span>
+    <span class="token comment" spellcheck="true"># 关系引用，即通过作者表中的作者id可以查询到与书表中作者id相同的数据</span>
+    <span class="token comment" spellcheck="true"># books是给自己（Author模型)用的，auther是给Book模型用的</span>
+    books <span class="token operator">=</span> db<span class="token punctuation">.</span>relationship<span class="token punctuation">(</span><span class="token string">'Book'</span><span class="token punctuation">,</span>backref<span class="token operator">=</span><span class="token string">'author'</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">__repr__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>     <span class="token comment" spellcheck="true"># 返回结果格式化</span>
+        <span class="token keyword">return</span> <span class="token string">'Author: %s '</span> <span class="token operator">%</span>self<span class="token punctuation">.</span>name
+
+<span class="token comment" spellcheck="true"># 书籍模型</span>
+<span class="token keyword">class</span> <span class="token class-name">Book</span><span class="token punctuation">(</span>db<span class="token punctuation">.</span>Model<span class="token punctuation">)</span><span class="token punctuation">:</span>       <span class="token comment" spellcheck="true"># 创建书类</span>
+    <span class="token comment" spellcheck="true"># 表名</span>
+    __tablename__ <span class="token operator">=</span> <span class="token string">'books'</span>     <span class="token comment" spellcheck="true"># 创建的表名</span>
+    <span class="token comment" spellcheck="true"># 定义字段</span>
+    id <span class="token operator">=</span> db<span class="token punctuation">.</span>Column<span class="token punctuation">(</span>db<span class="token punctuation">.</span>Integer<span class="token punctuation">,</span>primary_key<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+    name <span class="token operator">=</span> db<span class="token punctuation">.</span>Column<span class="token punctuation">(</span>db<span class="token punctuation">.</span>String<span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">)</span><span class="token punctuation">,</span>unique<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+    author_id <span class="token operator">=</span> db<span class="token punctuation">.</span>Column<span class="token punctuation">(</span>db<span class="token punctuation">.</span>Integer<span class="token punctuation">,</span>db<span class="token punctuation">.</span>ForeignKey<span class="token punctuation">(</span><span class="token string">'authors.id'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>        <span class="token comment" spellcheck="true"># authors表的外键,表名.id</span>
+
+    <span class="token keyword">def</span> <span class="token function">__repr__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>     <span class="token comment" spellcheck="true"># 返回结果格式化</span>
+        <span class="token keyword">return</span> <span class="token string">'Book: %s %s '</span> <span class="token operator">%</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>name<span class="token punctuation">,</span>self<span class="token punctuation">.</span>author_id<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 自定义表单类</span>
+<span class="token keyword">class</span> <span class="token class-name">AuthorForm</span><span class="token punctuation">(</span>FlaskForm<span class="token punctuation">)</span><span class="token punctuation">:</span>        <span class="token comment" spellcheck="true"># 创建表单类，用于在网页中显示表单时会用到</span>
+    author <span class="token operator">=</span> StringField<span class="token punctuation">(</span><span class="token string">'作者'</span><span class="token punctuation">,</span>validators<span class="token operator">=</span><span class="token punctuation">[</span>DataRequired<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>      <span class="token comment" spellcheck="true">#创建作者输入框</span>
+    book <span class="token operator">=</span> StringField<span class="token punctuation">(</span><span class="token string">'书籍'</span><span class="token punctuation">,</span>validators<span class="token operator">=</span><span class="token punctuation">[</span>DataRequired<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>        <span class="token comment" spellcheck="true"># 创建书名输入框</span>
+    submit <span class="token operator">=</span> SubmitField<span class="token punctuation">(</span><span class="token string">'提交'</span><span class="token punctuation">)</span>      <span class="token comment" spellcheck="true"># 创建提交按钮</span>
+
+
+@app<span class="token punctuation">.</span>route<span class="token punctuation">(</span><span class="token string">'/delete_author/&lt;author_id>'</span><span class="token punctuation">)</span>        <span class="token comment" spellcheck="true"># 创建删除作者路由</span>
+<span class="token keyword">def</span> <span class="token function">delete_author</span><span class="token punctuation">(</span>author_id<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment" spellcheck="true"># 查询数据库，是否有该ID的作者，如果有就删除，没有提示错误。</span>
+    author <span class="token operator">=</span> Author<span class="token punctuation">.</span>query<span class="token punctuation">.</span>get<span class="token punctuation">(</span>author_id<span class="token punctuation">)</span>        <span class="token comment" spellcheck="true"># 查询传入的作者的id，若查询到即author有值，反之无值</span>
+    <span class="token comment" spellcheck="true"># 如果有就删除</span>
+    <span class="token keyword">if</span> author<span class="token punctuation">:</span>      <span class="token comment" spellcheck="true"># 根据author判断，若数据库中存在这个作者</span>
+        <span class="token keyword">try</span><span class="token punctuation">:</span>
+            Book<span class="token punctuation">.</span>query<span class="token punctuation">.</span>filter_by<span class="token punctuation">(</span>author_id<span class="token operator">=</span>author<span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">.</span>delete<span class="token punctuation">(</span><span class="token punctuation">)</span>      <span class="token comment" spellcheck="true"># 根据作者id将书删除</span>
+            db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>commit<span class="token punctuation">(</span><span class="token punctuation">)</span>     <span class="token comment" spellcheck="true"># 提交数据</span>
+        <span class="token keyword">except</span> Exception <span class="token keyword">as</span> e<span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>        <span class="token comment" spellcheck="true"># 打印错误信息</span>
+            flash<span class="token punctuation">(</span><span class="token string">'删除作者出错'</span><span class="token punctuation">)</span>     <span class="token comment" spellcheck="true"># 在网页显示删除作者出错</span>
+            db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>rollback<span class="token punctuation">(</span><span class="token punctuation">)</span>       <span class="token comment" spellcheck="true"># 数据库回滚，即撤销操作</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>       <span class="token comment" spellcheck="true"># 若不存在</span>
+        <span class="token comment" spellcheck="true"># 没有提示错误</span>
+        flash<span class="token punctuation">(</span><span class="token string">'作者找不到'</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># return redirect('/')</span>
+    <span class="token comment" spellcheck="true"># redirect:重定向，需要传入域名/路由地址</span>
+    <span class="token comment" spellcheck="true"># url_for（’index‘）:需要传入视图函数名，返回视图函数对应的路由地址</span>
+    <span class="token keyword">return</span> redirect<span class="token punctuation">(</span>url_for<span class="token punctuation">(</span><span class="token string">'index'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>       <span class="token comment" spellcheck="true"># url_for('index')的返回结果为'/'即根目录，相当于redirect('/')重定向到根目录</span>
+
+
+@app<span class="token punctuation">.</span>route<span class="token punctuation">(</span><span class="token string">'/delete_book/&lt;book_id>'</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">delete_book</span><span class="token punctuation">(</span>book_id<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment" spellcheck="true"># 查询数据库，是否有该ID的书，如果有就删除，没有提示错误。</span>
+    book <span class="token operator">=</span> Book<span class="token punctuation">.</span>query<span class="token punctuation">.</span>get<span class="token punctuation">(</span>book_id<span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># 如果有就删除</span>
+    <span class="token keyword">if</span> book<span class="token punctuation">:</span>
+        <span class="token keyword">try</span><span class="token punctuation">:</span>
+            db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>delete<span class="token punctuation">(</span>book<span class="token punctuation">)</span>
+            db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>commit<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">except</span> Exception <span class="token keyword">as</span> e<span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+            flash<span class="token punctuation">(</span><span class="token string">'删除书籍出错'</span><span class="token punctuation">)</span>
+            db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>rollback<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token comment" spellcheck="true"># 没有提示错误</span>
+        flash<span class="token punctuation">(</span><span class="token string">'书籍找不到'</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># return redirect('/')</span>
+    <span class="token comment" spellcheck="true"># redirect:重定向，需要传入域名/路由地址</span>
+    <span class="token comment" spellcheck="true"># url_for（’index‘）:需要传入视图函数名，返回视图函数对应的路由地址</span>
+    <span class="token keyword">return</span> redirect<span class="token punctuation">(</span>url_for<span class="token punctuation">(</span><span class="token string">'index'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>       <span class="token comment" spellcheck="true"># url_for('index')的返回结果为'/'即根目录，相当于redirect('/')重定向到根目录</span>
+
+
+
+@app<span class="token punctuation">.</span>route<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span>methods<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'GET'</span><span class="token punctuation">,</span><span class="token string">'POST'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">index</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment" spellcheck="true"># 创建自定义表单类</span>
+    author_form <span class="token operator">=</span>AuthorForm<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token triple-quoted-string string">'''
+    验证逻辑:
+    1.调用WTF的验证函数实现验证
+    2.验证通过获取数据
+    3.判断作者是否存在
+    4.如果作者存在，判断书籍是否存在，没有重复书籍就添加书籍，重复就提示错误
+    5.如果作者不存在，直接添加作者和书籍
+    6.验证不通过就提示错误    
+    '''</span>
+
+    <span class="token keyword">if</span> author_form<span class="token punctuation">.</span>validate_on_submit<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment" spellcheck="true"># 验证通过获取数据</span>
+        author_name <span class="token operator">=</span> author_form<span class="token punctuation">.</span>author<span class="token punctuation">.</span>data      <span class="token comment" spellcheck="true">#获取输入的作者数据</span>
+        book_name <span class="token operator">=</span> author_form<span class="token punctuation">.</span>book<span class="token punctuation">.</span>data         <span class="token comment" spellcheck="true"># 获取输入的书名数据</span>
+
+        <span class="token comment" spellcheck="true"># 判断作者是否存在</span>
+
+        author <span class="token operator">=</span> Author<span class="token punctuation">.</span>query<span class="token punctuation">.</span>filter_by<span class="token punctuation">(</span>name <span class="token operator">=</span> author_name<span class="token punctuation">)</span><span class="token punctuation">.</span>first<span class="token punctuation">(</span><span class="token punctuation">)</span>     <span class="token comment" spellcheck="true"># 查询输入的作者名称是否在数据库中存在</span>
+        <span class="token keyword">if</span> author<span class="token punctuation">:</span>      <span class="token comment" spellcheck="true"># 进行判断语句</span>
+            book <span class="token operator">=</span> Book<span class="token punctuation">.</span>query<span class="token punctuation">.</span>filter_by<span class="token punctuation">(</span>name <span class="token operator">=</span> book_name<span class="token punctuation">)</span><span class="token punctuation">.</span>first<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token keyword">if</span> book<span class="token punctuation">:</span>
+                flash<span class="token punctuation">(</span><span class="token string">'已存在同名书籍'</span><span class="token punctuation">)</span>
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                <span class="token keyword">try</span><span class="token punctuation">:</span>
+                    new_book <span class="token operator">=</span> Book<span class="token punctuation">(</span>name<span class="token operator">=</span>book_name<span class="token punctuation">,</span>author_id<span class="token operator">=</span>author<span class="token punctuation">.</span>id<span class="token punctuation">)</span>
+                    db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>add<span class="token punctuation">(</span>new_book<span class="token punctuation">)</span>
+                    db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>commit<span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token keyword">except</span> Exception <span class="token keyword">as</span> e<span class="token punctuation">:</span>
+                    <span class="token keyword">print</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+                    flash<span class="token punctuation">(</span><span class="token string">'添加书籍失败'</span><span class="token punctuation">)</span>
+                    db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>rollback<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">try</span><span class="token punctuation">:</span>
+                new_author <span class="token operator">=</span> Author<span class="token punctuation">(</span>name <span class="token operator">=</span> author_name<span class="token punctuation">)</span>
+                db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>add<span class="token punctuation">(</span>new_author<span class="token punctuation">)</span>
+                db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>commit<span class="token punctuation">(</span><span class="token punctuation">)</span>
+                new_book <span class="token operator">=</span> Book<span class="token punctuation">(</span>name<span class="token operator">=</span>book_name<span class="token punctuation">,</span> author_id<span class="token operator">=</span>new_author<span class="token punctuation">.</span>id<span class="token punctuation">)</span>
+                db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>add<span class="token punctuation">(</span>new_book<span class="token punctuation">)</span>
+                db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>commit<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token keyword">except</span> Exception <span class="token keyword">as</span> e<span class="token punctuation">:</span>
+                <span class="token keyword">print</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+                flash<span class="token punctuation">(</span><span class="token string">'添加作者和书籍失败'</span><span class="token punctuation">)</span>
+                db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>rollback<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token comment" spellcheck="true"># 验证不通过就提示错误</span>
+        <span class="token keyword">if</span> request<span class="token punctuation">.</span>method <span class="token operator">==</span> <span class="token string">'POST'</span><span class="token punctuation">:</span>
+            flash<span class="token punctuation">(</span><span class="token string">'参数不全'</span><span class="token punctuation">)</span>
+
+
+    <span class="token comment" spellcheck="true"># 查询所有的作者信息，让信息传递给模板</span>
+    authors <span class="token operator">=</span> Author<span class="token punctuation">.</span>query<span class="token punctuation">.</span>all<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token triple-quoted-string string">'''
+    验证逻辑:
+    1.调用WTF的函数实现验证
+    2.验证通过获取数据
+    3.判断作者是否存在
+    4.如果作者存在，判断书记是否存在，没有重复书籍就可以添加书籍，若重复，则提示错误
+    5.如果作者不存在，添加作者和书籍。
+    6.验证不通过就提示错误
+    '''</span>
+
+    <span class="token comment" spellcheck="true"># 1.调用WTF的函数实现验证</span>
+
+
+    <span class="token keyword">return</span> render_template<span class="token punctuation">(</span><span class="token string">'books.html'</span><span class="token punctuation">,</span>authors<span class="token operator">=</span>authors<span class="token punctuation">,</span>form <span class="token operator">=</span> author_form<span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    db<span class="token punctuation">.</span>drop_all<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    db<span class="token punctuation">.</span>create_all<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token comment" spellcheck="true"># 生成数据</span>
+    au1 <span class="token operator">=</span> Author<span class="token punctuation">(</span>name<span class="token operator">=</span><span class="token string">'老王'</span><span class="token punctuation">)</span>
+    au2 <span class="token operator">=</span> Author<span class="token punctuation">(</span>name<span class="token operator">=</span><span class="token string">'老惠'</span><span class="token punctuation">)</span>
+    au3 <span class="token operator">=</span> Author<span class="token punctuation">(</span>name<span class="token operator">=</span><span class="token string">'老刘'</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># 把数据提交给用户会话</span>
+    db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>add_all<span class="token punctuation">(</span><span class="token punctuation">[</span>au1<span class="token punctuation">,</span> au2<span class="token punctuation">,</span> au3<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># 提交会话</span>
+    db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>commit<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    bk1 <span class="token operator">=</span> Book<span class="token punctuation">(</span>name<span class="token operator">=</span><span class="token string">'老王回忆录'</span><span class="token punctuation">,</span> author_id<span class="token operator">=</span>au1<span class="token punctuation">.</span>id<span class="token punctuation">)</span>
+    bk2 <span class="token operator">=</span> Book<span class="token punctuation">(</span>name<span class="token operator">=</span><span class="token string">'我读书少，你别骗我'</span><span class="token punctuation">,</span> author_id<span class="token operator">=</span>au1<span class="token punctuation">.</span>id<span class="token punctuation">)</span>
+    bk3 <span class="token operator">=</span> Book<span class="token punctuation">(</span>name<span class="token operator">=</span><span class="token string">'如何才能让自己更骚'</span><span class="token punctuation">,</span> author_id<span class="token operator">=</span>au2<span class="token punctuation">.</span>id<span class="token punctuation">)</span>
+    bk4 <span class="token operator">=</span> Book<span class="token punctuation">(</span>name<span class="token operator">=</span><span class="token string">'怎样征服美丽少女'</span><span class="token punctuation">,</span> author_id<span class="token operator">=</span>au3<span class="token punctuation">.</span>id<span class="token punctuation">)</span>
+    bk5 <span class="token operator">=</span> Book<span class="token punctuation">(</span>name<span class="token operator">=</span><span class="token string">'如何征服英俊少男'</span><span class="token punctuation">,</span> author_id<span class="token operator">=</span>au3<span class="token punctuation">.</span>id<span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># 把数据提交给用户会话</span>
+    db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>add_all<span class="token punctuation">(</span><span class="token punctuation">[</span>bk1<span class="token punctuation">,</span> bk2<span class="token punctuation">,</span> bk3<span class="token punctuation">,</span> bk4<span class="token punctuation">,</span> bk5<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># 提交会话</span>
+    db<span class="token punctuation">.</span>session<span class="token punctuation">.</span>commit<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    app<span class="token punctuation">.</span>run<span class="token punctuation">(</span>debug<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>html:</p>
+<pre><code class="html">&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;    &lt;meta charset="UTF-8"&gt;    &lt;title&gt;Title&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;form method="post"&gt;    {{ form.csrf_token() }}    {{ form.author.label }}{{ form.author }}&lt;br&gt;    {{ form.book.label }}{{ form.book }}&lt;br&gt;    {{ form.submit}}&lt;br&gt;    {# 显示消息闪现内容 #}    {% for message in get_flashed_messages()%}        {{ message }}    {% endfor%}&lt;/form&gt;&lt;hr&gt;&lt;ul&gt;    {% for author in authors %}        <li>{{ author.name }}<a href="{{" url_for("delete_author",author_id="author.id)" &#125;&#125;="">删除</a></li>    </code><ul><code class="html">        {% for book in author.books %}            <li>{{ book.name }}<a href="{{" url_for("delete_book",book_id="book.id)" &#125;&#125;="">删除</a></li>            {% else %}                <li>无</li>        {% endfor%}    &lt;/ul&gt;    {% endfor %}&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;
+</code></ul></pre>
+<p>运行结果：</p>
+<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Flask%E5%85%A5%E9%97%A8/image-20210526203705733.png">
+
+<p>功能描述：</p>
+<p>输入了作者和书籍，点击提交，会判断作者是否存在，存在就添加书籍，还会判断书是否存在，如果存在会提示书籍已存在，如果作者和书籍都不存在就都添加。点击删除可以实现删除，当作者没有书时会只显示一个无。</p>
 
                 
             </div>
@@ -2350,7 +3018,7 @@ In [17]: db.session.commit()
         <div class="col s12 m8 l8 copy-right">
 			
 			&nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-			    class="white-color">12.6k</span>&nbsp;字
+			    class="white-color">14.7k</span>&nbsp;字
 			
 			
 			
