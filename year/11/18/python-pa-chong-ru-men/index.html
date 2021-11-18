@@ -661,7 +661,7 @@ resp<span class="token punctuation">.</span>close<span class="token punctuation"
 </li>
 </ul>
 <h2 id="五、数据解析"><a href="#五、数据解析" class="headerlink" title="五、数据解析"></a>五、数据解析</h2><p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Blog_img/image-20210607170818247.png">https://cdn.jsdelivr.net/gh/zhaotaogit/images/Blog_img/image-20210607170818247.png</a></p>
-<h2 id="1-re解析-正则表达式"><a href="#1-re解析-正则表达式" class="headerlink" title="1.re解析-正则表达式"></a>1.re解析-正则表达式</h2><p><img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Blog_img/image-20210607170936886.png" alt="image-20210607170936886"></p>
+<h3 id="1-re解析-正则表达式"><a href="#1-re解析-正则表达式" class="headerlink" title="1.re解析-正则表达式"></a>1.re解析-正则表达式</h3><p><img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Blog_img/image-20210607170936886.png" alt="image-20210607170936886"></p>
 <ul>
 <li>开源中国：<a target="_blank" rel="noopener" href="https://www.oschina.net/">https://www.oschina.net/</a><ul>
 <li>工具：<a target="_blank" rel="noopener" href="https://tool.oschina.net/">https://tool.oschina.net/</a></li>
@@ -797,10 +797,10 @@ resp<span class="token punctuation">.</span>close<span class="token punctuation"
 <td>加上？为将贪婪匹配模式转为非贪婪匹配模式，会匹配尽量短的字符串</td>
 </tr>
 </tbody></table>
-<h2 id="二、re模块的使用"><a href="#二、re模块的使用" class="headerlink" title="二、re模块的使用"></a>二、re模块的使用</h2><blockquote>
+<h4 id="1-1、re模块的使用"><a href="#1-1、re模块的使用" class="headerlink" title="1.1、re模块的使用"></a>1.1、re模块的使用</h4><blockquote>
 <p> 安装模块:pip install requests</p>
 </blockquote>
-<h3 id="1-re模块的匹配使用"><a href="#1-re模块的匹配使用" class="headerlink" title="1.re模块的匹配使用"></a>1.re模块的匹配使用</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding = utf-8 -*-</span>
+<h4 id="1-2-re模块的匹配使用"><a href="#1-2-re模块的匹配使用" class="headerlink" title="1.2.re模块的匹配使用"></a>1.2.re模块的匹配使用</h4><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding = utf-8 -*-</span>
 <span class="token comment" spellcheck="true"># @Time : 2021/6/7 17:49</span>
 <span class="token comment" spellcheck="true"># @File : 5.re模块.py</span>
 <span class="token comment" spellcheck="true"># @Software: PyCharm</span>
@@ -842,7 +842,7 @@ obj <span class="token operator">=</span> re<span class="token punctuation">.</s
 lst <span class="token operator">=</span> obj<span class="token punctuation">.</span>findall<span class="token punctuation">(</span><span class="token string">'10086,你的电话号码是10010'</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>lst<span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="2-re模块匹配想要的东西并输出"><a href="#2-re模块匹配想要的东西并输出" class="headerlink" title="2.re模块匹配想要的东西并输出"></a>2.re模块匹配想要的东西并输出</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding = utf-8 -*-</span>
+<h4 id="1-3-re模块匹配想要的东西并输出"><a href="#1-3-re模块匹配想要的东西并输出" class="headerlink" title="1.3.re模块匹配想要的东西并输出"></a>1.3.re模块匹配想要的东西并输出</h4><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding = utf-8 -*-</span>
 <span class="token comment" spellcheck="true"># @Time : 2021/6/7 18:07</span>
 <span class="token comment" spellcheck="true"># @File : 6.re模块1.py</span>
 <span class="token comment" spellcheck="true"># @Software: PyCharm</span>
@@ -871,7 +871,7 @@ ret <span class="token operator">=</span> obj<span class="token punctuation">.</
     <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token string">'wahaha'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
     <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token string">'id'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="3-re模块爬取豆瓣排行榜250信息"><a href="#3-re模块爬取豆瓣排行榜250信息" class="headerlink" title="3.re模块爬取豆瓣排行榜250信息"></a>3.re模块爬取豆瓣排行榜250信息</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding = utf-8 -*-</span>
+<h4 id="1-4-re模块爬取豆瓣排行榜250信息"><a href="#1-4-re模块爬取豆瓣排行榜250信息" class="headerlink" title="1.4.re模块爬取豆瓣排行榜250信息"></a>1.4.re模块爬取豆瓣排行榜250信息</h4><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding = utf-8 -*-</span>
 <span class="token comment" spellcheck="true"># @Time : 2021/6/7 18:38</span>
 <span class="token comment" spellcheck="true"># @File : 7.re模块2.py</span>
 <span class="token comment" spellcheck="true"># @Software: PyCharm</span>
@@ -944,7 +944,7 @@ data <span class="token operator">=</span> pd<span class="token punctuation">.</
 data<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string">'db_all-250.csv'</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'utf-8-sig'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># utf-8-sig保证保存的csv不乱吗</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'over'</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="4-re模块爬取电影天堂信息"><a href="#4-re模块爬取电影天堂信息" class="headerlink" title="4.re模块爬取电影天堂信息"></a>4.re模块爬取电影天堂信息</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding = utf-8 -*-</span>
+<h4 id="1-5-re模块爬取电影天堂信息"><a href="#1-5-re模块爬取电影天堂信息" class="headerlink" title="1.5.re模块爬取电影天堂信息"></a>1.5.re模块爬取电影天堂信息</h4><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding = utf-8 -*-</span>
 <span class="token comment" spellcheck="true"># @Time : 2021/6/7 21:22</span>
 <span class="token comment" spellcheck="true"># @File : 8.re模块3.py</span>
 <span class="token comment" spellcheck="true"># @Software: PyCharm</span>
@@ -1005,10 +1005,10 @@ df <span class="token operator">=</span> pd<span class="token punctuation">.</sp
 df<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string">'dytt.csv'</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'utf-8-sig'</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'over'</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="三、bs4模块"><a href="#三、bs4模块" class="headerlink" title="三、bs4模块"></a>三、bs4模块</h2><blockquote>
+<h3 id="2、bs4模块"><a href="#2、bs4模块" class="headerlink" title="2、bs4模块"></a>2、bs4模块</h3><blockquote>
 <p>安装模块:pip install bs4</p>
 </blockquote>
-<h3 id="1-爬取菜价"><a href="#1-爬取菜价" class="headerlink" title="1.爬取菜价"></a>1.爬取菜价</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding = utf-8 -*-</span>
+<h4 id="2-1-爬取菜价"><a href="#2-1-爬取菜价" class="headerlink" title="2.1.爬取菜价"></a>2.1.爬取菜价</h4><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding = utf-8 -*-</span>
 <span class="token comment" spellcheck="true"># @Time : 2021/6/9 16:16</span>
 <span class="token comment" spellcheck="true"># @File : 9.bs4模块.py</span>
 <span class="token comment" spellcheck="true"># @Software: PyCharm</span>
@@ -1044,7 +1044,7 @@ df <span class="token operator">=</span> pd<span class="token punctuation">.</sp
 df<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string">'菜价.csv'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8-sig'</span><span class="token punctuation">)</span>
 resp<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="2-爬取50页菜价"><a href="#2-爬取50页菜价" class="headerlink" title="2.爬取50页菜价"></a>2.爬取50页菜价</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding = utf-8 -*-</span>
+<h4 id="2-2爬取50页菜价"><a href="#2-2爬取50页菜价" class="headerlink" title="2.2爬取50页菜价"></a>2.2爬取50页菜价</h4><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding = utf-8 -*-</span>
 <span class="token comment" spellcheck="true"># @Time : 2021/6/9 16:51</span>
 <span class="token comment" spellcheck="true"># @File : 10.bs4模块1.py</span>
 <span class="token comment" spellcheck="true"># @Software: PyCharm</span>
@@ -1083,7 +1083,7 @@ df <span class="token operator">=</span> pd<span class="token punctuation">.</sp
 df<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string">'菜价50页.csv'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8-sig'</span><span class="token punctuation">)</span>
 resp<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="3-优美图库图片"><a href="#3-优美图库图片" class="headerlink" title="3.优美图库图片"></a>3.优美图库图片</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding = utf-8 -*-</span>
+<h4 id="2-3-优美图库图片"><a href="#2-3-优美图库图片" class="headerlink" title="2.3.优美图库图片"></a>2.3.优美图库图片</h4><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding = utf-8 -*-</span>
 <span class="token comment" spellcheck="true"># @Time : 2021/6/9 18:43</span>
 <span class="token comment" spellcheck="true"># @File : 11.bs4模块2.py</span>
 <span class="token comment" spellcheck="true"># @Software: PyCharm</span>
@@ -1123,7 +1123,7 @@ alist <span class="token operator">=</span> div<span class="token punctuation">.
 
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'over!'</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="4-爬取多页优美图库图片"><a href="#4-爬取多页优美图库图片" class="headerlink" title="4.爬取多页优美图库图片"></a>4.爬取多页优美图库图片</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding = utf-8 -*-</span>
+<h4 id="2-4-爬取多页优美图库图片"><a href="#2-4-爬取多页优美图库图片" class="headerlink" title="2.4.爬取多页优美图库图片"></a>2.4.爬取多页优美图库图片</h4><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding = utf-8 -*-</span>
 <span class="token comment" spellcheck="true"># @Time : 2021/6/9 19:59</span>
 <span class="token comment" spellcheck="true"># @File : 12.bs4模块3.py</span>
 <span class="token comment" spellcheck="true"># @Software: PyCharm</span>
@@ -1175,7 +1175,7 @@ url1 <span class="token operator">=</span> <span class="token string">'https://w
 <p>安装lxml模块</p>
 <p>pip install lxml</p>
 </blockquote>
-<h3 id="1-xpath的基本使用"><a href="#1-xpath的基本使用" class="headerlink" title="1.xpath的基本使用"></a>1.xpath的基本使用</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding = utf-8 -*-</span>
+<h3 id="3-xpath的基本使用"><a href="#3-xpath的基本使用" class="headerlink" title="3.xpath的基本使用"></a>3.xpath的基本使用</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding = utf-8 -*-</span>
 <span class="token comment" spellcheck="true"># @Time : 2021/6/10 15:35</span>
 <span class="token comment" spellcheck="true"># @File : 13.xpath解析.py</span>
 <span class="token comment" spellcheck="true"># @Software: PyCharm</span>
@@ -1283,7 +1283,7 @@ ol_li_list <span class="token operator">=</span> tree<span class="token punctuat
 
 <span class="token keyword">print</span><span class="token punctuation">(</span>tree<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'/html/body/ul/li/a/@href'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>    <span class="token comment" spellcheck="true"># 获取a标签下href的值</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="2-用xpath爬取猪八戒网站信息"><a href="#2-用xpath爬取猪八戒网站信息" class="headerlink" title="2.用xpath爬取猪八戒网站信息"></a>2.用xpath爬取猪八戒网站信息</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding = utf-8 -*-</span>
+<h4 id="3-1-用xpath爬取猪八戒网站信息"><a href="#3-1-用xpath爬取猪八戒网站信息" class="headerlink" title="3.1.用xpath爬取猪八戒网站信息"></a>3.1.用xpath爬取猪八戒网站信息</h4><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding = utf-8 -*-</span>
 <span class="token comment" spellcheck="true"># @Time : 2021/6/10 20:52</span>
 <span class="token comment" spellcheck="true"># @File : 14.xpath解析2.py</span>
 <span class="token comment" spellcheck="true"># @Software: PyCharm</span>
@@ -1317,7 +1317,7 @@ dit <span class="token operator">=</span> <span class="token punctuation">{</spa
 df <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>dit<span class="token punctuation">)</span>
 df<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string">'猪八戒.csv'</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'utf-8-sig'</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="四、requests进阶"><a href="#四、requests进阶" class="headerlink" title="四、requests进阶"></a>四、requests进阶</h2><p><img src="D:/1学习/1笔记/Linux基础_imgs/image-20210611153420802.png" alt="image-20210611153420802"></p>
+<h2 id="六、requests进阶"><a href="#六、requests进阶" class="headerlink" title="六、requests进阶"></a>六、requests进阶</h2><p><img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Blog_img/image-20210611153420802.png" alt="image-20210611153420802"></p>
 <h3 id="1-模拟用户登录"><a href="#1-模拟用户登录" class="headerlink" title="1.模拟用户登录"></a>1.模拟用户登录</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding = utf-8 -*-</span>
 <span class="token comment" spellcheck="true"># @Time : 2021/6/11 15:40</span>
 <span class="token comment" spellcheck="true"># @File : 16.模拟用户登录cookie.py</span>
@@ -1386,7 +1386,7 @@ video <span class="token operator">=</span> videoResp<span class="token punctuat
     f<span class="token punctuation">.</span>write<span class="token punctuation">(</span>video<span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'over!'</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="六、给爬虫提速"><a href="#六、给爬虫提速" class="headerlink" title="六、给爬虫提速"></a>六、给爬虫提速</h2><p><img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Blog_img/image-20210613143403274.png" alt="image-20210613143403274"></p>
+<h2 id="七、给爬虫提速"><a href="#七、给爬虫提速" class="headerlink" title="七、给爬虫提速"></a>七、给爬虫提速</h2><p><img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Blog_img/image-20210613143403274.png" alt="image-20210613143403274"></p>
 <h3 id="1-多线程"><a href="#1-多线程" class="headerlink" title="1.多线程"></a>1.多线程</h3><blockquote>
 <p>进程是资源单位，每一个进程至少要有一个线程</p>
 <p>线程是执行单位</p>
@@ -1742,7 +1742,7 @@ urls <span class="token operator">=</span> html<span class="token punctuation">.
     loop <span class="token operator">=</span> asyncio<span class="token punctuation">.</span>get_event_loop<span class="token punctuation">(</span><span class="token punctuation">)</span>
     loop<span class="token punctuation">.</span>run_until_complete<span class="token punctuation">(</span>main<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="七、爬取一部视频"><a href="#七、爬取一部视频" class="headerlink" title="七、爬取一部视频"></a>七、爬取一部视频</h3><h3 id="1-视频网站的工作原理"><a href="#1-视频网站的工作原理" class="headerlink" title="1.视频网站的工作原理"></a>1.视频网站的工作原理</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># &lt;video src="一部视频.mp4">&lt;/video>&lt;video>    # 一般网站放视频</span>
+<h2 id="八、爬取一部视频"><a href="#八、爬取一部视频" class="headerlink" title="八、爬取一部视频"></a>八、爬取一部视频</h2><h3 id="1-视频网站的工作原理"><a href="#1-视频网站的工作原理" class="headerlink" title="1.视频网站的工作原理"></a>1.视频网站的工作原理</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># &lt;video src="一部视频.mp4">&lt;/video>&lt;video>    # 一般网站放视频</span>
 <span class="token comment" spellcheck="true"># 用户上传 -> 转码(把视频做处理,2k,108,标清),->切片处理(把单个的文件进行拆分)</span>
 <span class="token comment" spellcheck="true"># 拖动滚动条直接加载滚动条处的位置</span>
 <span class="token comment" spellcheck="true"># ==========================</span>
