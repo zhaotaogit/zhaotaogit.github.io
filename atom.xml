@@ -6,7 +6,7 @@
   <link href="https://zhaotaogit.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhaotaogit.github.io/"/>
-  <updated>2021-06-20T07:08:19.901Z</updated>
+  <updated>2021-11-18T09:51:24.010Z</updated>
   <id>https://zhaotaogit.github.io/</id>
   
   <author>
@@ -17,11 +17,136 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Python报错</title>
+    <link href="https://zhaotaogit.github.io/year/11/18/python-bao-cuo/"/>
+    <id>https://zhaotaogit.github.io/year/11/18/python-bao-cuo/</id>
+    <published>2021-11-18T09:49:49.000Z</published>
+    <updated>2021-11-18T09:51:24.010Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Pythonq报错&quot;&gt;&lt;a href=&quot;#Pythonq报错&quot; class=&quot;headerlink&quot; title=&quot;Pythonq报错&quot;&gt;&lt;/a&gt;Pythonq报错&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://zhaotaogit.github.io/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="https://zhaotaogit.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docker</title>
+    <link href="https://zhaotaogit.github.io/year/11/18/docker/"/>
+    <id>https://zhaotaogit.github.io/year/11/18/docker/</id>
+    <published>2021-11-18T09:04:26.000Z</published>
+    <updated>2021-11-18T09:10:32.113Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Docker&quot;&gt;&lt;a href=&quot;#Docker&quot; class=&quot;headerlink&quot; title=&quot;Docker&quot;&gt;&lt;/a&gt;Docker&lt;/h1&gt;&lt;h2 id=&quot;1-配置虚拟机IP&quot;&gt;&lt;a href=&quot;#1-配置虚拟机IP&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://zhaotaogit.github.io/categories/Docker/"/>
+    
+    
+    <category term="Docker" scheme="https://zhaotaogit.github.io/tags/Docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python面向对象OOP</title>
+    <link href="https://zhaotaogit.github.io/year/11/18/python-mian-xiang-dui-xiang-oop/"/>
+    <id>https://zhaotaogit.github.io/year/11/18/python-mian-xiang-dui-xiang-oop/</id>
+    <published>2021-11-18T08:55:25.000Z</published>
+    <updated>2021-11-18T08:59:14.259Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Python面向对象OOP&quot;&gt;&lt;a href=&quot;#Python面向对象OOP&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://zhaotaogit.github.io/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="https://zhaotaogit.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python爬虫入门</title>
+    <link href="https://zhaotaogit.github.io/year/11/18/python-pa-chong-ru-men/"/>
+    <id>https://zhaotaogit.github.io/year/11/18/python-pa-chong-ru-men/</id>
+    <published>2021-11-18T08:39:45.000Z</published>
+    <updated>2021-11-18T08:54:38.682Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Python爬虫&quot;&gt;&lt;a href=&quot;#Python爬虫&quot; class=&quot;headerlink&quot; title=&quot;Python爬虫&quot;&gt;&lt;/a&gt;Python爬虫&lt;/h1&gt;&lt;p&gt;笔记参考自视频连接：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://zhaotaogit.github.io/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="https://zhaotaogit.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python异常</title>
+    <link href="https://zhaotaogit.github.io/year/11/18/python-yi-chang/"/>
+    <id>https://zhaotaogit.github.io/year/11/18/python-yi-chang/</id>
+    <published>2021-11-18T08:32:24.000Z</published>
+    <updated>2021-11-18T08:50:12.437Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Python异常&quot;&gt;&lt;a href=&quot;#Python异常&quot; class=&quot;headerlink&quot; title=&quot;Python异常&quot;&gt;&lt;/a&gt;Python异常&lt;/h1&gt;&lt;h2 id=&quot;01-异常的概念&quot;&gt;&lt;a href=&quot;#01-异常的概念&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://zhaotaogit.github.io/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="https://zhaotaogit.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Flask入门</title>
     <link href="https://zhaotaogit.github.io/year/05/31/flask-ru-men/"/>
     <id>https://zhaotaogit.github.io/year/05/31/flask-ru-men/</id>
     <published>2021-05-31T09:50:40.000Z</published>
-    <updated>2021-06-20T07:08:19.901Z</updated>
+    <updated>2021-11-18T08:43:07.837Z</updated>
     
     
       
@@ -42,7 +167,7 @@
     <link href="https://zhaotaogit.github.io/year/05/16/linux-an-zhuang-anaconda3-huan-jing-pei-zhi-zhi-nan/"/>
     <id>https://zhaotaogit.github.io/year/05/16/linux-an-zhuang-anaconda3-huan-jing-pei-zhi-zhi-nan/</id>
     <published>2021-05-16T14:12:04.000Z</published>
-    <updated>2021-05-16T14:21:07.641Z</updated>
+    <updated>2021-11-18T08:43:30.655Z</updated>
     
     
       
@@ -71,7 +196,7 @@
     <link href="https://zhaotaogit.github.io/year/05/11/conda-chuang-jian-python-huan-jing/"/>
     <id>https://zhaotaogit.github.io/year/05/11/conda-chuang-jian-python-huan-jing/</id>
     <published>2021-05-11T04:06:55.000Z</published>
-    <updated>2021-05-11T04:18:18.212Z</updated>
+    <updated>2021-11-18T08:53:03.714Z</updated>
     
     
       
@@ -84,10 +209,14 @@
     
     
     
-    <category term="Conda" scheme="https://zhaotaogit.github.io/categories/Conda/"/>
+    <category term="Python" scheme="https://zhaotaogit.github.io/categories/Python/"/>
+    
+    <category term="Linux" scheme="https://zhaotaogit.github.io/categories/Python/Linux/"/>
     
     
-    <category term="Conda" scheme="https://zhaotaogit.github.io/tags/Conda/"/>
+    <category term="Linux" scheme="https://zhaotaogit.github.io/tags/Linux/"/>
+    
+    <category term="Python" scheme="https://zhaotaogit.github.io/tags/Python/"/>
     
   </entry>
   
@@ -96,7 +225,7 @@
     <link href="https://zhaotaogit.github.io/year/05/03/python-zhong-de-itertools-de-shi-yong-xiang-jie/"/>
     <id>https://zhaotaogit.github.io/year/05/03/python-zhong-de-itertools-de-shi-yong-xiang-jie/</id>
     <published>2021-05-03T14:22:25.000Z</published>
-    <updated>2021-05-16T14:14:15.555Z</updated>
+    <updated>2021-11-18T08:48:15.348Z</updated>
     
     
       
@@ -109,7 +238,7 @@
     
     
     
-    <category term="学习" scheme="https://zhaotaogit.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="Python" scheme="https://zhaotaogit.github.io/categories/Python/"/>
     
     
     <category term="Python" scheme="https://zhaotaogit.github.io/tags/Python/"/>
@@ -121,7 +250,7 @@
     <link href="https://zhaotaogit.github.io/year/04/29/git-cang-ku-xiao-ji/"/>
     <id>https://zhaotaogit.github.io/year/04/29/git-cang-ku-xiao-ji/</id>
     <published>2021-04-29T14:28:42.000Z</published>
-    <updated>2021-06-20T06:02:15.153Z</updated>
+    <updated>2021-11-18T08:48:26.359Z</updated>
     
     
       
@@ -134,7 +263,7 @@
     
     
     
-    <category term="学习" scheme="https://zhaotaogit.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="Git" scheme="https://zhaotaogit.github.io/categories/Git/"/>
     
     
     <category term="Git" scheme="https://zhaotaogit.github.io/tags/Git/"/>
@@ -146,7 +275,7 @@
     <link href="https://zhaotaogit.github.io/year/04/27/python-pandas-yi-xie-ming-ling-bi-ji-chi-xu-geng-xin/"/>
     <id>https://zhaotaogit.github.io/year/04/27/python-pandas-yi-xie-ming-ling-bi-ji-chi-xu-geng-xin/</id>
     <published>2021-04-27T12:23:18.000Z</published>
-    <updated>2021-05-03T14:37:00.516Z</updated>
+    <updated>2021-11-18T08:49:09.546Z</updated>
     
     
       
@@ -159,7 +288,7 @@
     
     
     
-    <category term="学习" scheme="https://zhaotaogit.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="Python" scheme="https://zhaotaogit.github.io/categories/Python/"/>
     
     
     <category term="Python" scheme="https://zhaotaogit.github.io/tags/Python/"/>
@@ -171,7 +300,7 @@
     <link href="https://zhaotaogit.github.io/year/04/27/java-yi-xie-nei-zhi-fang-fa-chi-xu-geng-xin/"/>
     <id>https://zhaotaogit.github.io/year/04/27/java-yi-xie-nei-zhi-fang-fa-chi-xu-geng-xin/</id>
     <published>2021-04-27T04:40:28.000Z</published>
-    <updated>2021-06-20T07:11:05.271Z</updated>
+    <updated>2021-11-18T08:48:57.352Z</updated>
     
     
       
@@ -184,7 +313,7 @@
     
     
     
-    <category term="学习" scheme="https://zhaotaogit.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="Java" scheme="https://zhaotaogit.github.io/categories/Java/"/>
     
     
     <category term="Java" scheme="https://zhaotaogit.github.io/tags/Java/"/>

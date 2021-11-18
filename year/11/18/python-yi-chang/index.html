@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Java一些内置方法-持续更新, Taotao&#39;s Blog">
+    <meta name="keywords" content="Python异常, Taotao&#39;s Blog">
     <meta name="description" content="Taotao&#39;s Blog">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Java一些内置方法-持续更新 | Taotao&#39;s Blog</title>
+    <title>Python异常 | Taotao&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -349,12 +349,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/zhaotaogit/images/Java%E5%B0%81%E9%9D%A2/Java.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/zhaotaogit/images/Blog_img/20211118163844.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Java一些内置方法-持续更新</h1>
+                    <h1 class="description center-align post-title">Python异常</h1>
                 </div>
             </div>
         </div>
@@ -470,8 +470,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Java/">
-                                <span class="chip bg-color">Java</span>
+                            <a href="/tags/Python/">
+                                <span class="chip bg-color">Python</span>
                             </a>
                         
                     </div>
@@ -482,8 +482,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Java/" class="post-category">
-                                Java
+                            <a href="/categories/Python/" class="post-category">
+                                Python
                             </a>
                         
                     </div>
@@ -495,7 +495,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-04-27
+                    2021-11-18
                 </div>
                 
 
@@ -509,14 +509,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    216
+                    785
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -539,43 +539,92 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Java-一些内置方法-持续更新"><a href="#Java-一些内置方法-持续更新" class="headerlink" title="Java 一些内置方法-持续更新"></a>Java 一些内置方法-持续更新</h1><h3 id="1-Java-split-用法方法"><a href="#1-Java-split-用法方法" class="headerlink" title="1. Java split()用法方法"></a>1. <a target="_blank" rel="noopener" href="https://www.cnblogs.com/xiaoxiaohui2015/p/5838674.html">Java split()用法方法</a></h3><ul>
-<li><p>例：</p>
-<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Arrays<span class="token punctuation">;</span>
-
-String address<span class="token operator">=</span><span class="token string">"上海\\上海市|闵行区\\吴中路"</span><span class="token punctuation">;</span>
-String<span class="token punctuation">[</span><span class="token punctuation">]</span> splitAddress<span class="token operator">=</span>address<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">"\\\\"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>Arrays<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span>splitAddress<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h1 id="Python异常"><a href="#Python异常" class="headerlink" title="Python异常"></a>Python异常</h1><h2 id="01-异常的概念"><a href="#01-异常的概念" class="headerlink" title="01.异常的概念"></a>01.异常的概念</h2><ul>
+<li>程序运行时，如果Python解释器 **遇到 **一个错误，会停止程序的执行，并且提示一些错误信息，这就是 <strong>异常</strong>。</li>
+<li><strong>程序停止执行并且提示错误信息</strong>，这个动作，我们通常称之为：<strong>抛出(raise)异常</strong>。</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python">num <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">'请输入一个数字：'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">## 让用户输入一个整数。</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">## 打印。</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>​        正常输入整数是不会报错的，而用户输入的不是整数的话就会报错，针对这一情况，就需要异常语句来处理。当出现报错时，给出一定的提示！，通过 **异常捕获 **可以针对突发事件做集中的处理，从而保证程序的 <strong>稳定性和健壮性。</strong></p>
+<h2 id="02-异常的捕获"><a href="#02-异常的捕获" class="headerlink" title="02 .异常的捕获"></a>02 .异常的捕获</h2><h3 id="2-1简单捕获异常语法"><a href="#2-1简单捕获异常语法" class="headerlink" title="2.1简单捕获异常语法"></a>2.1简单捕获异常语法</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">try</span><span class="token punctuation">:</span>
+    尝试运行的代码
+ <span class="token keyword">except</span><span class="token punctuation">:</span>
+    出现错误运行的代码
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-2错误类型捕获"><a href="#2-2错误类型捕获" class="headerlink" title="2.2错误类型捕获"></a>2.2错误类型捕获</h3><ul>
+<li><p>在程序运行时，可能会遇到<strong>不同类型的异常</strong>，并且需要 <strong>针对不同类型的异常，做出不同的响应</strong>，这个时候，就需要捕获错误类型了。</p>
+</li>
+<li><p>语法如下:</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">try</span><span class="token punctuation">:</span>
+    尝试运行的代码
+<span class="token keyword">except</span> 错误类型<span class="token number">1</span>：
+    针对错误类型<span class="token number">1</span>执行的代码
+<span class="token keyword">except</span> 错误类型<span class="token number">2</span>：
+    针对错误类型<span class="token number">2</span>执行的代码
+<span class="token keyword">except</span> Exception <span class="token keyword">as</span> result<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'未知错误{result}'</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>当python解释器 <strong>抛出异常</strong>时，最后一行错误信息的第一个单词，就是错误类型。</p>
+</li>
+<li><p>捕获未知错误,在程序开发时，会出现没有预料到的报错，这时候就可以使用<strong>捕获未知错误</strong>。</p>
+</li>
+<li><p>代码如下：</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">except</span> Exception <span class="token keyword">as</span> result<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'未知错误{result}'</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="2-3异常捕获的完整语法"><a href="#2-3异常捕获的完整语法" class="headerlink" title="2.3异常捕获的完整语法"></a>2.3异常捕获的完整语法</h3></li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">try</span><span class="token punctuation">:</span>
+    尝试运行的代码
+<span class="token keyword">except</span> 错误类型<span class="token number">1</span>：
+    针对错误类型<span class="token number">1</span>执行的代码
+<span class="token keyword">except</span> 错误类型<span class="token number">2</span>：
+    针对错误类型<span class="token number">2</span>执行的代码
+<span class="token keyword">except</span> Exception <span class="token keyword">as</span> result<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'未知错误{result}'</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    没有错误才会执行的代码
+<span class="token keyword">finally</span><span class="token punctuation">:</span>
+    无论是否有异常，都会执行的代码
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="03-异常的传递"><a href="#03-异常的传递" class="headerlink" title="03.异常的传递"></a>03.异常的传递</h2><ul>
+<li>异常的传递  - - 当 <strong>函数/方法</strong> 执行 <strong>出现异常</strong>，会 <strong>将异常传递</strong> 给函数/方法 的 <strong>调用一方</strong></li>
+<li>如果 <strong>传递到主程序</strong>，仍然 <strong>没有异常处理</strong>， 程序才会被终止</li>
+</ul>
+<blockquote>
+<p>提示</p>
+</blockquote>
+<ul>
+<li><p>在开发中，可以在主函数中增加 <strong>异常捕获</strong></p>
+</li>
+<li><p>而在主函数中调用的其他函数，只要出现异常，都会传递到主函数的 <strong>异常捕获</strong> 中</p>
+</li>
+<li><p>这样就不需要再代码中，增加大量的 <strong>异常捕获</strong>，能够保证代码的整洁</p>
 </li>
 </ul>
-<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Java%E4%B8%80%E4%BA%9B%E5%86%85%E7%BD%AE%E6%96%B9%E6%B3%95/image-20210531174727105.png">
+<h2 id="04-抛出-raise-异常"><a href="#04-抛出-raise-异常" class="headerlink" title="04.抛出 raise 异常"></a>04.抛出 <strong>raise</strong> 异常</h2><h3 id="4-1应用场景"><a href="#4-1应用场景" class="headerlink" title="4.1应用场景"></a>4.1应用场景</h3><ul>
+<li><p>在开发中，除了 <strong>代码执行出错</strong><code>Python</code>解释器会**抛出 **异常之外</p>
+</li>
+<li><p>还可以根据 <strong>应用程序 特有的业务需求 主动抛出异常</strong></p>
+<p><strong>示例：</strong></p>
+</li>
+<li><p>提示用户 <strong>输入密码</strong>，如果 <strong>长度少于8</strong>，抛出<strong>异常</strong></p>
+</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">input_password</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    password <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">'请输入密码:'</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> len<span class="token punctuation">(</span>password<span class="token punctuation">)</span> <span class="token operator">>=</span> <span class="token number">8</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> password
+    <span class="token keyword">raise</span> Exception<span class="token punctuation">(</span><span class="token string">'密码长度不够！'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 主动抛出异常</span>
 
-<blockquote>
-<p>实现按字符切分</p>
-</blockquote>
-<h3 id="2-Java-substring-方法"><a href="#2-Java-substring-方法" class="headerlink" title="2.Java substring()方法"></a>2.Java substring()方法</h3><pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Scanner<span class="token punctuation">;</span>
 
-Scanner sc <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Scanner</span><span class="token punctuation">(</span>System<span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">;</span>
-String s <span class="token operator">=</span> sc<span class="token punctuation">.</span><span class="token function">nextLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//提取下标为0-2(不包括2)的下标</span>
-System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//提取最后一个字符</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Java%E4%B8%80%E4%BA%9B%E5%86%85%E7%BD%AE%E6%96%B9%E6%B3%95/image-20210531174818062.png">
-
-<blockquote>
-<p>实现根据下标取字符</p>
-</blockquote>
-<h3 id="3-Arrays-toString-方法"><a href="#3-Arrays-toString-方法" class="headerlink" title="3.Arrays.toString()方法"></a>3.Arrays.toString()方法</h3><pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Arrays<span class="token punctuation">;</span>
-
-String string<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">"abc"</span><span class="token punctuation">,</span><span class="token string">"def"</span><span class="token punctuation">,</span><span class="token string">"igh"</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>Arrays<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span>string<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Java%E4%B8%80%E4%BA%9B%E5%86%85%E7%BD%AE%E6%96%B9%E6%B3%95/image-20210531172051448.png">
-
-<blockquote>
-<p>如果想要把数组中的内容打印出来,直接调用toString()方法只会打印出数组的地址,因此需要使用Arrays的toString()方法。这个方法是是用来将数组转换成String类型输出的，入参可以是long，float，double，int，boolean，byte，object型的数组。</p>
-</blockquote>
+<span class="token keyword">try</span><span class="token punctuation">:</span>
+    input_password<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">except</span> Exception <span class="token keyword">as</span> result<span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 捕获异常</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 打印异常信息</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -602,7 +651,7 @@ System<span class="token punctuation">.</span>out<span class="token punctuation"
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zhaotaogit.github.io/year/04/27/java-yi-xie-nei-zhi-fang-fa-chi-xu-geng-xin/">https://zhaotaogit.github.io/year/04/27/java-yi-xie-nei-zhi-fang-fa-chi-xu-geng-xin/</a>
+                    <a href="https://zhaotaogit.github.io/year/11/18/python-yi-chang/">https://zhaotaogit.github.io/year/11/18/python-yi-chang/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -640,8 +689,8 @@ System<span class="token punctuation">.</span>out<span class="token punctuation"
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Java/">
-                                    <span class="chip bg-color">Java</span>
+                                <a href="/tags/Python/">
+                                    <span class="chip bg-color">Python</span>
                                 </a>
                             
                         </div>
@@ -1078,23 +1127,23 @@ System<span class="token punctuation">.</span>out<span class="token punctuation"
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/year/04/27/python-pandas-yi-xie-ming-ling-bi-ji-chi-xu-geng-xin/">
+                <a href="/year/11/18/python-pa-chong-ru-men/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Python%E5%B0%81%E9%9D%A2/Python.jpg" class="responsive-img" alt="Python-Pandas一些命令笔记-持续更新">
+                        <img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Blog_img/20211118164028.png" class="responsive-img" alt="Python爬虫入门">
                         
-                        <span class="card-title">Python-Pandas一些命令笔记-持续更新</span>
+                        <span class="card-title">Python爬虫入门</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Python学习
+                            Python爬虫
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-27
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-18
                         </span>
                         <span class="publish-author">
                             
@@ -1123,47 +1172,35 @@ System<span class="token punctuation">.</span>out<span class="token punctuation"
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/year/04/27/java-yi-xie-nei-zhi-fang-fa-chi-xu-geng-xin/">
+                <a href="/year/05/31/flask-ru-men/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Java%E5%B0%81%E9%9D%A2/Java.jpg" class="responsive-img" alt="Java一些内置方法-持续更新">
                         
-                        <span class="card-title">Java一些内置方法-持续更新</span>
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Flask入门">
+                        
+                        <span class="card-title">Flask入门</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Java学习
+                            
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-27
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-31
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Java/" class="post-category">
-                                    Java
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Zhaotao
                             
                         </span>
                     </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Java/">
-                        <span class="chip bg-color">Java</span>
-                    </a>
-                    
                 </div>
                 
             </div>
