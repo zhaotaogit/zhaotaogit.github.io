@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Linux安装Anaconda3环境配置指南, Taotao&#39;s Blog">
+    <meta name="keywords" content="Python-Scrapy, Taotao&#39;s Blog">
     <meta name="description" content="Taotao&#39;s Blog">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Linux安装Anaconda3环境配置指南 | Taotao&#39;s Blog</title>
+    <title>Python-Scrapy | Taotao&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -349,12 +349,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://ss3.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/baike/pic/item/78310a55b319ebc45d5c45dc8e26cffc1e17164a.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/zhaotaogit/images/note_img/image-20211210205722145.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Linux安装Anaconda3环境配置指南</h1>
+                    <h1 class="description center-align post-title">Python-Scrapy</h1>
                 </div>
             </div>
         </div>
@@ -468,33 +468,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/Linux/">
-                                <span class="chip bg-color">Linux</span>
-                            </a>
-                        
-                            <a href="/tags/Anaconda/">
-                                <span class="chip bg-color">Anaconda</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/Anaconda/" class="post-category">
-                                Anaconda
-                            </a>
-                        
-                            <a href="/categories/Anaconda/Linux/" class="post-category">
-                                Linux
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -503,28 +482,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-05-16
+                    2021-12-10
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-11-18
+                    2021-12-10
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    163
+                    2.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    8 分
                 </div>
                 
 
@@ -547,26 +526,315 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Linux安装Anaconda3环境配置指南"><a href="#Linux安装Anaconda3环境配置指南" class="headerlink" title="Linux安装Anaconda3环境配置指南"></a>Linux安装Anaconda3环境配置指南</h1><h2 id="1-添加jupyter环境变量"><a href="#1-添加jupyter环境变量" class="headerlink" title="1.添加jupyter环境变量"></a>1.添加jupyter环境变量</h2><pre class="line-numbers language-linux"><code class="language-linux">find -name jupyter        找jupyter的位置
+                <p><img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/note_img/image-20211210205722145.png" alt="image-20211210205722145"></p>
+<h1 id="Python-Scrapy"><a href="#Python-Scrapy" class="headerlink" title="Python-Scrapy"></a>Python-Scrapy</h1><h2 id="1-安装依赖"><a href="#1-安装依赖" class="headerlink" title="1.安装依赖"></a>1.安装依赖</h2><pre class="line-numbers language-shell"><code class="language-shell">pip install twisted
+pip install pywin32
+pip install scrapy
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>再控制台输入Scrapy，出现如下效果即为安装正确：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Blog_img/image-20211123152712806.png" alt="image-20211123152712806"></p>
+<h2 id="2-创建一个工程"><a href="#2-创建一个工程" class="headerlink" title="2.创建一个工程"></a>2.创建一个工程</h2><pre class="line-numbers language-shell"><code class="language-shell">scrapy startproject 工程名
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>目录结构：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Blog_img/image-20211123153042880.png" alt="image-20211123153042880"></p>
+<pre><code>scrapy.cfg     # Scrapy 部署时的配置文件
+tutorial         # 项目的模块，引入的时候需要从这里引入
+    __init__.py    
+    items.py     # Items 的定义，定义爬取的数据结构
+    middlewares.py   # Middlewares 的定义，定义爬取时的中间件
+    pipelines.py       # Pipelines 的定义，定义数据管道
+    settings.py       # 配置文件
+    spiders         # 放置 Spiders 的文件夹
+    __init__.py
+</code></pre>
+<h2 id="3-创建一个爬虫文件"><a href="#3-创建一个爬虫文件" class="headerlink" title="3.创建一个爬虫文件"></a>3.创建一个爬虫文件</h2><p>进入工程目录</p>
+<p>在spiders子目录中创建一个爬虫文件</p>
+<pre class="line-numbers language-shell"><code class="language-shell">scrapy genspider spiderName 域名
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>例：</p>
+<pre class="line-numbers language-shell"><code class="language-shell">scrapy genspider first www.baidu.com
+Created spider 'first' using template 'basic' in module:
+  FirstBoold.spiders.first
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Blog_img/image-20211123153509605.png" alt="image-20211123153509605"></p>
+<p>这样就创建了一个爬虫文件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Blog_img/image-20211123153556662.png" alt="image-20211123153556662"></p>
+<h2 id="4-执行工程"><a href="#4-执行工程" class="headerlink" title="4.执行工程"></a>4.执行工程</h2><pre class="line-numbers language-shell"><code class="language-shell">scrapy crawl spiderName
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="5-爬虫文件内容解析"><a href="#5-爬虫文件内容解析" class="headerlink" title="5.爬虫文件内容解析"></a>5.爬虫文件内容解析</h2><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> scrapy
 
-vim /etc/profile        编辑文件
 
-根据找到的位置,在最后一行添加,PATH后面跟的路径自行改变：
-export PATH=$PATH:/root/anaconda3/bin 
+<span class="token keyword">class</span> <span class="token class-name">FirstSpider</span><span class="token punctuation">(</span>scrapy<span class="token punctuation">.</span>Spider<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment" spellcheck="true"># 爬虫文件的名称：爬虫源文件的唯一标识</span>
+    name <span class="token operator">=</span> <span class="token string">'first'</span>
+    <span class="token comment" spellcheck="true"># 允许的域名：用来限定start_urls列表中那些url可以被请求发送</span>
+    allowed_domains <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'www.baidu.com'</span><span class="token punctuation">]</span>
+    <span class="token comment" spellcheck="true"># 起始的url列表：该列表中存放的url会被scrapy自动进行请求的发送</span>
+    start_urls <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'http://www.baidu.com/'</span><span class="token punctuation">]</span>
+    
+    <span class="token comment" spellcheck="true"># 用作于数据解析，response参数表示的就是请求成功后对应的响应对象</span>
+    <span class="token keyword">def</span> <span class="token function">parse</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">pass</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="6-修改爬虫文件并运行"><a href="#6-修改爬虫文件并运行" class="headerlink" title="6.修改爬虫文件并运行"></a>6.修改爬虫文件并运行</h2><p>将爬虫文件修改为以下内容：</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> scrapy
 
-source  /etc/profile/         执行配置
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="2-修改配置文件"><a href="#2-修改配置文件" class="headerlink" title="2.修改配置文件"></a>2.修改配置文件</h2><pre class="line-numbers language-linux"><code class="language-linux">jupyter notebook --generate-config        生成配置文件
 
-vim  /root/.jupyter/jupyter_notebook_config.py         编辑配置文件
+<span class="token keyword">class</span> <span class="token class-name">FirstSpider</span><span class="token punctuation">(</span>scrapy<span class="token punctuation">.</span>Spider<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    name <span class="token operator">=</span> <span class="token string">'first'</span>
+    allowed_domains <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'www.baidu.com'</span><span class="token punctuation">]</span>
+    start_urls <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'http://www.baidu.com/'</span><span class="token punctuation">,</span><span class="token string">'https://www.bilibili.com/'</span><span class="token punctuation">]</span>
 
-添加代码：
-c.NotebookApp.ip = '*'        配置可以访问的ip为所有ip
-c.NotebookApp.open_browser = False        配置不自动打开浏览器
-c.NotebookApp.port = 8888        配置服务端口为888
-
-jupyter notebook --allow-root&  开启服务，root用户需要加--allow-root，&代表在后台运行
+    <span class="token keyword">def</span> <span class="token function">parse</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span>    <span class="token comment" spellcheck="true"># 打印相应结果</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>在控制台中执行：**<code>scrapy crawl first</code>**</p>
+<p><img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Blog_img/image-20211123155033506.png" alt="image-20211123155033506"></p>
+<p>发现输出了一大堆东西，但是没有我们打印的response结果，仔细观察输出结果，发现下图输出了<code> 'ROBOTSTXT_OBEY': True</code>,这代表爬虫将遵守Robot协议，我们配置为Flase不遵守此协议即可。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Blog_img/image-20211123155247327.png" alt="image-20211123155247327"></p>
+<p>这就是导致没有输出结果的原因。</p>
+<p>我们只需要修改配置文件即可：</p>
+<p>打开工程项目下的settings.py文件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Blog_img/image-20211123155502652.png" alt="image-20211123155502652"></p>
+<p>将<code>ROBOTSTXT_OBEY = True</code>修改为<code>ROBOTSTXT_OBEY = False</code>即可。</p>
+<p>再次执行：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Blog_img/image-20211123160225203.png" alt="image-20211123160225203"></p>
+<p>这次运行我们加了<code>--nolog</code>参数，屏蔽了程序执行的日志，这样控制台只会输出我们想要的内容，但是不推荐使用<code>--nolog</code>，因为程序有问题，不会报错，导致无法排错。</p>
+<p>通过上图发现程序正常运行，并输出了我们想要的结果。</p>
+<h2 id="7-Scrapy的数据解析"><a href="#7-Scrapy的数据解析" class="headerlink" title="7.Scrapy的数据解析"></a>7.Scrapy的数据解析</h2><p>任务目标：</p>
+<ul>
+<li>爬取糗事百科中段子类中的发帖人和发帖内容</li>
+</ul>
+<p>创建工程和爬虫文件：</p>
+<pre class="line-numbers language-shell"><code class="language-shell">scrapy startproject qiubaiPro    # 创建工程
+scrapy genspider qiubai www.xxx.com    # 创建爬虫文件
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>编辑爬虫文件</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> scrapy
+
+
+<span class="token keyword">class</span> <span class="token class-name">QiubaiSpider</span><span class="token punctuation">(</span>scrapy<span class="token punctuation">.</span>Spider<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    name <span class="token operator">=</span> <span class="token string">'qiubai'</span>
+    <span class="token comment" spellcheck="true"># allowed_domains = ['www.xxx.com']</span>
+    <span class="token comment" spellcheck="true"># 待爬取的Url</span>
+    start_urls <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'https://www.qiushibaike.com/text/'</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">def</span> <span class="token function">parse</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment" spellcheck="true"># 解析作者的名称+段子内容</span>
+        <span class="token comment" spellcheck="true"># 获取节点</span>
+        div_list <span class="token operator">=</span> response<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'/html/body/div[1]/div/div[2]/div'</span><span class="token punctuation">)</span>
+        <span class="token comment" spellcheck="true"># 遍历节点</span>
+        <span class="token keyword">for</span> div <span class="token keyword">in</span> div_list<span class="token punctuation">:</span>
+            <span class="token comment" spellcheck="true"># 获取作者名和段子内容</span>
+            <span class="token comment" spellcheck="true"># extract可以将Selector对象中所存储的data对象提取出来</span>
+            <span class="token comment" spellcheck="true"># 如果是对列表使用extract，可以将列表中所有Selector对象中所存储的data对象提取出来</span>
+            author <span class="token operator">=</span> div<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'./div[1]/a[2]/h2/text()'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            author <span class="token operator">=</span> div<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'./div[1]/a[2]/h2/text()'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract_first<span class="token punctuation">(</span><span class="token punctuation">)</span>    <span class="token comment" spellcheck="true"># 同上</span>
+            content <span class="token operator">=</span> div<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'./a[1]/div/span[1]//text()'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>author<span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> content<span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token keyword">break</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>修改配置文件<code>setting.py</code>:</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># UA</span>
+USER_AGENT <span class="token operator">=</span> <span class="token string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36'</span>
+<span class="token comment" spellcheck="true"># Robots协议</span>
+ROBOTSTXT_OBEY <span class="token operator">=</span> <span class="token boolean">False</span>
+<span class="token comment" spellcheck="true"># 显示日志等级</span>
+LOG_LEVEL <span class="token operator">=</span> <span class="token string">"ERROR"</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行工程：<code>scrapy crawl qiubai</code>：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Blog_img/image-20211123175333718.png" alt="image-20211123175333718"></p>
+<p>发现段子内容打印的是一个Selector对象，而作者名并没有被Selector包裹，说明extract()是提取Selector中的data内容。</p>
+<h2 id="8-持久化存储"><a href="#8-持久化存储" class="headerlink" title="8.持久化存储"></a>8.持久化存储</h2><h3 id="1-基于终端命令存储"><a href="#1-基于终端命令存储" class="headerlink" title="1.基于终端命令存储"></a>1.基于终端命令存储</h3><blockquote>
+<p>只能将parse方法的返回值存储在本地文件中</p>
+</blockquote>
+<p>修改爬虫文件：</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> scrapy
+
+
+<span class="token keyword">class</span> <span class="token class-name">QiubaiSpider</span><span class="token punctuation">(</span>scrapy<span class="token punctuation">.</span>Spider<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    name <span class="token operator">=</span> <span class="token string">'qiubai'</span>
+    <span class="token comment" spellcheck="true"># allowed_domains = ['www.xxx.com']</span>
+    start_urls <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'https://www.qiushibaike.com/text/'</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">def</span> <span class="token function">parse</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment" spellcheck="true"># 解析作者的名称+段子内容</span>
+        div_list <span class="token operator">=</span> response<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'/html/body/div[1]/div/div[2]/div'</span><span class="token punctuation">)</span>
+        data_all <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token keyword">for</span> div <span class="token keyword">in</span> div_list<span class="token punctuation">:</span>
+            author <span class="token operator">=</span> div<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'./div[1]/a[2]/h2/text()'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            author1 <span class="token operator">=</span> div<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'./div[1]/a[2]/h2/text()'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract_first<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            content <span class="token operator">=</span> div<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'./a[1]/div/span[1]//text()'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            content <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>content<span class="token punctuation">)</span>
+            dit <span class="token operator">=</span> <span class="token punctuation">{</span>
+                <span class="token string">'author'</span><span class="token punctuation">:</span>author<span class="token punctuation">,</span>
+                <span class="token string">'content'</span><span class="token punctuation">:</span>content
+            <span class="token punctuation">}</span>
+            data_all<span class="token punctuation">.</span>append<span class="token punctuation">(</span>dit<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> data_all
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>终端执行：<code>scrapy crawl qiubai -o data.json</code>:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Blog_img/image-20211123185601067.png" alt="image-20211123185601067"></p>
+<p>查看当前目录，已经生成了data.json文件:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Blog_img/image-20211123185641646.png" alt="image-20211123185641646"></p>
+<p>假如我们要保存成txt行不行呢？</p>
+<p>试一下：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Blog_img/image-20211123185723863.png" alt="image-20211123185723863"></p>
+<p>发现报错了，提示只支持<code>json</code>, <code>jsonlines</code>, <code>jl</code>, <code>csv</code>, <code>xml</code>, <code>marshal</code>, <code>pickle</code>这几种文件。</p>
+<h3 id="2-基于管道存储"><a href="#2-基于管道存储" class="headerlink" title="2.基于管道存储"></a>2.基于管道存储</h3><ul>
+<li>编码流程<ol>
+<li>数据解析</li>
+<li>在item类中定义相关属性</li>
+<li>将解析的数据封装存储到item类型的对象</li>
+<li>将item类型的对象提交给管道进行持久化存储操作</li>
+<li>在管道类的process_item中要将其接受到的item对象中存储的数据进行持久化存储</li>
+<li>在配置文件中开启管道</li>
+</ol>
+</li>
+</ul>
+<p>例：</p>
+<ol>
+<li><p>数据解析</p>
+<p>修改qiubai文件：</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> scrapy
+<span class="token keyword">from</span> qiubaiPro<span class="token punctuation">.</span>items <span class="token keyword">import</span> QiubaiproItem
+
+
+<span class="token keyword">class</span> <span class="token class-name">QiubaiSpider</span><span class="token punctuation">(</span>scrapy<span class="token punctuation">.</span>Spider<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    name <span class="token operator">=</span> <span class="token string">'qiubai'</span>
+    <span class="token comment" spellcheck="true"># allowed_domains = ['www.xxx.com']</span>
+    start_urls <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'https://www.qiushibaike.com/text/'</span><span class="token punctuation">]</span>
+    <span class="token keyword">def</span> <span class="token function">parse</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        item <span class="token operator">=</span> QiubaiproItem<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment" spellcheck="true"># 解析作者的名称+段子内容</span>
+        div_list <span class="token operator">=</span> response<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'/html/body/div[1]/div/div[2]/div'</span><span class="token punctuation">)</span>
+        data_all <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token keyword">for</span> div <span class="token keyword">in</span> div_list<span class="token punctuation">:</span>
+            author <span class="token operator">=</span> div<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'./div[1]/a[2]/h2/text()'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            author1 <span class="token operator">=</span> div<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'./div[1]/a[2]/h2/text()'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract_first<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            content <span class="token operator">=</span> div<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'./a[1]/div/span[1]//text()'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            content <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>content<span class="token punctuation">)</span>
+            item<span class="token punctuation">[</span><span class="token string">'author'</span><span class="token punctuation">]</span> <span class="token operator">=</span> author
+            item<span class="token punctuation">[</span><span class="token string">'content'</span><span class="token punctuation">]</span> <span class="token operator">=</span> content
+            <span class="token keyword">yield</span> item  <span class="token comment" spellcheck="true"># 将item提交给管道</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>在item类中定义相关属性</p>
+<p>打开工程目录下的item文件：</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> scrapy
+
+
+<span class="token keyword">class</span> <span class="token class-name">QiubaiproItem</span><span class="token punctuation">(</span>scrapy<span class="token punctuation">.</span>Item<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment" spellcheck="true"># define the fields for your item here like:</span>
+    <span class="token comment" spellcheck="true"># name = scrapy.Field()</span>
+    <span class="token comment" spellcheck="true"># 创建2个属性</span>
+    author <span class="token operator">=</span> scrapy<span class="token punctuation">.</span>Field<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    content <span class="token operator">=</span> scrapy<span class="token punctuation">.</span>Field<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>将解析的数据封装存储到item类型的对象</p>
+<p>这一步其实就是第一步qiubai文件中的第2行和10和19-20行：</p>
+<ul>
+<li><code>from qiubaiPro.items import QiubaiproItem</code> 导入item文件中的<code>QiubaiproItem </code>类</li>
+<li><code>item = QiubaiproItem()</code> 创建一个item对象</li>
+<li><code>item['author'] = author</code>和<code>item['content'] = content</code>给对象的author和content属性赋值</li>
+</ul>
+</li>
+<li><p>将item类型的对象提交给管道进行持久化存储操作</p>
+<ul>
+<li><code>yield item</code>  返回item对象</li>
+</ul>
+</li>
+<li><p>在管道类pipelines的process_item中要将其接受到的item对象中存储的数据进行持久化存储</p>
+<p>修改工程目录下的pipelines.py文件</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># Define your item pipelines here</span>
+<span class="token comment" spellcheck="true">#</span>
+<span class="token comment" spellcheck="true"># Don't forget to add your pipeline to the ITEM_PIPELINES setting</span>
+<span class="token comment" spellcheck="true"># See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html</span>
+
+
+<span class="token comment" spellcheck="true"># useful for handling different item types with a single interface</span>
+<span class="token keyword">from</span> itemadapter <span class="token keyword">import</span> ItemAdapter
+
+
+<span class="token keyword">class</span> <span class="token class-name">QiubaiproPipeline</span><span class="token punctuation">:</span>
+    f <span class="token operator">=</span> None
+
+    <span class="token comment" spellcheck="true"># 开启爬虫时执行，只执行一次</span>
+    <span class="token comment" spellcheck="true"># 重写父类方法</span>
+    <span class="token keyword">def</span> <span class="token function">open_spider</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> spider<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"开始爬虫....."</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>f <span class="token operator">=</span> open<span class="token punctuation">(</span><span class="token string">'qiubai.txt'</span><span class="token punctuation">,</span> <span class="token string">'w'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span>
+
+    <span class="token comment" spellcheck="true"># 专门用来处理item对象</span>
+    <span class="token comment" spellcheck="true"># 该方法可以接收爬虫文件提交过来的item对象</span>
+    <span class="token comment" spellcheck="true"># 该方法每接到一个item对象就会调用一次</span>
+    <span class="token keyword">def</span> <span class="token function">process_item</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> item<span class="token punctuation">,</span> spider<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        author <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token string">'author'</span><span class="token punctuation">]</span>
+        content <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token string">'content'</span><span class="token punctuation">]</span>
+        self<span class="token punctuation">.</span>f<span class="token punctuation">.</span>write<span class="token punctuation">(</span>author <span class="token operator">+</span> <span class="token string">':'</span> <span class="token operator">+</span> content <span class="token operator">+</span> <span class="token string">'\n'</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> item
+
+    <span class="token comment" spellcheck="true"># 关闭爬虫时执行，只执行一次。 (如果爬虫中间发生异常导致崩溃，close_spider可能也不会执行)</span>
+    <span class="token keyword">def</span> <span class="token function">close_spider</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> spider<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"爬虫结束...."</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>f<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>在配置文件中开启管道</p>
+<p>修改工程目录下settings.py文件</p>
+<p>将</p>
+<pre class="line-numbers language-python"><code class="language-python">ITEM_PIPELINES <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true"># 300表示是优先级，数值越小，优先级越高</span>
+    <span class="token string">'qiubaiPro.pipelines.QiubaiproPipeline'</span><span class="token punctuation">:</span> <span class="token number">300</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>取消注释</p>
+</li>
+</ol>
+<h3 id="3-将爬取的数据存两份"><a href="#3-将爬取的数据存两份" class="headerlink" title="3.将爬取的数据存两份"></a>3.将爬取的数据存两份</h3><p>任务目标：将爬取的数据一份存到txt文件，一份存到mysql数据库</p>
+<p>基于上一节的代码进行修改</p>
+<p>在pipelines.py添加代码：</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> pymysql
+
+
+<span class="token keyword">class</span> <span class="token class-name">MysqlPipeline</span><span class="token punctuation">:</span>
+    conn <span class="token operator">=</span> None
+    cour <span class="token operator">=</span> None
+
+    <span class="token keyword">def</span> <span class="token function">open_spider</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> spider<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>conn <span class="token operator">=</span> pymysql<span class="token punctuation">.</span>connect<span class="token punctuation">(</span>host<span class="token operator">=</span><span class="token string">"127.0.0.1"</span><span class="token punctuation">,</span> port<span class="token operator">=</span><span class="token number">3306</span><span class="token punctuation">,</span> user<span class="token operator">=</span><span class="token string">'root'</span><span class="token punctuation">,</span> password<span class="token operator">=</span><span class="token string">'123456'</span><span class="token punctuation">,</span> db<span class="token operator">=</span><span class="token string">'qiubai'</span><span class="token punctuation">,</span>
+                                    charset<span class="token operator">=</span><span class="token string">'utf8'</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">process_item</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> item<span class="token punctuation">,</span> spider<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>cour <span class="token operator">=</span> self<span class="token punctuation">.</span>conn<span class="token punctuation">.</span>cursor<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">try</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>cour<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">'insert into qiubai value ("%s","%s")'</span> <span class="token operator">%</span> <span class="token punctuation">(</span>item<span class="token punctuation">[</span><span class="token string">'author'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> item<span class="token punctuation">[</span><span class="token string">'content'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>conn<span class="token punctuation">.</span>commit<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">except</span> Exception <span class="token keyword">as</span> e<span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>conn<span class="token punctuation">.</span>rollback<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> item    
+    <span class="token comment" spellcheck="true"># 这里的item代表将item传给下一个类，在QiubaiproPipeline类中的MysqlPipeline方法，最终返回了item，如果不返回item，那MysqlPipeline类就接受不到item对象。</span>
+
+    <span class="token keyword">def</span> <span class="token function">close_spider</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> spider<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>cour<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>conn<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>修改setting.py文件：</p>
+<pre class="line-numbers language-python"><code class="language-python">ITEM_PIPELINES <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true"># 300表示是优先级，数值越小，优先级越高</span>
+    <span class="token string">'qiubaiPro.pipelines.QiubaiproPipeline'</span><span class="token punctuation">:</span> <span class="token number">300</span><span class="token punctuation">,</span>
+    <span class="token string">'qiubaiPro.pipelines.MysqlPipeline'</span><span class="token punctuation">:</span> <span class="token number">301</span><span class="token punctuation">,</span>    <span class="token comment" spellcheck="true"># 添加这一条，优先级设置为301，代表爬取的数据会先执行QiubaiproPipeline类，然后执行MysqlPipeline类</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/Blog_img/image-20211123234530728.png" alt="image-20211123234530728"></p>
+<p>查看mysql数据库中是否已有存取数据：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/note_img/image-20211130222547726.png" alt="image-20211130222547726"></p>
+<p>这里我运行了多次，所以qiubai表存在98条数据，总之，证明了程序成功爬取数据并存到了mysql中。</p>
+<h2 id="9-全站数据爬取"><a href="#9-全站数据爬取" class="headerlink" title="9.全站数据爬取"></a>9.全站数据爬取</h2><blockquote>
+<p>就是将网站中某板块下的全部页码对应的数据进行爬取</p>
+</blockquote>
 
                 
             </div>
@@ -583,7 +851,7 @@ jupyter notebook --allow-root&  开启服务，root用户需要加--allow-root�
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">Zhaotao</a>
+                    <a href="/about" rel="external nofollow noreferrer">ZhTao</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -593,7 +861,7 @@ jupyter notebook --allow-root&  开启服务，root用户需要加--allow-root�
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zhaotaogit.github.io/year/05/16/linux-an-zhuang-anaconda3-huan-jing-pei-zhi-zhi-nan/">https://zhaotaogit.github.io/year/05/16/linux-an-zhuang-anaconda3-huan-jing-pei-zhi-zhi-nan/</a>
+                    <a href="https://zhaotaogit.github.io/year/12/10/python-scrapy/">https://zhaotaogit.github.io/year/12/10/python-scrapy/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -606,7 +874,7 @@ jupyter notebook --allow-root&  开启服务，root用户需要加--allow-root�
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">Zhaotao</a>
+                    <a href="/about" target="_blank">ZhTao</a>
                     !
                 </span>
             </div>
@@ -630,15 +898,7 @@ jupyter notebook --allow-root&  开启服务，root用户需要加--allow-root�
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/Linux/">
-                                    <span class="chip bg-color">Linux</span>
-                                </a>
-                            
-                                <a href="/tags/Anaconda/">
-                                    <span class="chip bg-color">Anaconda</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -1069,17 +1329,17 @@ jupyter notebook --allow-root&  开启服务，root用户需要加--allow-root�
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/year/05/31/flask-ru-men/">
+                <a href="/year/12/10/python-scrapy/">
                     <div class="card-image">
                         
+                        <img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/note_img/image-20211210205722145.png" class="responsive-img" alt="Python-Scrapy">
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Flask入门">
-                        
-                        <span class="card-title">Flask入门</span>
+                        <span class="card-title">Python-Scrapy</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1089,17 +1349,18 @@ jupyter notebook --allow-root&  开启服务，root用户需要加--allow-root�
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-05-31
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-10
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            Zhaotao
+                            ZhTao
                             
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -1110,51 +1371,31 @@ jupyter notebook --allow-root&  开启服务，root用户需要加--allow-root�
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/year/05/11/conda-chuang-jian-python-huan-jing/">
+                <a href="/year/12/10/heroku-bu-shu-github-fang-shi-bu-shu/">
                     <div class="card-image">
                         
-                        <img src="https://ss3.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/baike/pic/item/78310a55b319ebc45d5c45dc8e26cffc1e17164a.jpg" class="responsive-img" alt="Conda创建python环境">
+                        <img src="https://cdn.jsdelivr.net/gh/zhaotaogit/images/note_img/src=http%253A%252F%252Fbkimg.cdn.bcebos.com%252Fpic%252Fb3fb43166d224f4a9b5130b501f790529922d148&refer=http%253A%252F%252Fbkimg.cdn.bcebos.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg" class="responsive-img" alt="heroku部署Github方式部署">
                         
-                        <span class="card-title">Conda创建python环境</span>
+                        <span class="card-title">heroku部署Github方式部署</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Python,Linux
+                            
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-10
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Python/" class="post-category">
-                                    Python
-                                </a>
-                            
-                            <a href="/categories/Python/Linux/" class="post-category">
-                                    Linux
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            ZhTap
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
-                    </a>
-                    
-                    <a href="/tags/Linux/">
-                        <span class="chip bg-color">Linux</span>
-                    </a>
-                    
                 </div>
                 
             </div>
